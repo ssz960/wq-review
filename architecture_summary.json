@@ -23,7 +23,7 @@
     "deployment_and_operations"
   ],
   "source_branch": "codex/know-20260718-008-root",
-  "source_commit": "c732d6c98faf27ee6cfea4e63825e5cbc470ddef",
+  "source_commit": "52d9bbae748e1f1e766598738dcd64c78fd8d50f",
   "source_of_truth": "local_git_repository",
   "test_runner_file_count": 3,
   "test_runner_files": [

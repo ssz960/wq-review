@@ -24,7 +24,7 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "f09c0f8fc57e4e394d7a0b7896a8dd9108b2e5d64dc5e34983fa3dfe041f921c",
+      "sha256": "6ece8f8b1f2b5e69b6bae5d95d256c3563fa7528870e8f4167dea1ebfb94a32c",
       "size": 967
     },
     {
@@ -79,8 +79,8 @@
     },
     {
       "path": "modules/research_exchange.md",
-      "sha256": "21804339f22a903d61f7245956111a23e737816f37374ba4c59ad94444598c65",
-      "size": 3632
+      "sha256": "2c7aaf61ed893c2cedd6257e91cd5ef2ae05fd0ed8f2e6acff5b0c241fb394ab",
+      "size": 3614
     },
     {
       "path": "modules/task_center.md",
@@ -94,7 +94,7 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "bb314e04234156b24be37f2d08fa12d3597b952ba1769ef2163ddca47aab7ddc",
+      "sha256": "384c6ea9296efec9c055567fcd1371104565018848e3b5d75cf5e126aaf1a4cd",
       "size": 8387
     },
     {
@@ -104,8 +104,8 @@
     },
     {
       "path": "recent_changes.md",
-      "sha256": "c06f594a83b4e7f550b5c2da942419492dc659ba51887dec10013a4b69eff776",
-      "size": 663
+      "sha256": "a26370f0f66fc42abd78ecf0b868bc7c6faf5b97a40b966033635891f102fe17",
+      "size": 666
     },
     {
       "path": "recent_tests.md",
@@ -114,8 +114,8 @@
     },
     {
       "path": "review_request.md",
-      "sha256": "65cdf17efd026ed1af28d2142a8834b9251a81662a8fe8b978b2c91f653f67cf",
-      "size": 300
+      "sha256": "8203164116317700c9f226e93b6e19d411c6c59c112f433b5fb31a0322e63e2b",
+      "size": 433
     },
     {
       "path": "server_status.json",
@@ -129,7 +129,7 @@
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-19T03:51:15+08:00",
+  "generated_at": "2026-07-19T04:26:53+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -155,6 +155,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "c732d6c98faf27ee6cfea4e63825e5cbc470ddef",
+  "local_commit": "52d9bbae748e1f1e766598738dcd64c78fd8d50f",
   "schema_version": 1
 }
