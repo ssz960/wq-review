@@ -23,7 +23,7 @@
     "deployment_and_operations"
   ],
   "source_branch": "phase3/research-exchange",
-  "source_commit": "b4373c3a433051cfda19d1ef14cb18113e6f75e4",
+  "source_commit": "a75a1affc92fcad9e09a4f98a00e1655455b0a49",
   "source_of_truth": "local_git_repository",
   "test_runner_file_count": 51,
   "test_runner_files": [

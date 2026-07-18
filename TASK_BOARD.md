@@ -15,13 +15,10 @@
 | 任务 ID | 涉及模块 | 负责人窗口 | 状态 | 依赖 | 本地 commit | 测试报告 |
 | --- | --- | --- | --- | --- | --- | --- |
 | `GOV-20260718-001` | deployment_and_operations, provider_and_skills, 全部模块文档 | root | DONE | 无 | `HEAD`（本治理提交） | `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md` |
-| `GOV-20260718-002` | deployment_and_operations, provider_and_skills | root | IN_PROGRESS | `GOV-20260718-001` | PENDING | `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md` |
+| `GOV-20260718-002` | deployment_and_operations, provider_and_skills | root | DONE | `GOV-20260718-001` | `HEAD`（公开审阅配置收口提交） | `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md` |
 
 ## 写锁
 
-| 模块 | 任务 ID | 工作树 |
-| --- | --- | --- |
-| deployment_and_operations | `GOV-20260718-002` | 当前本地工作树 |
-| provider_and_skills | `GOV-20260718-002` | 当前本地工作树 |
+无活动写锁。`GOV-20260718-002` 已释放其治理写锁。
 
 其他模块在本任务中仅更新治理文档，不授权业务代码写入。

@@ -24,7 +24,7 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "2849fae19dc0488e9e62e234905a8a6f011de1bc5b2b75d3c67651a22c3da996",
+      "sha256": "7e47d96e1789d85c394b6df88c834eea87613e8a7606f1c6239bf5f8760a1a6c",
       "size": 3049
     },
     {
@@ -44,8 +44,8 @@
     },
     {
       "path": "modules/deployment_and_operations.md",
-      "sha256": "2ef073b878a6e7a80af7b7068875c514c22ed67d035b359e562aba9543e5afa0",
-      "size": 2691
+      "sha256": "0b8775c459a139dc9925504598453ec7d05b36e89ced8f954d55e8eb94dc6c2e",
+      "size": 2811
     },
     {
       "path": "modules/execution_transport.md",
@@ -69,8 +69,8 @@
     },
     {
       "path": "modules/provider_and_skills.md",
-      "sha256": "c90dc18bf48ba7cecffa6a6825568c8469afedeebc979e90c21add42d2550200",
-      "size": 2469
+      "sha256": "e8d51a81ad9adae7bb503f2e4eab31c56eac03bcaf06d84dc3d18112dfecc11d",
+      "size": 2557
     },
     {
       "path": "modules/research_center.md",
@@ -94,8 +94,8 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "454746ab99a78a96f1a96e7f72d398bbe6f88daa4abe15875b8e0a4f51a0e67e",
-      "size": 5460
+      "sha256": "a53cdbb04d2d51f987bff2bdbbda152e001bf8dbf828bce07c8896046c2411be",
+      "size": 5683
     },
     {
       "path": "README.md",
@@ -104,7 +104,7 @@
     },
     {
       "path": "recent_changes.md",
-      "sha256": "6158f2ee66167ab47a70a2e33be13237d2c343286eaa0f379e3233b67686a333",
+      "sha256": "e4a1ca0d46f140246ef0637e4ea28ac7a6d3926b530c25c20b871651201f0e9f",
       "size": 671
     },
     {
@@ -124,12 +124,12 @@
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "73c5a4ac6b068337dd39dad3fce563ed6c72a113b6dd1a43430a396dd29c7e73",
-      "size": 1674
+      "sha256": "438795aa0ff7bd2a1f9eb8fc0a0b706425f681dcf8e08beaf38f152462c410eb",
+      "size": 1568
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-18T10:18:52+08:00",
+  "generated_at": "2026-07-18T10:25:47+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -155,6 +155,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "b4373c3a433051cfda19d1ef14cb18113e6f75e4",
+  "local_commit": "a75a1affc92fcad9e09a4f98a00e1655455b0a49",
   "schema_version": 1
 }
