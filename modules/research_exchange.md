@@ -1,0 +1,56 @@
+# research_exchange
+
+## 目标职责
+
+在本地系统与独立 `wqb` 资产仓库之间交换经过 schema、大小、路径和 hash 校验的研究快照/增量包，不承担运行时调度。
+
+## 入口文件
+
+- `backend/app/mining/research_exchange_v2.py`
+- `backend/app/mining/research_package_service.py`
+- `backend/app/mining/research_package_export_service.py`
+- `backend/app/data_pullback.py`
+- `backend/alembic/versions/20260621_0023_research_package_lifecycle_v1.py`
+
+## 模型
+
+`ResearchPackage`、`ResearchPackageAsset`、`ResearchArtifact`、`DataPullbackJob`、`DataPullbackItem`。
+
+## API
+
+`/api/research-campaigns/{id}/packages*`、`/api/research-packages/cleanup`、`/api/research-storage/health`、`/exports/incremental`、artifact download；Data Pullback 为 `/api/data-pullback/*`。
+
+## 流程
+
+`local reviewed state -> PlatformResearchSnapshotBuilder/ResearchDeltaBuilder -> manifest/hash/schema -> bounded package/Git adapter -> wqb`；反向只接受 inbox 白名单包并先校验。
+
+## 依赖
+
+Research Center、campaign/session 模型、package 存储、独立 wqb manifest/schema 和可选 Git adapter。
+
+## 安全边界
+
+拒绝路径穿越、symlink、超大文件/数量、hash/schema 不符和未批准内容。不得交换数据库、凭据、完整 PnL、原始日志或长寿命大 ZIP。wq-review 不是 wqb 包。
+
+## 当前实现
+
+快照 builder、delta builder、service、Git adapter、包生命周期 API 与测试存在。真实 wqb 路径、当前 cursor、服务器包状态为 `UNVERIFIED`。
+
+## 已确认设计
+
+`wqb` 独立；交换按 manifest 发生；服务器运行不依赖 wq-review；Data Pullback 是冷数据归档，不是公开审阅桥。
+
+## 已知 Bug
+
+- Research package、exchange、pullback 三套打包能力容易被混用。
+- Git adapter 的实际部署凭据/仓库策略：`UNVERIFIED`。
+- 根目录遗留多个 ZIP/tar 包说明历史打包缺少统一出口。
+
+## 验证记录
+
+2026-07-18 仅静态审计类、路由、模型和历史测试；未生成/导入 wqb 包。
+
+## 相关报告
+
+- `docs/test_reports/phase3_research_exchange_and_pullback_v2_20260718.md`（历史阶段报告）
+- `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`

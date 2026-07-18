@@ -1,0 +1,160 @@
+{
+  "deterministic": true,
+  "excluded_sensitive_content": {
+    "archives_backups_and_environment_files": true,
+    "complete_source": true,
+    "cookies_and_tokens": true,
+    "credentials_and_key_material": true,
+    "database_connections_and_files": true,
+    "network_addresses_and_domains": true,
+    "pnl_and_private_results": true,
+    "production_logs": true,
+    "submitted_pool": true
+  },
+  "files": [
+    {
+      "path": "AGENTS_SUMMARY.md",
+      "sha256": "6e95bfc7c0ec4544a92e033e5954b2af5599e58caebd28419993fb5967460804",
+      "size": 552
+    },
+    {
+      "path": "api_summary.json",
+      "sha256": "9e0091b3cc3ccb2a7e3c37b1083a9e7d450713cd489d4ce5c9473906542cb59e",
+      "size": 14135
+    },
+    {
+      "path": "architecture_summary.json",
+      "sha256": "2849fae19dc0488e9e62e234905a8a6f011de1bc5b2b75d3c67651a22c3da996",
+      "size": 3049
+    },
+    {
+      "path": "database_summary.json",
+      "sha256": "a85b905ea42ac7b965f80f43c1f6ea17a0470aea140e43319eff43d70e42446a",
+      "size": 3418
+    },
+    {
+      "path": "MODULE_INDEX.md",
+      "sha256": "3c97dd5de18948ccbe4d729c1369a12d147d9a10fc640e15c8860c0d938c72be",
+      "size": 2329
+    },
+    {
+      "path": "modules/ai_mode.md",
+      "sha256": "0275b69ee173100d72d83882f6fe1a025c51e40deac3f3888b0268674fe65f8f",
+      "size": 2303
+    },
+    {
+      "path": "modules/deployment_and_operations.md",
+      "sha256": "2ef073b878a6e7a80af7b7068875c514c22ed67d035b359e562aba9543e5afa0",
+      "size": 2691
+    },
+    {
+      "path": "modules/execution_transport.md",
+      "sha256": "e4f2eef9547141003e3b1453873ec7b9ee1fe101825425b6f881a89e641baf27",
+      "size": 2175
+    },
+    {
+      "path": "modules/factor_center.md",
+      "sha256": "60e08c8d4a0648756fad34fa79239bef983b3e8b232d9f901cfc9255bb984f33",
+      "size": 2115
+    },
+    {
+      "path": "modules/frontend_shell.md",
+      "sha256": "3c665e56d16092a2472bd82354276153cfa45cdeecb9cdb6a6406e655bb35230",
+      "size": 2115
+    },
+    {
+      "path": "modules/platform_registry.md",
+      "sha256": "0d33e2416fb2dcffdb4b9d8e7c20ae7f421af0c706bdd6c39231367529bcd06b",
+      "size": 2409
+    },
+    {
+      "path": "modules/provider_and_skills.md",
+      "sha256": "c90dc18bf48ba7cecffa6a6825568c8469afedeebc979e90c21add42d2550200",
+      "size": 2469
+    },
+    {
+      "path": "modules/research_center.md",
+      "sha256": "742787b5a3e25b5dcc329e39489201ea2ad1a1d21118c1780102ff2c31683e80",
+      "size": 2248
+    },
+    {
+      "path": "modules/research_exchange.md",
+      "sha256": "58128f7cf58f14d8fa94fbfa7304f90465ee7d61ea47c9b38a9d86e1b1c68ce6",
+      "size": 2241
+    },
+    {
+      "path": "modules/task_center.md",
+      "sha256": "d3eabd4abddd22e60e8ee3d5fe5b6bc2ceb8b39318c865a05048fc24c077fa40",
+      "size": 2242
+    },
+    {
+      "path": "modules/template_center.md",
+      "sha256": "8cf29735bebd69935b8a6470ab303fb77fff2550d1631621c7f6ef17e4f9f2f6",
+      "size": 2024
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "sha256": "454746ab99a78a96f1a96e7f72d398bbe6f88daa4abe15875b8e0a4f51a0e67e",
+      "size": 5460
+    },
+    {
+      "path": "README.md",
+      "sha256": "a60cfb8cd39ca5802d2ee10bb2311d648c4b67a56360a9cf5015622aebd67e35",
+      "size": 571
+    },
+    {
+      "path": "recent_changes.md",
+      "sha256": "6158f2ee66167ab47a70a2e33be13237d2c343286eaa0f379e3233b67686a333",
+      "size": 671
+    },
+    {
+      "path": "recent_tests.md",
+      "sha256": "cb3ac8a326be972041381e9f434c2e60bcf3919172e483d02e29450823400f73",
+      "size": 965
+    },
+    {
+      "path": "review_request.md",
+      "sha256": "956152406d0b31f70bc7428247576883ca050011484da664310e1d42e631b1b8",
+      "size": 203
+    },
+    {
+      "path": "server_status.json",
+      "sha256": "fd7a410b8408a2d9f1659683c6f1eea88d2b4ad00e8a00c29e2f190999cd35e3",
+      "size": 57
+    },
+    {
+      "path": "TASK_BOARD.md",
+      "sha256": "73c5a4ac6b068337dd39dad3fce563ed6c72a113b6dd1a43430a396dd29c7e73",
+      "size": 1674
+    }
+  ],
+  "full_source_exported": false,
+  "generated_at": "2026-07-18T10:18:52+08:00",
+  "included_files": [
+    "AGENTS_SUMMARY.md",
+    "api_summary.json",
+    "architecture_summary.json",
+    "database_summary.json",
+    "MODULE_INDEX.md",
+    "modules/ai_mode.md",
+    "modules/deployment_and_operations.md",
+    "modules/execution_transport.md",
+    "modules/factor_center.md",
+    "modules/frontend_shell.md",
+    "modules/platform_registry.md",
+    "modules/provider_and_skills.md",
+    "modules/research_center.md",
+    "modules/research_exchange.md",
+    "modules/task_center.md",
+    "modules/template_center.md",
+    "PROJECT_STATUS.md",
+    "README.md",
+    "recent_changes.md",
+    "recent_tests.md",
+    "review_request.md",
+    "server_status.json",
+    "TASK_BOARD.md"
+  ],
+  "local_commit": "b4373c3a433051cfda19d1ef14cb18113e6f75e4",
+  "schema_version": 1
+}

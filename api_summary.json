@@ -1,0 +1,631 @@
+{
+  "groups": {
+    "api/agent-sessions": 6,
+    "api/auth": 1,
+    "api/dashboard": 1,
+    "api/data-pullback": 7,
+    "api/factor-center": 14,
+    "api/fields": 6,
+    "api/health": 1,
+    "api/mining": 40,
+    "api/research": 7,
+    "api/research-artifacts": 1,
+    "api/research-campaigns": 27,
+    "api/research-instructions": 1,
+    "api/research-intents": 2,
+    "api/research-packages": 1,
+    "api/research-storage": 1,
+    "api/settings": 1,
+    "api/task-center": 11,
+    "api/task-runs": 13,
+    "api/template-library": 10
+  },
+  "route_count": 151,
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/agent-sessions"
+    },
+    {
+      "method": "POST",
+      "path": "/api/agent-sessions"
+    },
+    {
+      "method": "GET",
+      "path": "/api/agent-sessions/{session_id}/projections"
+    },
+    {
+      "method": "POST",
+      "path": "/api/agent-sessions/{session_id}/research-brief"
+    },
+    {
+      "method": "GET",
+      "path": "/api/agent-sessions/{session_id}/workspace"
+    },
+    {
+      "method": "POST",
+      "path": "/api/agent-sessions/{session_id}/{action}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/data-pullback/history"
+    },
+    {
+      "method": "GET",
+      "path": "/api/data-pullback/jobs/{job_id}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/data-pullback/jobs/{job_id}/confirm-cleanup"
+    },
+    {
+      "method": "GET",
+      "path": "/api/data-pullback/jobs/{job_id}/download"
+    },
+    {
+      "method": "POST",
+      "path": "/api/data-pullback/preview"
+    },
+    {
+      "method": "POST",
+      "path": "/api/data-pullback/start"
+    },
+    {
+      "method": "GET",
+      "path": "/api/data-pullback/status"
+    },
+    {
+      "method": "GET",
+      "path": "/api/factor-center/ai-assistant"
+    },
+    {
+      "method": "GET",
+      "path": "/api/factor-center/alphas"
+    },
+    {
+      "method": "GET",
+      "path": "/api/factor-center/alphas/{alpha_id}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/factor-center/alphas/{alpha_id}/official-refresh"
+    },
+    {
+      "method": "GET",
+      "path": "/api/factor-center/filter-presets"
+    },
+    {
+      "method": "POST",
+      "path": "/api/factor-center/filter-presets"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/factor-center/filter-presets/{preset_id}"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/factor-center/filter-presets/{preset_id}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/factor-center/import"
+    },
+    {
+      "method": "GET",
+      "path": "/api/factor-center/sync/jobs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/factor-center/sync/jobs/{sync_id}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/factor-center/sync/jobs/{sync_id}/cancel"
+    },
+    {
+      "method": "POST",
+      "path": "/api/factor-center/sync/jobs/{sync_id}/resume"
+    },
+    {
+      "method": "POST",
+      "path": "/api/factor-center/sync/start"
+    },
+    {
+      "method": "GET",
+      "path": "/api/fields"
+    },
+    {
+      "method": "GET",
+      "path": "/api/fields/datasets"
+    },
+    {
+      "method": "GET",
+      "path": "/api/fields/summary"
+    },
+    {
+      "method": "POST",
+      "path": "/api/fields/sync"
+    },
+    {
+      "method": "GET",
+      "path": "/api/fields/sync-runs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/fields/{field_id}"
+    },
+    {
+      "method": "GET",
+      "path": "/api/health"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/advice"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/architecture"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/ban-rules"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/candidates"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/evaluation-profiles"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/events"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/execution-plane/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/execution-requests"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/execution-requests/dispatch"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/execution-requests/recover"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/factor-checks"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/feedback"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/filter-presets"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-calls"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/calls"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/checkpoints"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/checkpoints/{checkpoint_id}/decision-outcomes"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/decisions"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/display-status"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/outcome-summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/outcomes"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/llm-supervisor/status"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/llm-supervisor/tasks/{task_run_id}/run"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/observation/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/operator-actions"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/operator-actions/confirm"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/operator-actions/preview"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/plugins"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/plugins/{strategy_id}/mock-run"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/plugins/{strategy_id}/seed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/priority-events"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/research-scheduler/mutation-preview"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/research-scheduler/operator-block-search-preview"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/simulation-transport/stats"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/strategy-definitions"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/strategy-definitions"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/strategy-runs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/strategy-runs/{strategy_run_id}/advice"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/strategy-runs/{strategy_run_id}/feedback"
+    },
+    {
+      "method": "GET",
+      "path": "/api/mining/strategy-runs/{strategy_run_id}/llm-calls"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-artifacts/{artifact_id}/download"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/default"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/migrate-legacy"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/activity"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/archive"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/context/compress"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/context/health"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/context/rebuild"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/context/snapshots"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/continuous-settings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/continuous-status"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/continuous/{action}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/dialogue"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/exports/incremental"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/instructions"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/messages"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/messages"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/packages"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/packages"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/packages/current"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/packages/preflight"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/primary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/process-log"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/self-correlation"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-campaigns/{campaign_id}/start"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-campaigns/{campaign_id}/workspace"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-instructions/{instruction_id}/expire"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-intents/confirm"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-intents/{intent_id}/cancel"
+    },
+    {
+      "method": "POST",
+      "path": "/api/research-packages/cleanup"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research-storage/health"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research/assets"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research/assets/{asset_id}"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research/assets/{asset_id}/export.csv"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research/export/research_pack_snapshot.zip"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research/freshness"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research/llm-review"
+    },
+    {
+      "method": "GET",
+      "path": "/api/research/llm-review/{action_id}"
+    },
+    {
+      "method": "GET",
+      "path": "/api/settings"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-center/control"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-center/llm-scheduler-dashboard"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-center/llm-scheduler-settings"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/task-center/llm-scheduler-settings"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-center/llm-scheduler/checkpoint"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-center/llm-scheduler/pause-crowded-direction"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-center/llm-scheduler/recheck"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-center/tasks/compact"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-center/timeline"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-center/timeline/export"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-center/top-stats"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-runs"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-runs/demo"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-runs/mock"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-runs/optimize-repair/options"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-runs/optimize-repair/preview"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-runs/stage1-lego/options"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-runs/stage1-lego/preview"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-runs/{task_run_id}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-runs/{task_run_id}/action"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-runs/{task_run_id}/detail"
+    },
+    {
+      "method": "GET",
+      "path": "/api/task-runs/{task_run_id}/logs"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-runs/{task_run_id}/mock-action"
+    },
+    {
+      "method": "POST",
+      "path": "/api/task-runs/{task_run_id}/reprioritize"
+    },
+    {
+      "method": "POST",
+      "path": "/api/template-library/extract"
+    },
+    {
+      "method": "POST",
+      "path": "/api/template-library/import-from-alpha"
+    },
+    {
+      "method": "GET",
+      "path": "/api/template-library/research-assistant"
+    },
+    {
+      "method": "GET",
+      "path": "/api/template-library/templates"
+    },
+    {
+      "method": "POST",
+      "path": "/api/template-library/templates"
+    },
+    {
+      "method": "GET",
+      "path": "/api/template-library/templates/{template_id}"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/template-library/templates/{template_id}"
+    },
+    {
+      "method": "POST",
+      "path": "/api/template-library/templates/{template_id}/activate"
+    },
+    {
+      "method": "POST",
+      "path": "/api/template-library/templates/{template_id}/deactivate"
+    },
+    {
+      "method": "POST",
+      "path": "/api/template-library/templates/{template_id}/test-expand"
+    }
+  ],
+  "source": "backend/app/main.py"
+}
