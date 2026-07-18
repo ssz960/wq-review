@@ -33,6 +33,11 @@
       "size": 2339
     },
     {
+      "path": "knowledge_collection_20260718.md",
+      "sha256": "84499f126bd5184e19879423f19724961e48b5f7dc6e3e1039913b3cd72b2bdb",
+      "size": 1844
+    },
+    {
       "path": "MODULE_INDEX.md",
       "sha256": "5b1a97f2c43ed98f02c90e2c3f18f1486d2a656c71f3179b28a2c14585d490af",
       "size": 2378
@@ -114,8 +119,8 @@
     },
     {
       "path": "review_request.md",
-      "sha256": "bae628f3e92756b9b78236a5d44b7b3c9177c3934aab3fe6b52d6c322bf590e9",
-      "size": 428
+      "sha256": "a2f56e2f9f7d340647527d244441469ceea00a8fca7b17587d7b11c043d7f2b8",
+      "size": 571
     },
     {
       "path": "server_status.json",
@@ -129,12 +134,13 @@
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-18T11:09:27+08:00",
+  "generated_at": "2026-07-18T11:27:00+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
     "architecture_summary.json",
     "database_summary.json",
+    "knowledge_collection_20260718.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
     "modules/deployment_and_operations.md",
@@ -155,6 +161,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "013c7b3a945921978db1f246c6dc99e8fdb83d58",
+  "local_commit": "a254fee5c0ab874f7e72c7160053262b435e557b",
   "schema_version": 1
 }
