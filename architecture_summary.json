@@ -23,7 +23,7 @@
     "deployment_and_operations"
   ],
   "source_branch": "codex/gov-20260718-005",
-  "source_commit": "d7f340b038596e754b370496ba7d26f7fd0d3c23",
+  "source_commit": "0f610cd772a6dc1d7de383dc4ba99c94912042c9",
   "source_of_truth": "local_git_repository",
   "test_runner_file_count": 3,
   "test_runner_files": [

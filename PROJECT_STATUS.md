@@ -17,6 +17,8 @@
 - 目标：重新发布统一 `wq-review` 快照，建立多窗口 Git 并发规则，并清理除 `wqmining` 外的常驻本地仓库/worktree 目录。
 - 策略：辅助资产仓库使用任务分支；`wq-review/main` 使用单发布者、固定远端 Commit、普通 fast-forward 的完整生成快照，不替换 Git 历史。
 - 安全：不调用真实 WQ，不修改前端、业务代码、服务器 Snapshot 或数据库。
+- 结果：`wq-review` 已由固定本地 Commit 重新生成、扫描、普通 fast-forward 发布并匿名验证；旧窗口文件仅从当前树移除，历史保留。
+- 本地：已删除 `wqa` 及其 worktree、`wqc`、`wq-review`、三个已完成 `wqmining_*` worktree 和空的 `wqmining-sync` 目录；`D:\Codex` 下长期仅保留主项目 `wqmining`。
 
 ## 实际架构清单
 

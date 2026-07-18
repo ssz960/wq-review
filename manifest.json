@@ -24,7 +24,7 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "0b9b55671f52e0f38506cb2e9f530dcde6535e982f4bc8cf4a74340351918f5b",
+      "sha256": "a23177c8febcad37489dda4fb36e77c6e9df75fed1eb0ece3d7745312f9e29e8",
       "size": 961
     },
     {
@@ -94,8 +94,8 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "49d4436a0d80ec522daca26ffe220d3b000c47c0a5238e33bdffd0d2425249b3",
-      "size": 7727
+      "sha256": "f6aa93a2cec9353dd601a8e62ccb2ac425239587ca0c617a7849c91d785d9e41",
+      "size": 8092
     },
     {
       "path": "README.md",
@@ -104,8 +104,8 @@
     },
     {
       "path": "recent_changes.md",
-      "sha256": "1143ca60b9772fd7437ef8580108864d3d7e1b0b4360211d844adbf019af4f9c",
-      "size": 668
+      "sha256": "c6281f0adafc396287a8ffcb8f9fa24d15de532ce6d47e29ab930e17ccb47f4c",
+      "size": 671
     },
     {
       "path": "recent_tests.md",
@@ -114,8 +114,8 @@
     },
     {
       "path": "review_request.md",
-      "sha256": "df89d4e1b274bc7e00eeb305abcf04baf14bea0445a904b28969ee3f2e3f12d7",
-      "size": 165
+      "sha256": "127773e7bd71e5c145aef12bb8e378c816d2bd43dabf625e760de1eb726d61fc",
+      "size": 174
     },
     {
       "path": "server_status.json",
@@ -124,12 +124,12 @@
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "9475017b8187549c93c35717cc98b11254a867d876159163fa42e6b6f6b7898b",
-      "size": 2702
+      "sha256": "a602f1d8dbcbf7f22080139b1971964b92123c78479507d99dcbf140181c35bf",
+      "size": 2692
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-18T14:25:03+08:00",
+  "generated_at": "2026-07-18T14:30:49+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -155,6 +155,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "d7f340b038596e754b370496ba7d26f7fd0d3c23",
+  "local_commit": "0f610cd772a6dc1d7de383dc4ba99c94912042c9",
   "schema_version": 1
 }
