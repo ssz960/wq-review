@@ -8,7 +8,7 @@
     "tasks": "backend/app/tasks.py"
   },
   "full_source_exported": false,
-  "mining_python_file_count": 66,
+  "mining_python_file_count": 10,
   "module_documents": [
     "platform_registry",
     "task_center",
@@ -20,36 +20,15 @@
     "research_exchange",
     "provider_and_skills",
     "frontend_shell",
-    "deployment_and_operations",
-    "allocation_decision_matrix",
-    "capacity_policy_and_slot_model",
-    "scheduler_recovery_state_machine",
-    "single_multi_allocation_design"
+    "deployment_and_operations"
   ],
-  "source_branch": "codex/runtime-recover-live-20260718-001-root",
-  "source_commit": "44f3b89865037fcf60eb29649cd21d31305d9f95",
+  "source_branch": "codex/AI-BACKEND-ARCH-AUDIT-20260718-001-root",
+  "source_commit": "0b6eecf0a10823cedebac8eaef115c78f019dcd2",
   "source_of_truth": "local_git_repository",
-  "test_runner_file_count": 20,
+  "test_runner_file_count": 3,
   "test_runner_files": [
-    "agent_context_conversation_snapshot_module3_test.py",
-    "agent_research_package_lifecycle_module2_test.py",
-    "agent_runtime_context_mode_decision_module4_test.py",
-    "consultant_core_test.py",
     "consultant_multi_transport_smoke_test.py",
-    "cross_module_research_center_pre_wq_integration_test.py",
-    "execution_adapter_test.py",
-    "factor_center_background_sync_smoke_test.py",
-    "factor_center_route_smoke_test.py",
-    "factor_center_smoke_test.py",
-    "live_result_loop_integration_test.py",
-    "llm_research_memory_v2_smoke_test.py",
-    "platform_registry_runtime_test.py",
     "platform_registry_sync_test.py",
-    "research_center_frontend_integration_test.py",
-    "research_center_smoke_test.py",
-    "research_exchange_v2_test.py",
-    "research_package_export_module8b_test.py",
-    "result_ingestion_offline_test.py",
-    "single_multi_allocation_test.py"
+    "research_exchange_v2_test.py"
   ]
 }
