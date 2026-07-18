@@ -43,6 +43,11 @@
       "size": 2339
     },
     {
+      "path": "knowledge_alpha_practice_summary.md",
+      "sha256": "c50ba150bd93950ed8e3535b5eb5360347fd8f8cd48c1f522da144d541b58c97",
+      "size": 2198
+    },
+    {
       "path": "design/autonomous_ai_research_architecture.md",
       "sha256": "8a8190891492fab614787c5ce584c9192310360bb66b271275db2340aa6e0e4a",
       "size": 11180
@@ -119,8 +124,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c8a9cd07454415220b3fe6c3aa31dad4105d0e0a2a5f245a202cf26d370b496b",
-      "size": 719
+      "sha256": "9828da5455f36dfd024baa203b12eb41533798042b64c2a9ceedd8b1fce7c19a",
+      "size": 851
     },
     {
       "path": "recent_changes.md",
@@ -162,6 +167,7 @@
     "audits/autonomous_ai_backend_gap_analysis_20260718.md",
     "contracts/autonomous_ai_contracts_v1.md",
     "database_summary.json",
+    "knowledge_alpha_practice_summary.md",
     "design/autonomous_ai_research_architecture.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
