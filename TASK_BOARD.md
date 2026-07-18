@@ -23,7 +23,7 @@
 | `KNOW-20260718-005` | research_exchange, research_center, provider_and_skills | root | DONE | `KNOW-20260718-004` | `PENDING` | `docs/test_reports/alpha_practice_collection_20260718.md` |
 | `GOV-20260718-004` | deployment_and_operations, provider_and_skills | root | BLOCKED | `GOV-20260718-003` | `HEAD` | `docs/test_reports/github_ephemeral_workspace_validation.md` |
 | `GOV-20260718-005` | deployment_and_operations, provider_and_skills | root | DONE | `GOV-20260718-004` | `HEAD` | `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md` |
-| `AI-BACKEND-ARCH-AUDIT-20260718-001` | ai_mode, research_exchange, research_center, provider_and_skills, task_center, execution_transport | root | DONE | `GOV-20260718-005`; GPT review pending | `PENDING` | `docs/test_reports/autonomous_ai_backend_architecture_audit_20260718.md` |
+| `KNOW-20260718-008` | research_exchange, research_center, provider_and_skills | root | IN_PROGRESS | `KNOW-20260718-005` | `PENDING` | `docs/test_reports/consultant_forum_full_collection_20260718.md` |
 
 ## 写锁
 
@@ -31,6 +31,7 @@
 `KNOW-20260718-004` 持有 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
 `KNOW-20260718-004` 已完成并释放 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
 `KNOW-20260718-005` 持有 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
-`AI-BACKEND-ARCH-AUDIT-20260718-001` 已完成架构审计与规划文档写入，释放 ai_mode、research_exchange、research_center、provider_and_skills、task_center、execution_transport 的治理文档写锁；业务代码、迁移、前端和真实 WQ 均未授权写入。
+
+`KNOW-20260718-008` 持有 research_exchange、research_center、provider_and_skills 的治理文档写锁；范围为四个顾问社区板块的可恢复只读全量采集、脱敏研究资产发布和审阅摘要；业务代码、真实 WQ 执行和账户状态保持只读。
 
 其他模块在本任务中仅更新治理文档，不授权业务代码写入。

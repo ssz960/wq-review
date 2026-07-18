@@ -24,18 +24,8 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "214e1e45cc6fded04460877f5331ebbe38a36cdc3c81c91a9a4d981e30feea8d",
-      "size": 984
-    },
-    {
-      "path": "audits/autonomous_ai_backend_gap_analysis_20260718.md",
-      "sha256": "226a610de8e09e3c085f49918a487dbc7e3c7e4b341c06681ce9bd3809e7ffa5",
-      "size": 16782
-    },
-    {
-      "path": "contracts/autonomous_ai_contracts_v1.md",
-      "sha256": "1a9231521e2cb806399f85935e9d202450de3174c64bfa128035b666cb9eb257",
-      "size": 7407
+      "sha256": "9e837d80a29a6d2619d9de7108b1b11e81b76259dc2ed12b6e798ac5d5daa85a",
+      "size": 967
     },
     {
       "path": "database_summary.json",
@@ -43,24 +33,14 @@
       "size": 2339
     },
     {
-      "path": "knowledge_alpha_practice_summary.md",
-      "sha256": "c50ba150bd93950ed8e3535b5eb5360347fd8f8cd48c1f522da144d541b58c97",
-      "size": 2198
-    },
-    {
-      "path": "design/autonomous_ai_research_architecture.md",
-      "sha256": "8a8190891492fab614787c5ce584c9192310360bb66b271275db2340aa6e0e4a",
-      "size": 11180
-    },
-    {
       "path": "MODULE_INDEX.md",
-      "sha256": "0371d4d124c40a9d35919cd00c1afc51aab3efa40ef6a26988e94ff9d3e4d9d2",
-      "size": 2760
+      "sha256": "3c97dd5de18948ccbe4d729c1369a12d147d9a10fc640e15c8860c0d938c72be",
+      "size": 2329
     },
     {
       "path": "modules/ai_mode.md",
-      "sha256": "ab1cab139c5aaefb7e88ed4b867e05cd854bdcda4d7d88e0df7ad672427dba7d",
-      "size": 3094
+      "sha256": "0275b69ee173100d72d83882f6fe1a025c51e40deac3f3888b0268674fe65f8f",
+      "size": 2303
     },
     {
       "path": "modules/deployment_and_operations.md",
@@ -89,8 +69,8 @@
     },
     {
       "path": "modules/provider_and_skills.md",
-      "sha256": "9cdd3aef042be27d253ab2371adec79fd52d57c1569cb7d9c4c051813c963c8a",
-      "size": 3842
+      "sha256": "b0c86d6b0b7c2873955ee64aa386f20dddd1290dd90bcb4cc4480a391edead96",
+      "size": 3398
     },
     {
       "path": "modules/research_center.md",
@@ -99,8 +79,8 @@
     },
     {
       "path": "modules/research_exchange.md",
-      "sha256": "388835c6f544bfed763fcc40c5d2def1b6107ce401d5ea2e890b5d2eecca4c7e",
-      "size": 3756
+      "sha256": "adebd50007653c5282839b7c40e9e7646eee43ac4b34b2ea81c87ea977e4ad27",
+      "size": 3559
     },
     {
       "path": "modules/task_center.md",
@@ -113,34 +93,29 @@
       "size": 2024
     },
     {
-      "path": "plans/autonomous_ai_backend_implementation_plan_20260718.md",
-      "sha256": "29d00d7ceb835e06a3d99107deb7051c8ccba0e8f5ff293b70036eb293f58c4d",
-      "size": 8627
-    },
-    {
       "path": "PROJECT_STATUS.md",
-      "sha256": "f4238491161e1950086f9dfc9ff1edbd82e898205b714e47e59b0557fe52196d",
-      "size": 9282
+      "sha256": "5c96aebb8b0d84cb346c2cb07b42a9b4e31e1fe65a317d56188f5320cbaee4af",
+      "size": 8288
     },
     {
       "path": "README.md",
-      "sha256": "9828da5455f36dfd024baa203b12eb41533798042b64c2a9ceedd8b1fce7c19a",
-      "size": 851
+      "sha256": "a60cfb8cd39ca5802d2ee10bb2311d648c4b67a56360a9cf5015622aebd67e35",
+      "size": 571
     },
     {
       "path": "recent_changes.md",
-      "sha256": "7a966745b31fc4b42460508b5cd5d20ab96f83978a2d7a7ae1b7c67985ad2228",
+      "sha256": "dcb69fe33f98f828fdb3d8f88bc7c9be054d4cac0d90773a3c7ea90004848727",
       "size": 657
     },
     {
       "path": "recent_tests.md",
-      "sha256": "da1ac4f48d8d1b8e05c6c00d5a071b6db8767e79a80292558b5bf115c4ceb02a",
-      "size": 764
+      "sha256": "098c847f48a6d5d8750056789ca1ba4ca0ce53194df0b97ef4800cffa1b5657d",
+      "size": 756
     },
     {
       "path": "review_request.md",
-      "sha256": "aa9a70533120e54ce462abad8ffe2dad739a223e6c617731ad8a775b222d4338",
-      "size": 1121
+      "sha256": "533178ff66936b74e63f453def799cc5bad245e3024d90265b16ff24c53b5888",
+      "size": 667
     },
     {
       "path": "server_status.json",
@@ -149,26 +124,17 @@
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "97fdfc808c6c7cc4878d50b7da3227bf764cdfcf125eda0eeb0313688d0cb1c8",
-      "size": 4064
-    },
-    {
-      "path": "test_reports/autonomous_ai_backend_architecture_audit_20260718.md",
-      "sha256": "cdc3affb76b69f858c8399dc6ade87b1d72395686d7276260c5ac12ba0a8a95a",
-      "size": 2938
+      "sha256": "53000d987e7b048b8f28a69c15677a631256addf2a33b17f8fce44fe4f27bdaf",
+      "size": 3982
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-18T23:29:55+08:00",
+  "generated_at": "2026-07-19T02:52:08+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
     "architecture_summary.json",
-    "audits/autonomous_ai_backend_gap_analysis_20260718.md",
-    "contracts/autonomous_ai_contracts_v1.md",
     "database_summary.json",
-    "knowledge_alpha_practice_summary.md",
-    "design/autonomous_ai_research_architecture.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
     "modules/deployment_and_operations.md",
@@ -181,16 +147,14 @@
     "modules/research_exchange.md",
     "modules/task_center.md",
     "modules/template_center.md",
-    "plans/autonomous_ai_backend_implementation_plan_20260718.md",
     "PROJECT_STATUS.md",
     "README.md",
     "recent_changes.md",
     "recent_tests.md",
     "review_request.md",
     "server_status.json",
-    "TASK_BOARD.md",
-    "test_reports/autonomous_ai_backend_architecture_audit_20260718.md"
+    "TASK_BOARD.md"
   ],
-  "local_commit": "0b6eecf0a10823cedebac8eaef115c78f019dcd2",
+  "local_commit": "12ec2458619ed398d2dfa8ac5ae5d1433a8850db",
   "schema_version": 1
 }
