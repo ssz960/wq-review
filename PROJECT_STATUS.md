@@ -1,17 +1,25 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-18
-- 当前任务：`INTEGRATE-LIVE-20260718-001` Single/Multi 与 Result Ingestion 真实闭环集成
-- 当前阶段：离线闭环与服务器 `0031` 迁移通过；运行镜像因 Git 事实源缺少 API/worker 依赖而停止，未进入真实 WQ 批次。
-- 安全状态：`BLOCKED_BY_CONCRETE_ERROR`；backend/worker 停止、旧系统 inactive、API Gate 关闭，未发出 WorldQuant 请求。
+- 当前任务：`RUNTIME-RECOVER-LIVE-20260718-001` 已完成 Git 运行依赖恢复与真实闭环续跑。
+- 当前阶段：Scheduler、Result Ingestion 与 `0031` 保持冻结；服务已从受控提交启动，首批 12 条和后续 30 条均已完成。
+- 安全状态：`LIVE_LOOP_RUNNING`；backend/worker 健康、RQ 默认队列为空、API Gate 已关闭、无活动容量预留。真实执行只发生在本任务已授权的有界批次内。
 
 ## INTEGRATE-LIVE-20260718-001 状态
 
-- 状态：`BLOCKED`。
+- 状态：`DONE`，由 `RUNTIME-RECOVER-LIVE-20260718-001` 在原检查点续跑完成。
 - 共同基线：`20260718_0029_consultant_core_models`；保留 SCHED `0030`，RESULT 迁移顺延为 `0031`。
 - 唯一真实执行状态：`execution_requests + simulation_batches + simulation_batch_children`；Consultant `multi_simulation_*` 仅为领域/兼容投影。
-- 结果：48 项组合测试、16 项 Multi Transport、0029→0031 临时数据库迁移与治理测试通过；服务器备份和修正后的 0031 迁移通过。API 镜像因 `main.py`/worker 所需多个文件从未进入 Git 而无法启动，真实 12/30 批次均未派发。
-- 写锁：业务与部署写锁已释放；`wq-review/main` 在本报告发布后释放。恢复前必须先建立独立事实源恢复任务。
+- 结果：48 项组合测试、17 项 Multi Transport、0029→0031 临时数据库迁移与治理测试通过；恢复后的 clean checkout 可导入 API/worker，服务器以 `0031` 运行。首批为 1 个 10-Child Multi 加 2 个 Single，后续为 3 个 10-Child Multi；42 条均完成，未见重复派发、429、活动槽位或结果链缺失。
+- 写锁：续跑完成并已释放；Gate 在受控批次结束后关闭。
+
+## RUNTIME-RECOVER-LIVE-20260718-001 状态
+
+- 状态：`DONE`；运行状态为 `LIVE_LOOP_RUNNING`。
+- Git 恢复：相对 `724ab02f`，25 个运行时/构建文件进入事实源，核心包括 `schemas.py`、`security.py`、`task_queue.py`、`worker.py`、`agent_control_service.py`、AI/campaign 支持模块、`main.py` 与镜像输入。未复制数据库、日志、缓存、部署包、备份、运行数据或凭据。
+- clean checkout：API/worker import、恢复失败关闭/可选路由 5 项、结果闭环 12 项、Result Ingestion 10 项、Allocation+CORE 26 项、Multi replay 17 项和适配器回归通过。当前工作站未安装 Docker CLI；已运行服务器镜像来自已提交恢复源，backend/worker 均健康。
+- 真实闭环：Alembic 唯一 Head 为 `20260718_0031`；42 条受控候选全部完成。首批产生 22 Fact/Normalized/Feedback 和 12 个 Factor 投影；30 条批次产生 30 Fact/Normalized/Factor/Feedback。预算 `42/42`、剩余 `0`、429 为 `0`、重复派发为 `0`。
+- 收尾：`/api/health` 返回 200，backend、worker、postgres、redis、nginx、frontend、cloudflared 均运行，RQ 默认队列为 0；Gate 已关闭并使派发会话失效。
 
 ## RESULT-20260718-001 状态
 

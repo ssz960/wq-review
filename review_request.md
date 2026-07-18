@@ -1,3 +1,3 @@
 # 当前审阅请求
 
-请 GPT 验收本任务的 Single/Multi 调度与 Result Ingestion 集成、唯一 0031 迁移、幂等与 Parent/Child 边界、48 项组合测试、16 项 Multi Transport、服务器备份/迁移证据，并重点确认因 clean Git checkout 缺少 API/worker 依赖而停止真实批次、Gate 保持关闭的处置是否符合失败关闭原则。详细结论见 PROJECT_STATUS、TASK_BOARD、execution_transport 与 deployment_and_operations 模块摘要。
+请审阅 RUNTIME-RECOVER-LIVE-20260718-001：Git 运行依赖恢复、clean-checkout 验证、0031 单一 Head、受控 12+30 Single/Multi 闭环与 Gate 关闭。仅含脱敏聚合计数和模块边界。

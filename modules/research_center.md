@@ -64,3 +64,7 @@ Research Center now owns `ResearchFeedbackDelta`. It derives only terminal, boun
 ## INTEGRATE-LIVE-20260718-001
 
 Offline tests verified Feedback Delta idempotency and restart recovery. Live deltas remain zero because no WorldQuant batch was dispatched.
+
+## RUNTIME-RECOVER-LIVE-20260718-001
+
+The authorized runtime continuation wrote 22 bounded Feedback Deltas for the first 12-candidate batch and 30 for the 30-candidate Multi batch. Every delta remained derived from a normalized result; full raw payloads, curves and remote references were not exported or added to review evidence.

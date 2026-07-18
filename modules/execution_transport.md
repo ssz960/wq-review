@@ -70,3 +70,7 @@ and restart without calling the real adapter.
 ## INTEGRATE-LIVE-20260718-001
 
 Confirmed Allocation decisions and legacy admitted requests now converge on the same `SimulationBatch`/Child scheduler. Terminal Child envelopes enter Result Ingestion before projection; duplicate poll/pullback is keyed by request, batch, Child, remote reference and payload hash. Allocation reservations are released idempotently even when Result Ingestion releases them before the transport aggregate. Offline and migration verification passed; real transport remains stopped because the runnable API/worker dependency set is absent from Git.
+
+## RUNTIME-RECOVER-LIVE-20260718-001
+
+The runnable Git source completed the explicitly authorized bounded validation: one 10-Child Multi plus two Singles, then three 10-Child Multi Parents. All 42 Child requests reached terminal completed state, each active Parent released its allocation reservation, and the daily ledger reached 42 submitted with zero remaining. No duplicate request, 429 event, lost Child result or permanent slot lease was observed. Gate is now closed; this is evidence for the deployed commit, not a standing authorization for future real execution.

@@ -8,7 +8,7 @@
     "tasks": "backend/app/tasks.py"
   },
   "full_source_exported": false,
-  "mining_python_file_count": 57,
+  "mining_python_file_count": 66,
   "module_documents": [
     "platform_registry",
     "task_center",
@@ -26,10 +26,10 @@
     "scheduler_recovery_state_machine",
     "single_multi_allocation_design"
   ],
-  "source_branch": "codex/integrate-live-20260718-001-root",
-  "source_commit": "38f3452392f672ef7ba325c2c41e414b6fe0595d",
+  "source_branch": "codex/runtime-recover-live-20260718-001-root",
+  "source_commit": "44f3b89865037fcf60eb29649cd21d31305d9f95",
   "source_of_truth": "local_git_repository",
-  "test_runner_file_count": 19,
+  "test_runner_file_count": 20,
   "test_runner_files": [
     "agent_context_conversation_snapshot_module3_test.py",
     "agent_research_package_lifecycle_module2_test.py",
@@ -37,6 +37,7 @@
     "consultant_core_test.py",
     "consultant_multi_transport_smoke_test.py",
     "cross_module_research_center_pre_wq_integration_test.py",
+    "execution_adapter_test.py",
     "factor_center_background_sync_smoke_test.py",
     "factor_center_route_smoke_test.py",
     "factor_center_smoke_test.py",

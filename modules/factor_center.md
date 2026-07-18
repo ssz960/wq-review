@@ -63,3 +63,7 @@ Execution-result writes now project from `NormalizedExecutionResult` through `no
 ## INTEGRATE-LIVE-20260718-001
 
 The 12-scenario offline chain verified idempotent Factor projection. No live projection was created because server API startup failed before candidate dispatch.
+
+## RUNTIME-RECOVER-LIVE-20260718-001
+
+The authorized runtime continuation produced 12 idempotent Factor Center projections for the first 12 candidates and 30 for the 30-candidate Multi batch. Projections remained downstream of normalized results; no raw transport payload or direct Factor Center write path was used. Counts are recorded only as sanitized aggregates.

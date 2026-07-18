@@ -29,7 +29,8 @@
 | `SCHED-20260718-001` | candidate_plan, task_center, scheduler, execution_transport | root | DONE | `CORE-20260718-003`, `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/single_multi_allocation_validation_20260718.md` |
 | `GOV-20260718-006` | deployment_and_operations, user_handoff, wq-review publication | root | DONE | `SCHED-20260718-001`, `GOV-20260718-005` | `HEAD`（本任务提交） | `docs/test_reports/user_handoff_and_review_publication_20260718.md` |
 | `LIVE-SCHED-20260718-002` | candidate_plan, allocation, scheduler, execution_transport, deployment_and_operations | root | READY | `SCHED-20260718-001`, `REG-20260718-002`, `RESULT-20260718-001` integration boundary | `PENDING` | `docs/test_reports/live_single_multi_scheduler_validation_20260718.md` |
-| `INTEGRATE-LIVE-20260718-001` | candidate_plan, task_center, scheduler, execution_transport, result_ingestion, factor_center, research_center, deployment_and_operations, wq-review publication | root | BLOCKED | `SCHED-20260718-001`, `RESULT-20260718-001`; missing tracked API/worker runtime dependencies | `724ab02f` | `docs/test_reports/integrate_live_result_loop_20260718.md` |
+| `INTEGRATE-LIVE-20260718-001` | candidate_plan, task_center, scheduler, execution_transport, result_ingestion, factor_center, research_center, deployment_and_operations, wq-review publication | root | DONE | `SCHED-20260718-001`, `RESULT-20260718-001`; runtime continuation completed by `RUNTIME-RECOVER-LIVE-20260718-001` | `724ab02f` | `docs/test_reports/integrate_live_result_loop_20260718.md` |
+| `RUNTIME-RECOVER-LIVE-20260718-001` | task_center API, worker/queue, ai/campaign runtime dependencies, execution_transport, deployment_and_operations, wq-review publication | root | DONE | `INTEGRATE-LIVE-20260718-001`, `724ab02f` | `PENDING` | `docs/test_reports/runtime_recover_live_20260718.md` |
 
 ## 写锁
 
@@ -56,3 +57,5 @@
 `RESULT-20260718-001` 已完成并释放 research_exchange、factor_center、research_center 与 execution_transport 写锁。离线事实账本、标准化、幂等投影、Parent/Child 聚合、Checks、五类 Correlation、Research Feedback Delta 与有界导出均由本任务报告验证；未调用真实 WQ、创建真实任务或修改 API Gate。
 
 `INTEGRATE-LIVE-20260718-001` 的离线集成和修正后的服务器 `0031` 迁移已通过，但 clean Git checkout 缺少 `main.py`/worker 的多项运行依赖，API 无法启动。任务转为 `BLOCKED` 并释放业务/部署写锁；API Gate 保持关闭且未调用真实 WQ。`wq-review/main` 发布锁在本报告快照发布后释放。
+
+`RUNTIME-RECOVER-LIVE-20260718-001` 已完成并释放 task_center/API、worker/queue、ai/campaign 运行依赖、execution_transport、deployment_and_operations、服务器切换与 `wq-review/main` 写锁。恢复文件逐个进入 Git，并从 clean checkout 验证；`0031` 未降级或重建。受控 12+30 批次完成后 Gate 已关闭，服务保持 `LIVE_LOOP_RUNNING`，无活动容量预留或重复派发。

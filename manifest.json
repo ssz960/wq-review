@@ -24,8 +24,8 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "882469b245c831d1cd9c36b9f0f057fb2f42dd570371609d342618c4ca70a058",
-      "size": 1868
+      "sha256": "0cdc77a793746aa5b5197b1a2bd21c87f24f21392f1b55dea4164556ae53c1e3",
+      "size": 1907
     },
     {
       "path": "database_summary.json",
@@ -34,13 +34,13 @@
     },
     {
       "path": "MODULE_INDEX.md",
-      "sha256": "0a7d5edab9ac0a7c4310c09f0c8373e86fda88d1cd6949fbd55e6f4fdc0a8eea",
-      "size": 2927
+      "sha256": "ef7d89cb2706546f8ab21cea9bcdf6a0b67f851f1513495b4a417f438fee291b",
+      "size": 3011
     },
     {
       "path": "modules/ai_mode.md",
-      "sha256": "0275b69ee173100d72d83882f6fe1a025c51e40deac3f3888b0268674fe65f8f",
-      "size": 2303
+      "sha256": "0f56e070c4b1def0055f5d12a3ada62906d23795db319af1136e8c712c449130",
+      "size": 2657
     },
     {
       "path": "modules/allocation_decision_matrix.md",
@@ -54,18 +54,18 @@
     },
     {
       "path": "modules/deployment_and_operations.md",
-      "sha256": "58328003d953fc7b3636e31b8df4632a9416835126baa346ce0e7f2949b50620",
-      "size": 3749
+      "sha256": "d6fb4a76bc0fe64ae235cdb7804ee7c34e6b2baded061f4254127d7adca9d5ee",
+      "size": 4237
     },
     {
       "path": "modules/execution_transport.md",
-      "sha256": "6a781e2eab07b563bafcd57877fb3295e1413696acd7dac5fa385c53f83fd12e",
-      "size": 3909
+      "sha256": "8844fb939872c0e83b8ac2f984b474f181e69949030d9f24fcfee2694468f514",
+      "size": 4482
     },
     {
       "path": "modules/factor_center.md",
-      "sha256": "1f62fd278442ce9f8b792fb07475f0e4e819ab0f2f423e0a6a1af0a722b8e9d7",
-      "size": 3007
+      "sha256": "92a28c244ab382a7c80becc5c6a9cac4c52cbb01ba8eec0f93bbe9866c78944b",
+      "size": 3375
     },
     {
       "path": "modules/frontend_shell.md",
@@ -84,8 +84,8 @@
     },
     {
       "path": "modules/research_center.md",
-      "sha256": "75212888ec7f56fffa2609c14a100df5a365813e86b2f26279e14969c84c8c4c",
-      "size": 3164
+      "sha256": "5eef504c1da5d3b555e0a7ed7c574e2dfe6610ec7966b2fee24f13c5c8d4a276",
+      "size": 3496
     },
     {
       "path": "modules/research_exchange.md",
@@ -104,8 +104,8 @@
     },
     {
       "path": "modules/task_center.md",
-      "sha256": "2f2ae4d78ee2ff4e9dbe289fc61cef719b8c420da98cba443c604016173a6640",
-      "size": 2804
+      "sha256": "57012402c9193fa2377567681538133c8d76a77036c45f692a03c8f4bde064b9",
+      "size": 3332
     },
     {
       "path": "modules/template_center.md",
@@ -114,8 +114,8 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "fce9671174f7ded151551f3daaf01c51f6de1e3abd2672b8956bb564e9a446b1",
-      "size": 13223
+      "sha256": "77b11113fe357f05fb15f2fdda7d6da37d42f3a983cad29a8f50e836a1042e92",
+      "size": 14563
     },
     {
       "path": "README.md",
@@ -124,32 +124,32 @@
     },
     {
       "path": "recent_changes.md",
-      "sha256": "cdd8db8b35da2bd38ab780929df7394d7232e8495653f1e87c8bac7ae937d06f",
-      "size": 757
+      "sha256": "4e1b3a45ff40f14565926aec949098090135a0fcaa9d1b48aee78e1bb9b4026e",
+      "size": 733
     },
     {
       "path": "recent_tests.md",
-      "sha256": "daef91d9294c40a89db2a6b7d8fb3cd180861e271a7b6c56f2d9892fa5d9b421",
-      "size": 809
+      "sha256": "bfa920d27e76144d615df1366c15be079d1076ff353800b7aed32509b28faa56",
+      "size": 798
     },
     {
       "path": "review_request.md",
-      "sha256": "9dc04c7c5936abaa03581d86c453ba837a58b48d173e2090486a17c1e3dfc460",
-      "size": 485
+      "sha256": "ece0749df4758c39fba58f4e7527a30b40145edd44f47b9d4a9e8c9386a7e423",
+      "size": 229
     },
     {
       "path": "server_status.json",
-      "sha256": "88dcc5a36d97bc33114a9781b6362d5301830eec290b971030eec00016562657",
-      "size": 843
+      "sha256": "fd7a410b8408a2d9f1659683c6f1eea88d2b4ad00e8a00c29e2f190999cd35e3",
+      "size": 57
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "3381c58781d2dcb2874475edfb1ad5ca0d5d4a34ea06f787007dd7fce1e0557c",
-      "size": 7279
+      "sha256": "22ab14bf2c72a4f964b8ecf27a033499470bce3fe0bc3248c335e3638b0781f2",
+      "size": 8022
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-18T17:42:19+08:00",
+  "generated_at": "2026-07-18T21:58:32+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -179,6 +179,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "38f3452392f672ef7ba325c2c41e414b6fe0595d",
+  "local_commit": "44f3b89865037fcf60eb29649cd21d31305d9f95",
   "schema_version": 1
 }

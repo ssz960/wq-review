@@ -64,3 +64,7 @@ returns DEFER; preview never creates an ExecutionRequest.
 ## INTEGRATE-LIVE-20260718-001
 
 Confirmed Allocation decisions and legacy admitted requests converge on the same Batch scheduler without a second execution-state table. Server dispatch stayed disabled because the clean Git runtime could not start.
+
+## RUNTIME-RECOVER-LIVE-20260718-001
+
+Tracked `main.py`, queue/worker and campaign dependencies now start from a clean checkout. The authorized run used only the scoped `run_mock_dispatcher(..., strategy_run_id=<run>, agent_only=True, force_mode="real")` path; it never used an unscoped resume or generic dispatch. After terminal reconciliation, `_update_task_center_control_state(action="close_api_gate")` recorded the close, paused dispatch and invalidated the session. The default queue and capacity reservations are empty.

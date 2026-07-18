@@ -1,32 +1,4 @@
 {
-  "alembic_head": "20260718_0031",
-  "api_gate": "CLOSED",
-  "backend": "STOPPED",
-  "blocker": "Clean Git checkout lacks tracked API and worker runtime dependencies; no live request was made.",
-  "live_counts": {
-    "completed": 0,
-    "duplicate_dispatch": false,
-    "error": 0,
-    "factor_projections": 0,
-    "feedback_deltas": 0,
-    "invalid": 0,
-    "multi_child": 0,
-    "multi_parent": 0,
-    "normalized_results": 0,
-    "pending": 0,
-    "rate_limit_429": 0,
-    "result_facts": 0,
-    "single": 0
-  },
-  "old_worldquant_system": "INACTIVE",
-  "resource_guard": "PASS",
-  "status": "BLOCKED_BY_CONCRETE_ERROR",
-  "task_id": "INTEGRATE-LIVE-20260718-001",
-  "tests": {
-    "combined": "48/48 PASS",
-    "governance": "PASS",
-    "migration_0029_to_0031": "PASS",
-    "multi_transport": "16/16 PASS"
-  },
-  "worker": "STOPPED"
+  "source": "not_provided",
+  "status": "UNVERIFIED"
 }

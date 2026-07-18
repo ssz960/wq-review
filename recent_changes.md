@@ -1,14 +1,14 @@
 # 最近本地变更
 
 ```text
-38f34523 2026-07-18 docs(live): record guarded deployment blocker
-724ab02f 2026-07-18 fix(live): unify allocation transport and result slots
-23afa816 2026-07-18 scheduler: separate task ceiling from unknown daily quota
-e5514616 2026-07-18 scheduler: resolve scoped neutralization capability
-a980f916 2026-07-18 scheduler: include instrument type in execution profile
-a1d231ff 2026-07-18 scheduler: require only execution profile settings
-d8b2d376 2026-07-18 scheduler: keep unknown capacity conservative
-872c9957 2026-07-18 scheduler: enable guarded real multi transport
-5dbababc 2026-07-18 scheduler: connect allocation to unified transport
-25d7309d 2026-07-18 feat(live): connect allocation to canonical result ingestion
+44f3b898 2026-07-18 docs(runtime): record live recovery validation
+8efd8563 2026-07-18 fix(allocation): retain sequential dispatch plans
+9debf66b 2026-07-18 fix(transport): normalize multi child simulation ids
+8ed57f6e 2026-07-18 build(runtime): map bounded consultant run limit
+ebe00f39 2026-07-18 fix(runtime): use dialect-safe active session index
+143d42c3 2026-07-18 build(runtime): pin timezone database dependency
+af4e3800 2026-07-18 build(runtime): restore pinned backend image inputs
+89552e00 2026-07-18 fix(runtime): restore tracked API and worker dependencies
+6317b4b9 2026-07-18 governance: register runtime recovery task
+01c5c565 2026-07-18 docs(live): record guarded deployment blocker
 ```
