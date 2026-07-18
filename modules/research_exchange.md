@@ -34,7 +34,7 @@ Research Center、campaign/session 模型、package 存储、独立 wqb manifest
 
 ## 当前实现
 
-快照 builder、delta builder、service、Git adapter、包生命周期 API 与测试存在。真实 wqb 路径、当前 cursor、服务器包状态为 `UNVERIFIED`。
+快照 builder、delta builder、service、Git adapter、包生命周期 API 与测试存在。独立 `wqb` Public 骨架已建立，当前 manifest 为空且不含运行 inbox/outbox；实际交换 cursor、服务器包状态为 `UNVERIFIED`。
 
 ## 已确认设计
 
@@ -48,7 +48,7 @@ Research Center、campaign/session 模型、package 存储、独立 wqb manifest
 
 ## 验证记录
 
-2026-07-18 仅静态审计类、路由、模型和历史测试；未生成/导入 wqb 包。
+2026-07-18 静态审计类、路由、模型和历史测试；独立 wqb 骨架通过 schema、白名单、链接、敏感信息和匿名读取验证。未生成/导入任何研究包。
 
 ## 相关报告
 

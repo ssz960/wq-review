@@ -1,8 +1,8 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-18
-- 当前治理任务：`GOV-20260718-002`
-- 当前阶段：脱敏 wq-review 公开审阅仓库已配置并验证；Registry、Multi、AI 循环等业务功能仍冻结。
+- 当前治理任务：`GOV-20260718-003`
+- 当前阶段：脱敏 wq-review 及独立 wqb/wqc 公开骨架已配置并验证；Registry、Multi、AI 循环等业务功能仍冻结。
 - 安全状态：本任务未调用真实 WQ，未修改前端或业务代码。
 
 ## 实际架构清单
@@ -61,6 +61,7 @@
 - 当前业务实现不因本任务获得生产可用或真实 WQ 授权；模块中无法由静态代码确认的内容标为 `UNVERIFIED`。
 - 离线治理验收已通过：16 个治理/模块文档链接无缺失，11 个模块无孤儿，任务 ID 唯一，重复目录风险被检测并记录，敏感内容被阻断，review 重复生成且 manifest 稳定，业务/前端 diff 与真实 WQ 调用均为零。
 - 公开 `wq-review` 已匿名验证可读；仅含 24 个白名单 Markdown/JSON 文件，Pages/Wiki/Issues/Discussions 均关闭且无 Release。公开仓库不是源码、服务器同步或生产事实源。
+- 独立 `wqb` 与 `wqc` 已建立 Public `main` 骨架：各含 6 个治理/schema 文件、空 manifest、0 个业务条目和 0 个 Release；匿名读取、schema、白名单、链接与敏感信息扫描均通过。
 
 ## 下一步边界
 

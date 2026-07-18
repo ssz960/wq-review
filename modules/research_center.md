@@ -39,7 +39,7 @@ Task Center、Factor Center、AI Mode、数据库、Research Exchange 和 packag
 
 ## 已确认设计
 
-研究知识与执行分离；检索必须有界并记录；wq-review 只消费摘要，不消费此模块的原始导出包。
+研究知识与执行分离；检索必须有界并记录；wq-review 只消费摘要，不消费此模块的原始导出包；独立 wqc 只接收经过人工审核和脱敏的公共知识资产。
 
 ## 已知 Bug
 
@@ -49,7 +49,7 @@ Task Center、Factor Center、AI Mode、数据库、Research Exchange 和 packag
 
 ## 验证记录
 
-2026-07-18 静态审计函数、路由、模型与导出边界；未读取研究数据库或生成研究包。
+2026-07-18 静态审计函数、路由、模型与导出边界；独立 wqc 骨架通过 schema、白名单、链接、敏感信息和匿名读取验证。未读取研究数据库或生成研究包。
 
 ## 相关报告
 

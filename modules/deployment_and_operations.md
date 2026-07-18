@@ -34,7 +34,7 @@
 
 ## 当前实现
 
-现有 guard/deploy/local 脚本存在；本任务新增安全的 wq-review 生成器。审计发现大量根目录历史部署包、数据库、日志和临时脚本，均保留原位但已纳入 ignore/risk 清单。服务器当前运行状态为 `UNVERIFIED`。
+现有 guard/deploy/local 脚本存在；安全的 wq-review 生成器已落地。独立 wqb/wqc 已在 `wqmining` 外建立本地 checkout 和 Public 骨架，不作为 nested repo。审计发现的大量根目录历史部署包、数据库、日志和临时脚本仍保留原位并纳入 ignore/risk 清单。服务器当前运行状态为 `UNVERIFIED`。
 
 ## 已确认设计
 
@@ -48,7 +48,7 @@
 
 ## 验证记录
 
-2026-07-18 完成静态仓库/Git 审计；离线治理测试已验证链接、索引、任务 ID、重复目录检测、敏感拦截、manifest 契约、Git checkout 保留和 review 重现性，全部 PASS。公开仓库已匿名读取验证，24 个文件均为白名单 Markdown/JSON；未部署服务器、未调用 WQ。
+2026-07-18 完成静态仓库/Git 审计；离线治理测试已验证链接、索引、任务 ID、重复目录检测、敏感拦截、manifest 契约、Git checkout 保留和 review 重现性，全部 PASS。wq-review、wqb、wqc 均已匿名读取验证；两个资产骨架各 6 个治理/schema 文件且 manifest 为空。未部署服务器、未调用 WQ。
 
 ## 相关报告
 
