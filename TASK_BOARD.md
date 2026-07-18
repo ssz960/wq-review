@@ -23,7 +23,7 @@
 | `KNOW-20260718-005` | research_exchange, research_center, provider_and_skills | root | DONE | `KNOW-20260718-004` | `PENDING` | `docs/test_reports/alpha_practice_collection_20260718.md` |
 | `GOV-20260718-004` | deployment_and_operations, provider_and_skills | root | BLOCKED | `GOV-20260718-003` | `HEAD` | `docs/test_reports/github_ephemeral_workspace_validation.md` |
 | `GOV-20260718-005` | deployment_and_operations, provider_and_skills | root | DONE | `GOV-20260718-004` | `HEAD` | `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md` |
-| `AI-BACKEND-ARCH-AUDIT-20260718-001` | ai_mode, research_exchange, research_center, provider_and_skills, task_center, execution_transport | root | DONE | `GOV-20260718-005`; GPT review pending | `0b6eecf0` | `docs/test_reports/autonomous_ai_backend_architecture_audit_20260718.md` |
+| `AI-BACKEND-ARCH-AUDIT-20260718-001` | ai_mode, research_exchange, research_center, provider_and_skills, task_center, execution_transport | root | DONE | `GOV-20260718-005`; `wq-review` snapshot `5b2f20a2` published; GPT review pending | `0b6eecf0` | `docs/test_reports/autonomous_ai_backend_architecture_audit_20260718.md` |
 
 ## 写锁
 

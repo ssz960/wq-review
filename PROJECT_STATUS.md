@@ -84,6 +84,7 @@
 - 产出：新增 `docs/design/autonomous_ai_research_architecture.md`、`docs/audits/autonomous_ai_backend_gap_analysis_20260718.md`、`docs/plans/autonomous_ai_backend_implementation_plan_20260718.md`、`docs/contracts/autonomous_ai_contracts_v1.md`。
 - 结论：现有 Platform Registry、CandidatePlan、Scheduler、Execution Adapter、Result Ingestion、Factor Center、Research Package v1、Context/Checkpoint、Research Memory v2 等可复用；缺口集中在 Research Round、Hypothesis、MemoryProposal、Assistance、Provider Profile/Secret、Policy Engine 和 Context Builder V2。
 - 风险：本地迁移证据只到 `20260718_0030`，任务描述中的 `20260718_0031` 标记为 `UNVERIFIED/source gap`；Agent Runtime 与 LLM Supervisor 两套语义需先合并边界，避免第二套 AI 权限模型。
+- 审阅发布：本地 `dbf46ab6` 已由受白名单、manifest 和敏感内容校验的发布器生成并普通 fast-forward 发布至 `wq-review/main`，发布 commit 为 `5b2f20a2`；审阅请求包含十项架构核对并要求 `PASS`、`FAIL` 或 `BLOCKED`。
 - 状态：`READY_FOR_GPT_ARCH_REVIEW`；GPT 返回 `PASS` 前禁止启动正式后端改造。
 
 ## 下一步边界
