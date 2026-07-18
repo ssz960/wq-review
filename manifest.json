@@ -33,6 +33,11 @@
       "size": 2339
     },
     {
+      "path": "knowledge_consultant_deep_collection_summary.md",
+      "sha256": "24c68b0bd29123e70fa9542592fea454e2f45056b57baee96ad612f832390677",
+      "size": 3346
+    },
+    {
       "path": "MODULE_INDEX.md",
       "sha256": "3c97dd5de18948ccbe4d729c1369a12d147d9a10fc640e15c8860c0d938c72be",
       "size": 2329
@@ -129,12 +134,13 @@
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-19T02:52:08+08:00",
+  "generated_at": "2026-07-19T07:29:04+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
     "architecture_summary.json",
     "database_summary.json",
+    "knowledge_consultant_deep_collection_summary.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
     "modules/deployment_and_operations.md",
@@ -155,6 +161,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "12ec2458619ed398d2dfa8ac5ae5d1433a8850db",
+  "local_commit": "fc444388d16402a79c2b0328ed618d61e7c8dff5",
   "schema_version": 1
 }
