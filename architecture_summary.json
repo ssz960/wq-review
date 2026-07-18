@@ -8,7 +8,7 @@
     "tasks": "backend/app/tasks.py"
   },
   "full_source_exported": false,
-  "mining_python_file_count": 12,
+  "mining_python_file_count": 54,
   "module_documents": [
     "platform_registry",
     "task_center",
@@ -22,13 +22,27 @@
     "frontend_shell",
     "deployment_and_operations"
   ],
-  "source_branch": "codex/TPL-20260718-001-root",
-  "source_commit": "af3013931ee7200e6885bb72cf892ff732e47746",
+  "source_branch": "codex/review-20260718-001-root",
+  "source_commit": "bd3a4717fae65290e26107a913ed605b03b5a672",
   "source_of_truth": "local_git_repository",
-  "test_runner_file_count": 3,
+  "test_runner_file_count": 17,
   "test_runner_files": [
+    "agent_context_conversation_snapshot_module3_test.py",
+    "agent_research_package_lifecycle_module2_test.py",
+    "agent_runtime_context_mode_decision_module4_test.py",
+    "consultant_core_test.py",
     "consultant_multi_transport_smoke_test.py",
+    "cross_module_research_center_pre_wq_integration_test.py",
+    "factor_center_background_sync_smoke_test.py",
+    "factor_center_route_smoke_test.py",
+    "factor_center_smoke_test.py",
+    "llm_research_memory_v2_smoke_test.py",
+    "platform_registry_runtime_test.py",
     "platform_registry_sync_test.py",
-    "research_exchange_v2_test.py"
+    "research_center_frontend_integration_test.py",
+    "research_center_smoke_test.py",
+    "research_exchange_v2_test.py",
+    "research_package_export_module8b_test.py",
+    "result_ingestion_offline_test.py"
   ]
 }
