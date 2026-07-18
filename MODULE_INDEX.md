@@ -21,3 +21,20 @@
 `platform_registry -> research/provider context -> candidate plan -> task_center admission/scheduler -> execution_transport -> factor/research result -> research_exchange`
 
 静态代码只能证明接口和实现存在，不能证明服务器正在运行、数据最新或真实 WQ 可用。
+
+## 架构审计入口
+
+`AI-BACKEND-ARCH-AUDIT-20260718-001` 新增长期架构审计材料：
+
+- `docs/design/autonomous_ai_research_architecture.md`
+- `docs/audits/autonomous_ai_backend_gap_analysis_20260718.md`
+- `docs/plans/autonomous_ai_backend_implementation_plan_20260718.md`
+- `docs/contracts/autonomous_ai_contracts_v1.md`
+
+这些文档是后续自主 AI 后端改造的审阅输入，不表示后端改造已经完成。
+
+## 累计完成资产入口
+
+历史完成资产不会因新审计文档而删除或覆盖。`REG`、`CORE`、`SCHED`、`RESULT`、`RUNTIME-RECOVER`、`TPL`、`consultant_core`、`single_multi_allocation`、allocation decision、capacity policy 和 scheduler recovery 的历史文档与“旧文档 -> 当前权威文档”迁移关系见 [completed_asset_migration_index](archive/completed_asset_migration_index.md)。
+
+该索引及其归档文档必须随 `wq-review` manifest 发布；当前模块文档是后续修订的唯一入口，archive 只保留历史事实。

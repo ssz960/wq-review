@@ -1,5 +1,3 @@
-# 当前审阅请求
-
 Task: `AI-BACKEND-ARCH-AUDIT-20260718-001`
 
 Return exactly one verdict: `PASS`, `FAIL`, or `BLOCKED`. Tie every non-PASS

@@ -2,9 +2,10 @@
 
 仅列出报告文件名和首个明确结果标记，不复制报告正文或附件。
 
+- `ai_backend_architecture_review_delivery_governance_20260719.md` — PASS
 - `alpha_practice_collection_20260718.md` — PASS
+- `autonomous_ai_backend_architecture_audit_20260718.md` — PASS
 - `auxiliary_repository_concurrency_and_cleanup_20260718.md` — PASS
-- `consultant_forum_full_collection_20260718.md` — PASS
 - `consultant_mainline_evidence_20260718.md` — PASS
 - `correlation_practice_collection_20260718.md` — PASS
 - `github_ephemeral_workspace_validation.md` — PASS
