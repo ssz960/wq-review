@@ -1,9 +1,11 @@
 # Alpha Mining OS 模块索引
 
-本索引是当前模块文档的唯一入口。列出的 11 个文档必须与 `docs/modules/` 一一对应。
+本索引是当前模块文档的唯一入口；子设计文档由对应主模块维护。
 
 | 模块 | 文档 | 主要代码入口 | 状态摘要 |
 | --- | --- | --- | --- |
+| consultant_core | [consultant_core_model_design](modules/consultant_core_model_design.md) | `backend/app/mining/consultant_core.py` | Additive Multi/Policy/Correlation/Pool mock core; real WQ unchanged. |
+| single_multi_allocation | [single_multi_allocation_design](modules/single_multi_allocation_design.md) | `backend/app/mining/single_multi_allocation.py` | Deterministic preview/confirm, shared Capacity reservation and Mock recovery. |
 | platform_registry | [platform_registry](modules/platform_registry.md) | `backend/app/mining/platform_registry.py` | 快照同步实现存在；生产源状态 UNVERIFIED。 |
 | task_center | [task_center](modules/task_center.md) | `backend/app/main.py`、`backend/app/mining/service.py` | 路由与调度实现广泛，耦合较高。 |
 | ai_mode | [ai_mode](modules/ai_mode.md) | `backend/app/mining/agent_runtime_v1.py` | Agent 与 supervisor 两套语义并存。 |

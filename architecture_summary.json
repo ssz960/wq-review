@@ -8,7 +8,7 @@
     "tasks": "backend/app/tasks.py"
   },
   "full_source_exported": false,
-  "mining_python_file_count": 10,
+  "mining_python_file_count": 17,
   "module_documents": [
     "platform_registry",
     "task_center",
@@ -22,13 +22,16 @@
     "frontend_shell",
     "deployment_and_operations"
   ],
-  "source_branch": "codex/gov-20260718-005",
-  "source_commit": "0f610cd772a6dc1d7de383dc4ba99c94912042c9",
+  "source_branch": "codex/GOV-20260718-006-root",
+  "source_commit": "8c580e753e56c59c76b459b7d86d85a85b79626f",
   "source_of_truth": "local_git_repository",
-  "test_runner_file_count": 3,
+  "test_runner_file_count": 6,
   "test_runner_files": [
+    "consultant_core_test.py",
     "consultant_multi_transport_smoke_test.py",
+    "platform_registry_runtime_test.py",
     "platform_registry_sync_test.py",
-    "research_exchange_v2_test.py"
+    "research_exchange_v2_test.py",
+    "single_multi_allocation_test.py"
   ]
 }
