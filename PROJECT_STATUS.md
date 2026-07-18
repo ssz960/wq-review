@@ -1,9 +1,13 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-18
-- 当前治理任务：`KNOW-20260718-003` 已完成
-- 当前阶段：已只读发布相关性获取、筛选漏斗与他人系统工程经验的脱敏候选资产；Registry、Multi、AI 循环等业务功能仍冻结。
+- 当前治理任务：`KNOW-20260718-005` 已完成
+- 当前阶段：正在只读采集 Alpha 实战、模板、数据集、地区、优化、收益经验与挖矿工作流；Registry、Multi、AI 循环等业务功能仍冻结。
 - 安全状态：本任务未调用真实 WQ，未修改前端或业务代码。
+
+## TPL-20260718-001
+
+Template Center remains the sole runtime template source. Sanitized wqc candidates require human approval before idempotent import; GPT assets are exported only from local Template Center state. Offline validation passed without real WQ, backtest, or Alpha submission. Public wqb remains skeleton-and-aggregate-only pending a user privacy decision.
 
 ## GOV-20260718-004 状态
 
@@ -88,31 +92,3 @@
 - 因未发现用户原始论坛导出，使用已登录 Chrome 只读建立了 6 条高信号论坛页面的本地脱敏索引；SQLite、原始页面内容和本地 JSON 均未进入公开仓。
 - `wqc` 发布 20 条 `PENDING_HUMAN_REVIEW` 结构化候选结论，Manifest 依宪法保持空列表；`wq-review` 仅发布摘要、目录、冲突和待审项。
 - 未调用真实 Simulation、未读写凭据/Cookie/Token、未调用提交或账户修改操作；论坛自动化代码只作为禁止直用的反例记录。
-
-## REG-20260718-001 Platform Registry 上游状态
-
-- `wqa` 已在独立 `main` worktree 合并 USA Field 上下文与 43 个多 Region Dataset/Settings Scope，并在 commit `cea82e2119b8a91db818722294ef45d18e3f6a6b` 生成不可变 `REG-20260718-001` Manifest、Hash、Schema、Scope 覆盖矩阵、容量评估和离线同步验证。
-- Dataset/Settings 覆盖 USA、GLB、EUR、ASI、CHN、JPN、IND、MEA 共 43 个合法 Scope；Field 权威记录仅 USA/TOP3000/D1 完整，其余 Scope 均明确 `MISSING`，禁止跨 Region 推断。
-- 已登录平台只读 UI 验证 8 个 Region、GLB Settings 选项和 85 条 Operator；Operator 字段类型兼容矩阵仍 `UNVERIFIED`，最终组合必须失败关闭。
-- 无网络端到端验证通过：Manifest/Hash -> 1,000 行批量 SQLite staging import -> Active Snapshot -> Region/Dataset/Field type/关键词 Top-K -> Operator/Profile 校验；真实 WQ 调用为零。
-- 2C/2G/40G 下热 Scope 实测数据库约 39.4 MiB、导入约 5.5 秒、峰值 RSS 约 32.1 MiB、查询中位数约 2 ms；部署结论 `READY_WITH_LIMITS`，未执行部署。
-
-## CORE-20260718-003 Consultant Core
-
-- 新增版本化 Simulation Profile、Submission Policy、Multi Parent/Child、五类 Correlation Observation、Power Pool 历史成员和 SuperAlpha Selection 模型，迁移版本为 `20260718_0029`。
-- 统一 Scheduler 本轮仅提供不创建队列的 Mock 边界；现有 Single、Admission、API Gate、优先级和真实 WQ worker 未修改。
-- 10 项离线单元测试通过；现有旧运输回归因 Git 事实源缺少 `backend/app/db.py` 无法启动，执行级 Single 回归仍 `UNVERIFIED`。
-- 额度关系、每日限额、Invalid/Cancelled 计数、Osmosis、Pyramid、奖励、限流数值及相关性阈值继续保持 `UNKNOWN`。
-
-## SCHED-20260718-001 Single/Multi Allocation
-
-- 已恢复Platform Registry迁移0028与CORE迁移0029，并新增连续迁移`20260718_0030`。
-- 实现只读预览、不可变AllocationPlan、SHARED/SEPARATE/UNKNOWN Capacity、持久化预留、Single/Multi统一Mock调度和恢复；复用现有Batch与ExecutionRequest。
-- 25项离线测试通过；真实WQ、生产Worker和服务器Gate调用为零。
-- Single/Multi额度关系、最大Multi Parent并发、每日额度及Invalid/Cancelled计数仍为UNKNOWN。
-
-## GOV-20260718-006 用户交付与审阅发布
-
-- 用户汇报改为简短自然语言，只说明完成结果和下一步审阅入口；精确提交标识、文件清单和内部测试细节默认留在脱敏审阅快照中。
-- `SCHED-20260718-001` 的治理状态、设计摘要和测试结论由单写者从本地已提交事实源完整生成并发布到 `wq-review/main`。
-- 发布过程仅使用系统临时目录，完成后不在 Windows 保留辅助仓库、审阅副本或中间生成物。

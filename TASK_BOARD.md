@@ -19,26 +19,17 @@
 | `GOV-20260718-003` | research_exchange, research_center, provider_and_skills, deployment_and_operations | root | DONE | `GOV-20260718-002` | `HEAD`（资产仓库骨架治理提交） | `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md` |
 | `KNOW-20260718-002` | research_exchange, research_center, provider_and_skills | root | DONE | `GOV-20260718-003` | `PENDING`（本治理提交） | `docs/test_reports/knowledge_collection_20260718.md` |
 | `KNOW-20260718-003` | research_exchange, research_center, provider_and_skills | root | DONE | `KNOW-20260718-002` | `PENDING` | `docs/test_reports/correlation_practice_collection_20260718.md` |
+| `KNOW-20260718-004` | research_exchange, research_center, provider_and_skills | root | DONE | `KNOW-20260718-003` | `PENDING` | `docs/test_reports/consultant_mainline_evidence_20260718.md` |
+| `KNOW-20260718-005` | research_exchange, research_center, provider_and_skills | root | DONE | `KNOW-20260718-004` | `PENDING` | `docs/test_reports/alpha_practice_collection_20260718.md` |
 | `GOV-20260718-004` | deployment_and_operations, provider_and_skills | root | BLOCKED | `GOV-20260718-003` | `HEAD` | `docs/test_reports/github_ephemeral_workspace_validation.md` |
 | `GOV-20260718-005` | deployment_and_operations, provider_and_skills | root | DONE | `GOV-20260718-004` | `HEAD` | `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md` |
-| `REG-20260718-001` | platform_registry | root | DONE | `GOV-20260718-003` | `HEAD`（本任务治理与验证提交） | `docs/test_reports/platform_registry_upstream_validation_20260718.md` |
-| `REG-20260718-002` | platform_registry, deployment_and_operations | root | BLOCKED | `REG-20260718-001`, wqa `cea82e2119b8a91db818722294ef45d18e3f6a6b` | `a4ae0da` | `docs/test_reports/platform_registry_server_validation_20260718.md` |
-| `CORE-20260718-003` | core_models, execution_transport, factor_center | root | DONE | `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/consultant_core_model_validation_20260718.md` |
-| `SCHED-20260718-001` | candidate_plan, task_center, scheduler, execution_transport | root | DONE | `CORE-20260718-003`, `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/single_multi_allocation_validation_20260718.md` |
-| `GOV-20260718-006` | deployment_and_operations, user_handoff, wq-review publication | root | DONE | `SCHED-20260718-001`, `GOV-20260718-005` | `HEAD`（本任务提交） | `docs/test_reports/user_handoff_and_review_publication_20260718.md` |
+| `TPL-20260718-001` | template_center, platform_registry, research_exchange, research_center | root | DONE | `REG-20260718-002` | `PENDING` | `docs/test_reports/template_candidate_promotion_20260718.md` |
 
 ## 写锁
 
 `KNOW-20260718-003` 已完成并释放 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
-
-`CORE-20260718-003` 已恢复到本地事实源并释放 core_models、execution_transport 与 factor_center 写锁。
-
-`REG-20260718-002` 使用独立 worktree 持有 platform_registry 与 deployment_and_operations 写锁；禁止修改回测队列、API Gate、Admission 阈值、候选优先级或调用真实 WorldQuant。
-
-`SCHED-20260718-001` 执行期间使用独立 `codex/SCHED-20260718-001-root` 分支/worktree，并持有 candidate_plan、task_center、scheduler、execution_transport 写锁。共享文件清单：`backend/app/models.py`、`backend/alembic/versions/20260718_0030_single_multi_allocation.py`、`docs/TASK_BOARD.md`、`docs/PROJECT_STATUS.md`、`docs/MODULE_INDEX.md`；不修改 Result Ingestion、Factor Center、Research Center、Feedback Delta、真实 WQ worker 或服务器 Gate。
-
-`SCHED-20260718-001` 已完成并释放上述写锁；等待独立 RESULT 集成任务合并共享模型与迁移。
-
-`GOV-20260718-006` 由 root 作为本轮 `wq-review/main` 唯一发布者；仅修改交付规范、治理记录和脱敏审阅快照，不修改业务代码。发布完成后释放单写者锁并清理临时目录。
+`KNOW-20260718-004` 持有 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
+`KNOW-20260718-004` 已完成并释放 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
+`KNOW-20260718-005` 持有 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
 
 其他模块在本任务中仅更新治理文档，不授权业务代码写入。

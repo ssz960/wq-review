@@ -60,9 +60,3 @@
 
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
 - `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md`
-
-## 用户交付与审阅发布
-
-面向用户的交付只用自然语言说明完成内容与下一步；技术细节由单写者从本地已提交事实源重生成脱敏 `wq-review/main`。发布只使用系统临时目录，成功或失败都清理 checkout、生成物和中间文件，不建立本地常驻辅助仓库。
-
-- `docs/test_reports/user_handoff_and_review_publication_20260718.md`
