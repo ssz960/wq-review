@@ -50,6 +50,13 @@
 
 2026-07-18 完成静态仓库/Git 审计；离线治理测试已验证链接、索引、任务 ID、重复目录检测、敏感拦截、manifest 契约、Git checkout 保留和 review 重现性，全部 PASS。wq-review、wqb、wqc 均已匿名读取验证；两个资产骨架各 6 个治理/schema 文件且 manifest 为空。未部署服务器、未调用 WQ。
 
+## 多窗口仓库发布
+
+- 辅助仓库默认仅在线上存在，任务通过 GitHub API 或系统临时目录固定 Commit 稀疏检出。
+- `wqa/wqb/wqc` 使用任务分支；`wq-review/main` 由任务板登记的单一发布者生成完整快照并普通 fast-forward 推送。
+- 发布结束或失败均清理临时目录；本地长期仅保留 `wqmining`。
+
 ## 相关报告
 
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
+- `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md`

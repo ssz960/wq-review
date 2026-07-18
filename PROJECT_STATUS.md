@@ -1,9 +1,22 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-18
-- 当前治理任务：`KNOW-20260718-002`
-- 当前阶段：正在只读采集 Consultant 机制与系统工程证据，准备供人工审阅的脱敏 wqc 候选资产及 wq-review 摘要；Registry、Multi、AI 循环等业务功能仍冻结。
+- 当前治理任务：`KNOW-20260718-003` 已完成
+- 当前阶段：已只读发布相关性获取、筛选漏斗与他人系统工程经验的脱敏候选资产；Registry、Multi、AI 循环等业务功能仍冻结。
 - 安全状态：本任务未调用真实 WQ，未修改前端或业务代码。
+
+## GOV-20260718-004 状态
+
+- 范围：只审计和删除已经验证的常驻本地辅助 GitHub 检出，并替换为固定 Commit GitHub API 读取或任务范围临时稀疏检出。
+- 安全：不调用真实 WQ，不修改前端或业务代码，不修改服务器快照，不执行服务器部署动作。
+- 当前结论：`wqa_sync`、`wqa_reg_20260718`、`wqc` 与本地 `wq-review` 因含未提交或仅本地历史而保留为 `UNKNOWN`，自动化不得删除；仅已验证的 `wqb` 与 `wq-review-repeat` 已删除。
+- 服务器 Registry 仅保留只读证据；完整的无变更启动/查询/回滚演练必须由明确授权的部署运行任务执行。
+
+## GOV-20260718-005 状态
+
+- 目标：重新发布统一 `wq-review` 快照，建立多窗口 Git 并发规则，并清理除 `wqmining` 外的常驻本地仓库/worktree 目录。
+- 策略：辅助资产仓库使用任务分支；`wq-review/main` 使用单发布者、固定远端 Commit、普通 fast-forward 的完整生成快照，不替换 Git 历史。
+- 安全：不调用真实 WQ，不修改前端、业务代码、服务器 Snapshot 或数据库。
 
 ## 实际架构清单
 
@@ -67,10 +80,9 @@
 
 `GOV-20260718-001` 完成后不自动启动后续工作。任何业务修复、目录清理、服务器部署或真实 WQ 验证必须另建任务。
 
-## REG-20260718-001 Platform Registry 上游状态
+## KNOW-20260718-002 记录
 
-- `wqa` 已在独立 `main` worktree 合并 USA Field 上下文与 43 个多 Region Dataset/Settings Scope，并在 commit `cea82e2119b8a91db818722294ef45d18e3f6a6b` 生成不可变 `REG-20260718-001` Manifest、Hash、Schema、Scope 覆盖矩阵、容量评估和离线同步验证。
-- Dataset/Settings 覆盖 USA、GLB、EUR、ASI、CHN、JPN、IND、MEA 共 43 个合法 Scope；Field 权威记录仅 USA/TOP3000/D1 完整，其余 Scope 均明确 `MISSING`，禁止跨 Region 推断。
-- 已登录平台只读 UI 验证 8 个 Region、GLB Settings 选项和 85 条 Operator；Operator 字段类型兼容矩阵仍 `UNVERIFIED`，最终组合必须失败关闭。
-- 无网络端到端验证通过：Manifest/Hash -> 1,000 行批量 SQLite staging import -> Active Snapshot -> Region/Dataset/Field type/关键词 Top-K -> Operator/Profile 校验；真实 WQ 调用为零。
-- 2C/2G/40G 下热 Scope 实测数据库约 39.4 MiB、导入约 5.5 秒、峰值 RSS 约 32.1 MiB、查询中位数约 2 ms；部署结论 `READY_WITH_LIMITS`，未执行部署。
+- `BeastOrange/wq-forum` 已在本地 clone；74 篇官方 Documents 已入库。
+- 因未发现用户原始论坛导出，使用已登录 Chrome 只读建立了 6 条高信号论坛页面的本地脱敏索引；SQLite、原始页面内容和本地 JSON 均未进入公开仓。
+- `wqc` 发布 20 条 `PENDING_HUMAN_REVIEW` 结构化候选结论，Manifest 依宪法保持空列表；`wq-review` 仅发布摘要、目录、冲突和待审项。
+- 未调用真实 Simulation、未读写凭据/Cookie/Token、未调用提交或账户修改操作；论坛自动化代码只作为禁止直用的反例记录。

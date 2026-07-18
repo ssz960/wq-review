@@ -17,13 +17,13 @@
 | `GOV-20260718-001` | deployment_and_operations, provider_and_skills, 全部模块文档 | root | DONE | 无 | `HEAD`（本治理提交） | `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md` |
 | `GOV-20260718-002` | deployment_and_operations, provider_and_skills | root | DONE | `GOV-20260718-001` | `HEAD`（公开审阅配置收口提交） | `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md` |
 | `GOV-20260718-003` | research_exchange, research_center, provider_and_skills, deployment_and_operations | root | DONE | `GOV-20260718-002` | `HEAD`（资产仓库骨架治理提交） | `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md` |
-| `KNOW-20260718-002` | research_exchange, research_center, provider_and_skills | root | IN_PROGRESS | `GOV-20260718-003` | `PENDING` | `docs/test_reports/knowledge_collection_20260718.md` |
-| `REG-20260718-001` | platform_registry | root | DONE | `GOV-20260718-003` | `HEAD`（本任务治理与验证提交） | `docs/test_reports/platform_registry_upstream_validation_20260718.md` |
+| `KNOW-20260718-002` | research_exchange, research_center, provider_and_skills | root | DONE | `GOV-20260718-003` | `PENDING`（本治理提交） | `docs/test_reports/knowledge_collection_20260718.md` |
+| `KNOW-20260718-003` | research_exchange, research_center, provider_and_skills | root | DONE | `KNOW-20260718-002` | `PENDING` | `docs/test_reports/correlation_practice_collection_20260718.md` |
+| `GOV-20260718-004` | deployment_and_operations, provider_and_skills | root | BLOCKED | `GOV-20260718-003` | `HEAD` | `docs/test_reports/github_ephemeral_workspace_validation.md` |
+| `GOV-20260718-005` | deployment_and_operations, provider_and_skills | root | IN_PROGRESS | `GOV-20260718-004` | `PENDING` | `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md` |
 
 ## 写锁
 
-`KNOW-20260718-002` 持有 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
-
-`REG-20260718-001` 使用独立 worktree 完成 platform_registry 上游资产审计与离线验证；未进入上述研究模块写锁范围，任务完成后不保留写锁。
+`KNOW-20260718-003` 已完成并释放 research_exchange、research_center、provider_and_skills 的治理文档写锁；业务代码保持只读。
 
 其他模块在本任务中仅更新治理文档，不授权业务代码写入。

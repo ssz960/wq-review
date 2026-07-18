@@ -22,8 +22,8 @@
     "frontend_shell",
     "deployment_and_operations"
   ],
-  "source_branch": "reg/REG-20260718-001",
-  "source_commit": "013c7b3a945921978db1f246c6dc99e8fdb83d58",
+  "source_branch": "codex/gov-20260718-005",
+  "source_commit": "d7f340b038596e754b370496ba7d26f7fd0d3c23",
   "source_of_truth": "local_git_repository",
   "test_runner_file_count": 3,
   "test_runner_files": [

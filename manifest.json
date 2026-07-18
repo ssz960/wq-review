@@ -24,8 +24,8 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "c99c225d2df46dd23e54fcfe43ce1c5345cea1d0cc896f140c0677a47fecb553",
-      "size": 959
+      "sha256": "0b9b55671f52e0f38506cb2e9f530dcde6535e982f4bc8cf4a74340351918f5b",
+      "size": 961
     },
     {
       "path": "database_summary.json",
@@ -33,19 +33,9 @@
       "size": 2339
     },
     {
-      "path": "knowledge_collection_20260718.md",
-      "sha256": "84499f126bd5184e19879423f19724961e48b5f7dc6e3e1039913b3cd72b2bdb",
-      "size": 1844
-    },
-    {
-      "path": "correlation_practice_collection_20260718.md",
-      "sha256": "120f4b6dcb73088867f4f4919594de2b6fb62897ac64f36b6503f17fc91cc1a4",
-      "size": 1894
-    },
-    {
       "path": "MODULE_INDEX.md",
-      "sha256": "5b1a97f2c43ed98f02c90e2c3f18f1486d2a656c71f3179b28a2c14585d490af",
-      "size": 2378
+      "sha256": "3c97dd5de18948ccbe4d729c1369a12d147d9a10fc640e15c8860c0d938c72be",
+      "size": 2329
     },
     {
       "path": "modules/ai_mode.md",
@@ -54,8 +44,8 @@
     },
     {
       "path": "modules/deployment_and_operations.md",
-      "sha256": "a86ada580dc16b9018ff17eac0e36ae7543f250b33a4af32999969ddc87eed6d",
-      "size": 2942
+      "sha256": "499f250439eee2a822d3cc60289f57df3ca1bbcd6e2e34d606df48d14892ad2f",
+      "size": 3388
     },
     {
       "path": "modules/execution_transport.md",
@@ -74,23 +64,23 @@
     },
     {
       "path": "modules/platform_registry.md",
-      "sha256": "d88ff75973af0f65ca5f29428a87ab0de894ab7a5ce337117bce03fb41faef86",
-      "size": 2788
-    },
-    {
-      "path": "modules/provider_and_skills.md",
-      "sha256": "a951ca250dce0915c2c6055c96c97fee5ba0352d8c5b3abf9f65abff6b50422b",
-      "size": 2556
-    },
-    {
-      "path": "modules/research_center.md",
-      "sha256": "6ab64ca2d2d9aa19838d9dd17d746fd5e2fc23dd2f7e5273c69eda8d98caa441",
+      "sha256": "0d33e2416fb2dcffdb4b9d8e7c20ae7f421af0c706bdd6c39231367529bcd06b",
       "size": 2409
     },
     {
+      "path": "modules/provider_and_skills.md",
+      "sha256": "9104ce3ebcab2d34bacebd3a1669a192c7c493ea71019ba69c1512137b8d4800",
+      "size": 3149
+    },
+    {
+      "path": "modules/research_center.md",
+      "sha256": "666467a9b563d1c283c1e3e274e3538027f20f0300bb415f6a3eec68f0eee0aa",
+      "size": 2702
+    },
+    {
       "path": "modules/research_exchange.md",
-      "sha256": "64cd3e201266013ed09e8ac5070728e9715309c78dda37ae36cf29fe27e93143",
-      "size": 2412
+      "sha256": "397a06afa4aa5810689c6f55ffcd9543bd3bd40d2979351d76bef9672115ff2c",
+      "size": 2963
     },
     {
       "path": "modules/task_center.md",
@@ -104,8 +94,8 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "825f787ccad46f3513e05bef8026da973c0a8fd56e95c98ccfa9ac1d45d6e4a7",
-      "size": 7089
+      "sha256": "49d4436a0d80ec522daca26ffe220d3b000c47c0a5238e33bdffd0d2425249b3",
+      "size": 7727
     },
     {
       "path": "README.md",
@@ -114,18 +104,18 @@
     },
     {
       "path": "recent_changes.md",
-      "sha256": "06ef754bd405c70535ce8214df69bca0a98c17e450f44b987fce701effd3f403",
-      "size": 674
+      "sha256": "1143ca60b9772fd7437ef8580108864d3d7e1b0b4360211d844adbf019af4f9c",
+      "size": 668
     },
     {
       "path": "recent_tests.md",
-      "sha256": "482189d49135841cd661b0e96ebfd5731c40f9b008eeebef284005ea87453405",
-      "size": 429
+      "sha256": "b6b64b8d81b069f8bb13b69299a2fd98533275bc45bf92417cda246065b67220",
+      "size": 593
     },
     {
       "path": "review_request.md",
-      "sha256": "aa176bb6d7e7b19fcf5173b5c1419c6493467e2f019166ee53c0fefaccf3f564",
-      "size": 549
+      "sha256": "df89d4e1b274bc7e00eeb305abcf04baf14bea0445a904b28969ee3f2e3f12d7",
+      "size": 165
     },
     {
       "path": "server_status.json",
@@ -134,19 +124,17 @@
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "10812f9011cdbedadf7262984b4f95b4f585ab2f02cee9daccaea17a79f42f57",
-      "size": 2467
+      "sha256": "9475017b8187549c93c35717cc98b11254a867d876159163fa42e6b6f6b7898b",
+      "size": 2702
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-18T12:10:00+08:00",
+  "generated_at": "2026-07-18T14:25:03+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
     "architecture_summary.json",
     "database_summary.json",
-    "knowledge_collection_20260718.md",
-    "correlation_practice_collection_20260718.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
     "modules/deployment_and_operations.md",
@@ -167,6 +155,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "a254fee5c0ab874f7e72c7160053262b435e557b",
+  "local_commit": "d7f340b038596e754b370496ba7d26f7fd0d3c23",
   "schema_version": 1
 }

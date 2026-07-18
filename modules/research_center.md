@@ -54,3 +54,5 @@ Task Center、Factor Center、AI Mode、数据库、Research Exchange 和 packag
 ## 相关报告
 
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
+
+2026-07-18 `KNOW-20260718-003`：相关性检索经验以来源可追溯、结论可冲突的 Practice Card 与证据矩阵形式进入候选审阅层。`Self -> PP -> Prod` 仅作假设研究记忆，必须携带 scope、样本和本地验证方法，禁止变成硬规则或执行权限。
