@@ -38,6 +38,11 @@
       "size": 1844
     },
     {
+      "path": "correlation_practice_collection_20260718.md",
+      "sha256": "120f4b6dcb73088867f4f4919594de2b6fb62897ac64f36b6503f17fc91cc1a4",
+      "size": 1894
+    },
+    {
       "path": "MODULE_INDEX.md",
       "sha256": "5b1a97f2c43ed98f02c90e2c3f18f1486d2a656c71f3179b28a2c14585d490af",
       "size": 2378
@@ -119,8 +124,8 @@
     },
     {
       "path": "review_request.md",
-      "sha256": "a2f56e2f9f7d340647527d244441469ceea00a8fca7b17587d7b11c043d7f2b8",
-      "size": 571
+      "sha256": "aa176bb6d7e7b19fcf5173b5c1419c6493467e2f019166ee53c0fefaccf3f564",
+      "size": 549
     },
     {
       "path": "server_status.json",
@@ -134,13 +139,14 @@
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-18T11:27:00+08:00",
+  "generated_at": "2026-07-18T12:10:00+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
     "architecture_summary.json",
     "database_summary.json",
     "knowledge_collection_20260718.md",
+    "correlation_practice_collection_20260718.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
     "modules/deployment_and_operations.md",
