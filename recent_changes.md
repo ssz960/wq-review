@@ -12,3 +12,9 @@ af4e3800 2026-07-18 build(runtime): restore pinned backend image inputs
 6317b4b9 2026-07-18 governance: register runtime recovery task
 01c5c565 2026-07-18 docs(live): record guarded deployment blocker
 ```
+
+## KNOW-20260718-006 knowledge update
+
+- Added a sanitized alpha-practice review summary for the latest `wqc` expansion.
+- Scope: PPA July 2026, Power Pool planning, low-correlation practice, Genius progression, forum scripts, and placeholder template families.
+- Sensitive material remains excluded.
