@@ -22,8 +22,8 @@
     "frontend_shell",
     "deployment_and_operations"
   ],
-  "source_branch": "codex/AI-BACKEND-ARCH-AUDIT-20260718-001-root",
-  "source_commit": "7e169957fed8a8c88a102c9332aab2a21a97a077",
+  "source_branch": "codex/know-20260718-008-root",
+  "source_commit": "c732d6c98faf27ee6cfea4e63825e5cbc470ddef",
   "source_of_truth": "local_git_repository",
   "test_runner_file_count": 3,
   "test_runner_files": [

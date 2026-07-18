@@ -36,8 +36,6 @@ Research Center、campaign/session 模型、package 存储、独立 wqb manifest
 
 快照 builder、delta builder、service、Git adapter、包生命周期 API 与测试存在。独立 `wqb` Public 骨架已建立，当前 manifest 为空且不含运行 inbox/outbox；实际交换 cursor、服务器包状态为 `UNVERIFIED`。
 
-2026-07-18 架构审计确认：Research Package v1 已有四根文件白名单和 hash/schema preflight，但只接受 `research-package.v1`，缺少 V2 的 `UPLOADED -> HASH_VALIDATED -> SCHEMA_VALIDATED -> SANITIZED -> REVIEWED -> IMPORTED -> AVAILABLE` 生命周期。后续 `research-package.v2` 必须继续保持根目录仅 `manifest.json`、`brief.json`、`seed_pack.csv`、`operator_probe.csv`，且导入后只生成未验证知识、假设或待审提案。
-
 ## 已确认设计
 
 `wqb` 独立；交换按 manifest 发生；服务器运行不依赖 wq-review；Data Pullback 是冷数据归档，不是公开审阅桥。
@@ -55,9 +53,9 @@ Research Center、campaign/session 模型、package 存储、独立 wqb manifest
 2026-07-18 `KNOW-20260718-002`：独立 `wqc` 发布了源索引的脱敏候选知识资产，均标记 `PENDING_HUMAN_REVIEW` 且未列入其 Manifest；`wq-review` 仅含摘要。原始论坛 JSON、SQLite、完整帖子和账号资料保持本地，不进入交换包。
 2026-07-18 `KNOW-20260718-003`：相关性工程候选资产通过现有单向审阅链发布。仅交换 Practice Card、来源定位、证据矩阵与冲突摘要；不交换原始帖子、外部代码、接口信息、账号信息、Alpha 表达式、结果或执行包。
 2026-07-18 `KNOW-20260718-004`：使用固定 Commit 的临时浅层工作区发布 `wqc` 与 `wq-review`，完成后删除临时目录。公开资产仅含脱敏主链结论；原始论坛内容、代码和接口信息未进入单向发布链。
+2026-07-18 `KNOW-20260718-008`：对昆奇、非洲顾问、全球顾问和顾问专属中文四个板块执行可恢复的只读全量采集。原始分页快照、完整帖子和索引数据库只保留在任务本地缓存；679 篇正文已入本地检查点，27 篇仅保留隔离重试队列；`wqc` 只接收结构化脱敏结论、来源定位和主题覆盖，`wq-review` 只接收摘要、冲突与待审项。
 
 ## 相关报告
 
 - `docs/test_reports/phase3_research_exchange_and_pullback_v2_20260718.md`（历史阶段报告）
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
-- `docs/test_reports/autonomous_ai_backend_architecture_audit_20260718.md`

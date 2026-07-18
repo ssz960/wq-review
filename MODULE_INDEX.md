@@ -21,14 +21,3 @@
 `platform_registry -> research/provider context -> candidate plan -> task_center admission/scheduler -> execution_transport -> factor/research result -> research_exchange`
 
 静态代码只能证明接口和实现存在，不能证明服务器正在运行、数据最新或真实 WQ 可用。
-
-## 架构审计入口
-
-`AI-BACKEND-ARCH-AUDIT-20260718-001` 新增长期架构审计材料：
-
-- `docs/design/autonomous_ai_research_architecture.md`
-- `docs/audits/autonomous_ai_backend_gap_analysis_20260718.md`
-- `docs/plans/autonomous_ai_backend_implementation_plan_20260718.md`
-- `docs/contracts/autonomous_ai_contracts_v1.md`
-
-这些文档是后续自主 AI 后端改造的审阅输入，不表示后端改造已经完成。
