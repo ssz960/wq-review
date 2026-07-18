@@ -4,7 +4,7 @@
 
 | 模块 | 文档 | 主要代码入口 | 状态摘要 |
 | --- | --- | --- | --- |
-| platform_registry | [platform_registry](modules/platform_registry.md) | `backend/app/mining/platform_registry.py` | 快照同步实现存在；生产源状态 UNVERIFIED。 |
+| platform_registry | [platform_registry](modules/platform_registry.md) | `backend/app/mining/platform_registry.py` | wqa Manifest/Hash 离线 Active Snapshot 验证通过；多 Region Field 与生产部署仍 UNVERIFIED。 |
 | task_center | [task_center](modules/task_center.md) | `backend/app/main.py`、`backend/app/mining/service.py` | 路由与调度实现广泛，耦合较高。 |
 | ai_mode | [ai_mode](modules/ai_mode.md) | `backend/app/mining/agent_runtime_v1.py` | Agent 与 supervisor 两套语义并存。 |
 | execution_transport | [execution_transport](modules/execution_transport.md) | `backend/app/mining/execution_adapter.py` | real/mock adapter 均存在；本任务禁用真实调用。 |

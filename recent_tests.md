@@ -2,15 +2,8 @@
 
 仅列出报告文件名和首个明确结果标记，不复制报告正文或附件。
 
-- `research_center_v1_local_frontend_integration_20260617_0121.md` — PASS
-- `research_center_v1_local_frontend_integration_20260617_0132.md` — PASS
-- `research_center_v1_local_frontend_integration_20260617_0137.md` — PASS
-- `research_center_v1_local_frontend_integration_20260617_0138.md` — PASS
-- `research_center_v1_local_frontend_integration_20260617_0726.md` — PASS
-- `research_center_v1_local_frontend_integration_20260617_0737.md` — PASS
-- `server_task_center_debug_regression_20260611_0722.md` — PASS
-- `server_task_center_debug_regression_20260611_1300_round2.md` — PASS
-- `server_task_center_issues_20260610_1302.md` — UNVERIFIED
-- `server_task_center_issues_status_20260611_0722.md` — UNVERIFIED
-- `server_task_center_test_20260610_1302.md` — FAIL
-- `task_center_real_functional_ui_backend_20260614_010253.md` — BLOCKED
+- `phase1_platform_registry_and_git_assets_20260718.md` — PASS
+- `phase2_consultant_multi_transport_20260718.md` — PASS
+- `phase3_research_exchange_and_pullback_v2_20260718.md` — PASS
+- `platform_registry_upstream_validation_20260718.md` — PASS
+- `project_governance_and_gpt_codex_bridge_20260718.md` — PASS

@@ -1,8 +1,8 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-18
-- 当前治理任务：`GOV-20260718-003`
-- 当前阶段：脱敏 wq-review 及独立 wqb/wqc 公开骨架已配置并验证；Registry、Multi、AI 循环等业务功能仍冻结。
+- 当前治理任务：`KNOW-20260718-002`
+- 当前阶段：正在只读采集 Consultant 机制与系统工程证据，准备供人工审阅的脱敏 wqc 候选资产及 wq-review 摘要；Registry、Multi、AI 循环等业务功能仍冻结。
 - 安全状态：本任务未调用真实 WQ，未修改前端或业务代码。
 
 ## 实际架构清单
@@ -66,3 +66,11 @@
 ## 下一步边界
 
 `GOV-20260718-001` 完成后不自动启动后续工作。任何业务修复、目录清理、服务器部署或真实 WQ 验证必须另建任务。
+
+## REG-20260718-001 Platform Registry 上游状态
+
+- `wqa` 已在独立 `main` worktree 合并 USA Field 上下文与 43 个多 Region Dataset/Settings Scope，并在 commit `cea82e2119b8a91db818722294ef45d18e3f6a6b` 生成不可变 `REG-20260718-001` Manifest、Hash、Schema、Scope 覆盖矩阵、容量评估和离线同步验证。
+- Dataset/Settings 覆盖 USA、GLB、EUR、ASI、CHN、JPN、IND、MEA 共 43 个合法 Scope；Field 权威记录仅 USA/TOP3000/D1 完整，其余 Scope 均明确 `MISSING`，禁止跨 Region 推断。
+- 已登录平台只读 UI 验证 8 个 Region、GLB Settings 选项和 85 条 Operator；Operator 字段类型兼容矩阵仍 `UNVERIFIED`，最终组合必须失败关闭。
+- 无网络端到端验证通过：Manifest/Hash -> 1,000 行批量 SQLite staging import -> Active Snapshot -> Region/Dataset/Field type/关键词 Top-K -> Operator/Profile 校验；真实 WQ 调用为零。
+- 2C/2G/40G 下热 Scope 实测数据库约 39.4 MiB、导入约 5.5 秒、峰值 RSS 约 32.1 MiB、查询中位数约 2 ms；部署结论 `READY_WITH_LIMITS`，未执行部署。
