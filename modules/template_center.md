@@ -23,6 +23,8 @@
 
 `source text/alpha -> extraction preview -> explicit create/import -> draft/active lifecycle -> bounded test-expand -> candidate consumer`。
 
+Governed external flow: `wqc PENDING_HUMAN_REVIEW -> APPROVED_FOR_IMPORT -> Template Center DRAFT -> REVIEWED -> TESTING -> ACTIVE/PAUSED/RETIRED -> sanitized asset export -> fixed four-file Research Package`. External repositories are not runtime template libraries.
+
 ## 依赖
 
 数据库、schemas、字段/Operator 信息、Task Center 和研究策略；论坛 distill 产物是外部输入而非权威代码。
@@ -38,6 +40,8 @@
 ## 已确认设计
 
 模板生命周期与执行分离；前端通过后端 API 管理；active 只表示可被选择，不表示可执行或有效。
+
+Version identity is `template_id + version + content_hash`. Each version records provenance, evidence, Registry Snapshot, field roles/types, Operators, Profiles, risk, and validation. Registry epoch changes and unavailable types/operators fail selection closed. Asset Export produces one JSONL snapshot, three CSV summaries, and a hashed manifest; Research Package keeps exactly its existing four root files.
 
 ## 已知 Bug
 
