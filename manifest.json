@@ -38,6 +38,11 @@
       "size": 1192
     },
     {
+      "path": "alpha_practice_collection_20260718.md",
+      "sha256": "95a4374bf450b5aa921ad25eb203268777efe6dc9a9011feca2d7be1aedf77ae",
+      "size": 636
+    },
+    {
       "path": "MODULE_INDEX.md",
       "sha256": "3c97dd5de18948ccbe4d729c1369a12d147d9a10fc640e15c8860c0d938c72be",
       "size": 2329
@@ -141,6 +146,7 @@
     "architecture_summary.json",
     "database_summary.json",
     "consultant_mainline_evidence_20260718.md",
+    "alpha_practice_collection_20260718.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
     "modules/deployment_and_operations.md",
