@@ -52,9 +52,16 @@ Research Center、campaign/session 模型、package 存储、独立 wqb manifest
 
 2026-07-18 `KNOW-20260718-002`：独立 `wqc` 发布了源索引的脱敏候选知识资产，均标记 `PENDING_HUMAN_REVIEW` 且未列入其 Manifest；`wq-review` 仅含摘要。原始论坛 JSON、SQLite、完整帖子和账号资料保持本地，不进入交换包。
 2026-07-18 `KNOW-20260718-003`：相关性工程候选资产通过现有单向审阅链发布。仅交换 Practice Card、来源定位、证据矩阵与冲突摘要；不交换原始帖子、外部代码、接口信息、账号信息、Alpha 表达式、结果或执行包。
-2026-07-18 `KNOW-20260718-004`：使用固定 Commit 的临时浅层工作区发布 `wqc` 与 `wq-review`，完成后删除临时目录。公开资产仅含脱敏主链结论；原始论坛内容、代码和接口信息未进入单向发布链。
 
 ## 相关报告
 
 - `docs/test_reports/phase3_research_exchange_and_pullback_v2_20260718.md`（历史阶段报告）
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
+
+## RESULT-20260718-001
+
+The V2 delta cursor includes `feedback_delta`. Research Exchange exports Research Center-owned bounded feedback only for execution requests in the selected campaign; it does not normalize transport results, evaluate checks, or reconstruct raw payloads. Data Pullback remains a separate cold archive.
+
+## INTEGRATE-LIVE-20260718-001
+
+This boundary stayed unchanged. The review handoff contains sanitized status and test evidence only, with no execution payloads or PnL.

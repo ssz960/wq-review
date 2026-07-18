@@ -1,13 +1,33 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-18
-- 当前治理任务：`KNOW-20260718-005` 已完成
-- 当前阶段：正在只读采集 Alpha 实战、模板、数据集、地区、优化、收益经验与挖矿工作流；Registry、Multi、AI 循环等业务功能仍冻结。
-- 安全状态：本任务未调用真实 WQ，未修改前端或业务代码。
+- 当前任务：`INTEGRATE-LIVE-20260718-001` Single/Multi 与 Result Ingestion 真实闭环集成
+- 当前阶段：离线闭环与服务器 `0031` 迁移通过；运行镜像因 Git 事实源缺少 API/worker 依赖而停止，未进入真实 WQ 批次。
+- 安全状态：`BLOCKED_BY_CONCRETE_ERROR`；backend/worker 停止、旧系统 inactive、API Gate 关闭，未发出 WorldQuant 请求。
 
-## TPL-20260718-001
+## INTEGRATE-LIVE-20260718-001 状态
 
-Template Center remains the sole runtime template source. Sanitized wqc candidates require human approval before idempotent import; GPT assets are exported only from local Template Center state. Offline validation passed without real WQ, backtest, or Alpha submission. Public wqb remains skeleton-and-aggregate-only pending a user privacy decision.
+- 状态：`BLOCKED`。
+- 共同基线：`20260718_0029_consultant_core_models`；保留 SCHED `0030`，RESULT 迁移顺延为 `0031`。
+- 唯一真实执行状态：`execution_requests + simulation_batches + simulation_batch_children`；Consultant `multi_simulation_*` 仅为领域/兼容投影。
+- 结果：48 项组合测试、16 项 Multi Transport、0029→0031 临时数据库迁移与治理测试通过；服务器备份和修正后的 0031 迁移通过。API 镜像因 `main.py`/worker 所需多个文件从未进入 Git 而无法启动，真实 12/30 批次均未派发。
+- 写锁：业务与部署写锁已释放；`wq-review/main` 在本报告发布后释放。恢复前必须先建立独立事实源恢复任务。
+
+## RESULT-20260718-001 状态
+
+- 状态：`DONE`，离线实现、回归和治理收口完成。
+- 目标：Execution Transport 只产生原始执行结果；Result Ingestion 负责原始事实账本、标准化、幂等写入、Parent/Child 聚合、Checks 与 Correlation 分类；Factor Center 只作读模型；Research Center 生成 Feedback Delta；Research Exchange 只作有界导出；Data Pullback 保持冷数据归档。
+- 结果：迁移链单一 head `20260718_0030`；RESULT 10/10、CORE 10/10、Multi Transport 15/15、Research Exchange/Memory/Center 与 Data Pullback 服务层通过。完整证据见 `docs/test_reports/result_ingestion_offline_20260718.md`。
+- 写锁：已释放 research_exchange、factor_center、research_center、execution_transport。
+
+## CORE-20260718-004 基线恢复
+
+- 状态：`DONE`。
+- 原因：`CORE-20260718-003` 的迁移 `20260718_0029`、核心模型、服务、Schema 与 10 项测试仅存在于隔离分支，尚未进入当前事实源；RESULT 目标文件中另有多项仅存在于未跟踪工作树。
+- 范围：在独立临时 worktree 中整合固定 REG/CORE 提交，语义化解决治理冲突，并逐文件恢复可追溯业务源码。禁止批量纳入未跟踪文件。
+- 安全：不调用真实 WQ，不创建真实任务，不部署，不修改 API Gate 或前端；恢复验证通过前不启动 `RESULT-20260718-001` 业务开发。
+- 结果：固定提交链已语义合并；Alembic 从 `20260606_0001` 到 `20260718_0029` 共 29 个 revision 且单一 head 为 `20260718_0029`。CORE 10 项、Multi 15 项、Research Exchange、Research Memory、Research Center、Research Package/Context 离线回归通过。
+- 已知基线缺陷：Data Pullback 服务层通过但完整路由仍依赖未恢复的 `app.main` 控制面；Factor Center 既有 smoke 在 legacy curve 外置缓存断言失败，留给 RESULT 审计，不在恢复任务中改业务语义。
 
 ## GOV-20260718-004 状态
 
@@ -92,3 +112,25 @@ Template Center remains the sole runtime template source. Sanitized wqc candidat
 - 因未发现用户原始论坛导出，使用已登录 Chrome 只读建立了 6 条高信号论坛页面的本地脱敏索引；SQLite、原始页面内容和本地 JSON 均未进入公开仓。
 - `wqc` 发布 20 条 `PENDING_HUMAN_REVIEW` 结构化候选结论，Manifest 依宪法保持空列表；`wq-review` 仅发布摘要、目录、冲突和待审项。
 - 未调用真实 Simulation、未读写凭据/Cookie/Token、未调用提交或账户修改操作；论坛自动化代码只作为禁止直用的反例记录。
+
+## REG-20260718-001 Platform Registry 上游状态
+
+- `wqa` 已在独立 `main` worktree 合并 USA Field 上下文与 43 个多 Region Dataset/Settings Scope，并在 commit `cea82e2119b8a91db818722294ef45d18e3f6a6b` 生成不可变 `REG-20260718-001` Manifest、Hash、Schema、Scope 覆盖矩阵、容量评估和离线同步验证。
+- Dataset/Settings 覆盖 USA、GLB、EUR、ASI、CHN、JPN、IND、MEA 共 43 个合法 Scope；Field 权威记录仅 USA/TOP3000/D1 完整，其余 Scope 均明确 `MISSING`，禁止跨 Region 推断。
+- 已登录平台只读 UI 验证 8 个 Region、GLB Settings 选项和 85 条 Operator；Operator 字段类型兼容矩阵仍 `UNVERIFIED`，最终组合必须失败关闭。
+- 无网络端到端验证通过：Manifest/Hash -> 1,000 行批量 SQLite staging import -> Active Snapshot -> Region/Dataset/Field type/关键词 Top-K -> Operator/Profile 校验；真实 WQ 调用为零。
+- 2C/2G/40G 下热 Scope 实测数据库约 39.4 MiB、导入约 5.5 秒、峰值 RSS 约 32.1 MiB、查询中位数约 2 ms；部署结论 `READY_WITH_LIMITS`，未执行部署。
+
+## CORE-20260718-003 Consultant Core
+
+- 新增版本化 Simulation Profile、Submission Policy、Multi Parent/Child、五类 Correlation Observation、Power Pool 历史成员和 SuperAlpha Selection 模型，迁移版本为 `20260718_0029`。
+- 统一 Scheduler 本轮仅提供不创建队列的 Mock 边界；现有 Single、Admission、API Gate、优先级和真实 WQ worker 未修改。
+- 10 项离线单元测试通过；现有旧运输回归因 Git 事实源缺少 `backend/app/db.py` 无法启动，执行级 Single 回归仍 `UNVERIFIED`。
+- 额度关系、每日限额、Invalid/Cancelled 计数、Osmosis、Pyramid、奖励、限流数值及相关性阈值继续保持 `UNKNOWN`。
+
+## SCHED-20260718-001 Single/Multi Allocation
+
+- 已恢复Platform Registry迁移0028与CORE迁移0029，并新增连续迁移`20260718_0030`。
+- 实现只读预览、不可变AllocationPlan、SHARED/SEPARATE/UNKNOWN Capacity、持久化预留、Single/Multi统一Mock调度和恢复；复用现有Batch与ExecutionRequest。
+- 25项离线测试通过；真实WQ、生产Worker和服务器Gate调用为零。
+- Single/Multi额度关系、最大Multi Parent并发、每日额度及Invalid/Cancelled计数仍为UNKNOWN。

@@ -50,6 +50,8 @@
 
 2026-07-18 完成静态仓库/Git 审计；离线治理测试已验证链接、索引、任务 ID、重复目录检测、敏感拦截、manifest 契约、Git checkout 保留和 review 重现性，全部 PASS。wq-review、wqb、wqc 均已匿名读取验证；两个资产骨架各 6 个治理/schema 文件且 manifest 为空。未部署服务器、未调用 WQ。
 
+2026-07-18 `INTEGRATE-LIVE-20260718-001` 完成服务器资源 guard、数据库/进程状态备份及修正后的 `0031` 迁移；构建后的 API 因 clean Git checkout 缺少多个既有运行依赖而无法启动。按失败关闭原则停止 backend/worker 并保持 API Gate 关闭，未调用 WQ。恢复不得直接发布主工作树未跟踪副本。
+
 ## 多窗口仓库发布
 
 - 辅助仓库默认仅在线上存在，任务通过 GitHub API 或系统临时目录固定 Commit 稀疏检出。
