@@ -1,9 +1,9 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-18
-- 当前治理任务：`KNOW-20260718-008` 进行中
-- 当前阶段：正在对四个顾问社区板块执行可恢复的只读全量采集，并将 Alpha 实战、模板、数据集、地区、优化、收益经验与挖矿工作流加工为脱敏研究资产；Registry、Multi、AI 循环等业务功能仍冻结。
-- 安全状态：本任务仅通过已登录 Chrome 的可见论坛界面读取内容；不读取 Cookie、Token 或凭据，不调用真实 WQ，不修改前端或业务代码。
+- 当前治理任务：`AI-BACKEND-ARCH-AUDIT-20260718-001` 已完成本地文档审计，等待 GPT 架构验收。
+- 当前阶段：自主 AI 研究员后端处于架构审计与改造规划完成态；正式后端改造、迁移、前端改造、服务器部署和真实 WQ 调用仍冻结。
+- 安全状态：本任务未调用真实 WQ，未修改前端、业务代码或数据库迁移。
 
 ## GOV-20260718-004 状态
 
@@ -77,6 +77,14 @@
 - 离线治理验收已通过：16 个治理/模块文档链接无缺失，11 个模块无孤儿，任务 ID 唯一，重复目录风险被检测并记录，敏感内容被阻断，review 重复生成且 manifest 稳定，业务/前端 diff 与真实 WQ 调用均为零。
 - 公开 `wq-review` 已匿名验证可读；仅含 24 个白名单 Markdown/JSON 文件，Pages/Wiki/Issues/Discussions 均关闭且无 Release。公开仓库不是源码、服务器同步或生产事实源。
 - 独立 `wqb` 与 `wqc` 已建立 Public `main` 骨架：各含 6 个治理/schema 文件、空 manifest、0 个业务条目和 0 个 Release；匿名读取、schema、白名单、链接与敏感信息扫描均通过。
+
+## AI-BACKEND-ARCH-AUDIT-20260718-001 记录
+
+- 范围：只读审计自主 AI 研究员后端现状，固化长期目标架构、差异矩阵、阶段改造计划和 V1 契约。
+- 产出：新增 `docs/design/autonomous_ai_research_architecture.md`、`docs/audits/autonomous_ai_backend_gap_analysis_20260718.md`、`docs/plans/autonomous_ai_backend_implementation_plan_20260718.md`、`docs/contracts/autonomous_ai_contracts_v1.md`。
+- 结论：现有 Platform Registry、CandidatePlan、Scheduler、Execution Adapter、Result Ingestion、Factor Center、Research Package v1、Context/Checkpoint、Research Memory v2 等可复用；缺口集中在 Research Round、Hypothesis、MemoryProposal、Assistance、Provider Profile/Secret、Policy Engine 和 Context Builder V2。
+- 风险：本地迁移证据只到 `20260718_0030`，任务描述中的 `20260718_0031` 标记为 `UNVERIFIED/source gap`；Agent Runtime 与 LLM Supervisor 两套语义需先合并边界，避免第二套 AI 权限模型。
+- 状态：`READY_FOR_GPT_ARCH_REVIEW`；GPT 返回 `PASS` 前禁止启动正式后端改造。
 
 ## 下一步边界
 
