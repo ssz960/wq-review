@@ -91,3 +91,9 @@ Required new table count after reuse analysis: 5 (`research_rounds`, `research_h
 2. Context Builder V2 and Memory Governance are not yet strong enough for unattended operation; missing omitted counts and proposal lifecycle can turn missing evidence into false certainty.
 3. Provider/secret is env-driven and not yet suitable for unattended admin-managed campaigns.
 4. Local evidence has a source gap (`20260718_0031` not found locally) and a dirty main tree; GPT review must treat that as `UNVERIFIED`, not as production truth.
+
+## V1 Implementation Update
+
+The Phase 0 source gap was resolved before coding by using a clean committed fact source containing `20260718_0031`, verifying the single `20260719_0032` Head, and developing in a separate worktree. The V1 implementation now supplies the planned Round, Hypothesis, MemoryProposal, Assistance, Provider Profile/Secret, Policy, Context V2, Skill Registry, Package V2, and bounded Orchestrator capabilities behind feature flags.
+
+The reuse decisions remain intact: CandidatePlan/materializer, shared scheduler/adapter, Result Ingestion, Factor Center, Research Feedback Delta, Registry, and `MiningEvent` remain authoritative. No second execution queue, result pullback, template store, Factor store, or campaign-event table was introduced. Local coverage proves mock behavior only; server integration, real provider connectivity, real WorldQuant, Prod Corr, and final submission remain `UNVERIFIED` and unauthorized.

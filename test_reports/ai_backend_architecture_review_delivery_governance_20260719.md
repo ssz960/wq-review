@@ -24,7 +24,7 @@
 ## Local Validation Result
 
 - `python scripts/test_project_governance.py`: PASS. It generated a stable
-  44-file review payload, validated the manifest v2 cumulative-history
+  51-file review payload, validated the manifest v2 cumulative-history
   contract, checked the whitelist and all archive links, and rejected
   key/token, IP, domain, database connection, cookie, submitted-pool, PnL,
   production-log, oversized-file, and source-file samples.

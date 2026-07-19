@@ -51,13 +51,13 @@
     },
     {
       "path": "api_summary.json",
-      "sha256": "9e0091b3cc3ccb2a7e3c37b1083a9e7d450713cd489d4ce5c9473906542cb59e",
-      "size": 14135
+      "sha256": "c241210cb988908bb44a13a4043f7dec0b3cdea0bb9f52d6266a5f44de3dfd9d",
+      "size": 14303
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "5f6b03d8f9acac74d3cfde436216eec7635be993f872659d39acb6e975a96015",
-      "size": 997
+      "sha256": "e60dfcf547cfeaa3329c383b0839c3b60c0143c8768b1594e535f82a6f116b85",
+      "size": 2154
     },
     {
       "path": "archive/20260718_completed_assets/allocation_decision_matrix.md",
@@ -131,48 +131,63 @@
     },
     {
       "path": "audits/autonomous_ai_backend_gap_analysis_20260718.md",
-      "sha256": "a36d0b69c7e8e8edb77f145f57e2aec53a2eb944973221c7e98d34f9f35ae803",
-      "size": 16984
+      "sha256": "c8cbd0519805436fcd4c12b27fb49cf68f08a47cb3c071c728e9790eeb875ada",
+      "size": 17929
+    },
+    {
+      "path": "audits/autonomous_ai_backend_v1_review_request_20260719.md",
+      "sha256": "c116f8af864402e81cf09cdff2cb434e85d385478579385cd0f2e024927edb8b",
+      "size": 2568
     },
     {
       "path": "contracts/autonomous_ai_contracts_v1.md",
-      "sha256": "1a9231521e2cb806399f85935e9d202450de3174c64bfa128035b666cb9eb257",
-      "size": 7407
+      "sha256": "007c3c74b89bf9801aac8810d20d91d009e54a8c75a3aca62bdd4fc3ebafd678",
+      "size": 8812
     },
     {
       "path": "database_summary.json",
-      "sha256": "1afb5d272cbba1d18b83dea9a9d580720cb931dd9ff639b29f89f8cc889cd17e",
-      "size": 2339
+      "sha256": "a080897038043e6df662678899a6462c66069a92089d672da6c47a6609b83065",
+      "size": 4437
     },
     {
       "path": "design/autonomous_ai_research_architecture.md",
-      "sha256": "8a8190891492fab614787c5ce584c9192310360bb66b271275db2340aa6e0e4a",
-      "size": 11180
+      "sha256": "12e152813c4af922638affe6c2140aac7afde27840ad11f21e9027cbb7ea22fa",
+      "size": 12861
     },
     {
       "path": "MODULE_INDEX.md",
-      "sha256": "7db90cb5828f85b77f0977dd4d44e3f208e03dcc193ef4dd69934584e854dbdd",
-      "size": 3332
+      "sha256": "445e3a3c506659f336f368c4bf1d87be925d2475a6029550590231f4f05196b4",
+      "size": 4698
     },
     {
       "path": "modules/ai_mode.md",
-      "sha256": "ab1cab139c5aaefb7e88ed4b867e05cd854bdcda4d7d88e0df7ad672427dba7d",
-      "size": 3094
+      "sha256": "ff5365be58129783ea86a7e6edf493551d6d7897283b1396cff157c989d1608f",
+      "size": 4280
+    },
+    {
+      "path": "modules/allocation_decision_matrix.md",
+      "sha256": "aba126f7cd0123cd7553c7777a610db75c3a81ac2ae449f39242f29094ce78a2",
+      "size": 925
+    },
+    {
+      "path": "modules/capacity_policy_and_slot_model.md",
+      "sha256": "fcceba438095721b68e6d11b5b7cfd5320e8d64e8e3022ae979eef0230338299",
+      "size": 908
     },
     {
       "path": "modules/deployment_and_operations.md",
-      "sha256": "499f250439eee2a822d3cc60289f57df3ca1bbcd6e2e34d606df48d14892ad2f",
-      "size": 3388
+      "sha256": "d6fb4a76bc0fe64ae235cdb7804ee7c34e6b2baded061f4254127d7adca9d5ee",
+      "size": 4237
     },
     {
       "path": "modules/execution_transport.md",
-      "sha256": "e4f2eef9547141003e3b1453873ec7b9ee1fe101825425b6f881a89e641baf27",
-      "size": 2175
+      "sha256": "705087f6cb1f6b0b8304fb68f97ebde88f1d409a8b6bbabc98ff9ebd19afcb50",
+      "size": 5015
     },
     {
       "path": "modules/factor_center.md",
-      "sha256": "60e08c8d4a0648756fad34fa79239bef983b3e8b232d9f901cfc9255bb984f33",
-      "size": 2115
+      "sha256": "d109aa0f0e70c8ac394a4477efee97d71bc30cf5d4f23ec6025eddb1b6f7fdf0",
+      "size": 3786
     },
     {
       "path": "modules/frontend_shell.md",
@@ -181,28 +196,38 @@
     },
     {
       "path": "modules/platform_registry.md",
-      "sha256": "0d33e2416fb2dcffdb4b9d8e7c20ae7f421af0c706bdd6c39231367529bcd06b",
-      "size": 2409
+      "sha256": "528c7f116b9fbce6e99ef11195628cf55c9708c749fc544b0cac94aaf5f0db6b",
+      "size": 3282
     },
     {
       "path": "modules/provider_and_skills.md",
-      "sha256": "9cdd3aef042be27d253ab2371adec79fd52d57c1569cb7d9c4c051813c963c8a",
-      "size": 3842
+      "sha256": "f2e48c1fe526410522beb1a1a7da95cebf2238a315b6bac012a2279685dc37f4",
+      "size": 4369
     },
     {
       "path": "modules/research_center.md",
-      "sha256": "01a1f2fc0449bfe1121a7b90c2d543b97e2917f8389b82ec2f590bdf8a223f99",
-      "size": 2997
+      "sha256": "d80a3fd800cc11f11ac93b5a29a66e0e1b155c505d2b163b2f50cdc19d7316f4",
+      "size": 4053
     },
     {
       "path": "modules/research_exchange.md",
-      "sha256": "388835c6f544bfed763fcc40c5d2def1b6107ce401d5ea2e890b5d2eecca4c7e",
-      "size": 3756
+      "sha256": "12fcebb1ab36c59f755a1d82a8fb31b1e9093b0a533295fd86eccffbd2622d56",
+      "size": 4891
+    },
+    {
+      "path": "modules/scheduler_recovery_state_machine.md",
+      "sha256": "e107540b7da1709db0665ba7acff64698069bf5b006b626219ea18dd8b380897",
+      "size": 943
+    },
+    {
+      "path": "modules/single_multi_allocation_design.md",
+      "sha256": "0a38c7eeb0ae0b2e11a4ed97201e2da30b21d3ee22792c9a6517137eeb42bafb",
+      "size": 1398
     },
     {
       "path": "modules/task_center.md",
-      "sha256": "d3eabd4abddd22e60e8ee3d5fe5b6bc2ceb8b39318c865a05048fc24c077fa40",
-      "size": 2242
+      "sha256": "dca99a57bc95e3e3d5426315af3654d6fdec1f14e2334feb3fe6236f9c61bfa0",
+      "size": 3876
     },
     {
       "path": "modules/template_center.md",
@@ -211,33 +236,33 @@
     },
     {
       "path": "plans/autonomous_ai_backend_implementation_plan_20260718.md",
-      "sha256": "9460dd1b242428b7b6447d5267c11f5f9deecc2244218663612fe6e7c16737ac",
-      "size": 9170
+      "sha256": "79c337d89b71dbc47916170098d942928098b45df7e07f5a0156991139fcba43",
+      "size": 10121
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "025b11f910fb1ee99da291b3d8056abb98d8db053dcd3e5b637f9f8a0bc2b62d",
-      "size": 10447
+      "sha256": "65fbb8f2ce51ef09b52fe996028911870ad457a23faf1989a849cff536b6904f",
+      "size": 19378
     },
     {
       "path": "README.md",
-      "sha256": "b43051ba3cb1fa68b6a9b5d0092bb624c97e24c3b7fe891d50832fe3811f4f39",
-      "size": 852
+      "sha256": "624d77aec6957bde21bb0695f77d46d9ee73011a1b88b6944a7954b663a44436",
+      "size": 870
     },
     {
       "path": "recent_changes.md",
-      "sha256": "525a361bae2247af70f8bca465694a940656a01b91816cd7816215c144306d5a",
-      "size": 682
+      "sha256": "27416c9188be2cba4b9d2ba148099ad0a50556f0c5868512318cf94ded14310c",
+      "size": 751
     },
     {
       "path": "recent_tests.md",
-      "sha256": "9fc38d44af751f89161da54a3ea5482ec9a70d2b7b18abec91613514528a85d4",
-      "size": 840
+      "sha256": "4a3e91d6494c073c2e72e42023b68d73ea9659ace90488ce7db3c78fcce9cbef",
+      "size": 811
     },
     {
       "path": "review_request.md",
-      "sha256": "f40424ec1609b71c62e19cc9e5598c2a96206e4b9b00ac1c9a2c72aa2986b22b",
-      "size": 1835
+      "sha256": "73a79cdf4c2dcc5273245175db58e0233a1b9b8d02c160b520cdefa2f60b0eca",
+      "size": 2590
     },
     {
       "path": "server_status.json",
@@ -246,22 +271,32 @@
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "8a1db4fb0f4396db743cb2dbf0c267ccaf5b82e644545c2b26284afd24664e70",
-      "size": 5075
+      "sha256": "635ab4d320e4ea799ee8c42ff4f456db17af35e715ee95b36e8914ea036815da",
+      "size": 11078
     },
     {
       "path": "test_reports/ai_backend_architecture_review_delivery_governance_20260719.md",
-      "sha256": "df730f3ea4387ed83f929307abcc644a87c9ee5b6cad5dbe96363e1c40450fd8",
+      "sha256": "1929bf30ecd316f4147c03452d3476cd0f65c46b75c8dfafee35a8da0e3ef889",
       "size": 1880
     },
     {
       "path": "test_reports/autonomous_ai_backend_architecture_audit_20260718.md",
-      "sha256": "a4534fa0e5771fc5e5a1ae96e6734bd47785e7e0b04bbacbc29f736bf99ee87e",
-      "size": 3243
+      "sha256": "cdc3affb76b69f858c8399dc6ade87b1d72395686d7276260c5ac12ba0a8a95a",
+      "size": 2938
+    },
+    {
+      "path": "test_reports/autonomous_ai_backend_v1_20260719.md",
+      "sha256": "abcdeec837520df85ecde53889601fde4e4e4dddff3c219ac9d0f470fde99ee5",
+      "size": 4357
+    },
+    {
+      "path": "test_reports/autonomous_ai_backend_v1_baseline_20260718.md",
+      "sha256": "bb844c2d1e5125a7c41508987b24950facda3f6ac258c6fa11a08b18acd6c8bf",
+      "size": 3498
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-19T07:36:28+08:00",
+  "generated_at": "2026-07-19T13:03:52+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -281,11 +316,14 @@
     "archive/completed_asset_migration_index.md",
     "audits/autonomous_ai_backend_architecture_review_request_20260718.md",
     "audits/autonomous_ai_backend_gap_analysis_20260718.md",
+    "audits/autonomous_ai_backend_v1_review_request_20260719.md",
     "contracts/autonomous_ai_contracts_v1.md",
     "database_summary.json",
     "design/autonomous_ai_research_architecture.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
+    "modules/allocation_decision_matrix.md",
+    "modules/capacity_policy_and_slot_model.md",
     "modules/deployment_and_operations.md",
     "modules/execution_transport.md",
     "modules/factor_center.md",
@@ -294,6 +332,8 @@
     "modules/provider_and_skills.md",
     "modules/research_center.md",
     "modules/research_exchange.md",
+    "modules/scheduler_recovery_state_machine.md",
+    "modules/single_multi_allocation_design.md",
     "modules/task_center.md",
     "modules/template_center.md",
     "plans/autonomous_ai_backend_implementation_plan_20260718.md",
@@ -305,8 +345,10 @@
     "server_status.json",
     "TASK_BOARD.md",
     "test_reports/ai_backend_architecture_review_delivery_governance_20260719.md",
-    "test_reports/autonomous_ai_backend_architecture_audit_20260718.md"
+    "test_reports/autonomous_ai_backend_architecture_audit_20260718.md",
+    "test_reports/autonomous_ai_backend_v1_20260719.md",
+    "test_reports/autonomous_ai_backend_v1_baseline_20260718.md"
   ],
-  "local_commit": "33d29cf505865276373743339df2a5e7ae1b4e14",
+  "local_commit": "c658238fc40489c8db6109c7d6864d67c6116cba",
   "schema_version": 2
 }

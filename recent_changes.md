@@ -1,14 +1,14 @@
 # 最近本地变更
 
 ```text
-33d29cf5 2026-07-19 governance: restore cumulative review history
-7e169957 2026-07-19 governance: record architecture review publication
-dbf46ab6 2026-07-19 governance: record architecture audit commit
-0b6eecf0 2026-07-18 Document autonomous AI backend architecture audit
-49234f20 2026-07-18 record alpha practice collection
-8c1d3294 2026-07-18 record consultant mainline evidence
-0f610cd7 2026-07-18 governance: complete auxiliary repository cleanup
-d7f340b0 2026-07-18 governance: serialize auxiliary repository publishing
-328ab515 2026-07-18 record correlation practice collection
-2eb7d918 2026-07-18 governance: use ephemeral GitHub workspaces
+c658238f 2026-07-19 docs(governance): restore cumulative review history
+886d11ad 2026-07-19 feat(autonomous): orchestrate bounded campaign rounds
+47d4d0fe 2026-07-19 test(autonomous): verify phase zero baseline
+ef06fee9 2026-07-19 feat(autonomous): add provider and assistance controls
+0408942a 2026-07-19 feat(autonomous): add research package v2 import
+19d6d2b7 2026-07-19 feat(autonomous): add skill proposal lifecycle
+cc23164c 2026-07-19 feat(autonomous): add context and memory proposal governance
+2a67834e 2026-07-19 feat(autonomous): add v1 campaign policy foundation
+14bc86a9 2026-07-19 fix(review): retain autonomous AI baseline evidence
+7863342f 2026-07-18 Document autonomous AI backend architecture audit
 ```

@@ -73,3 +73,9 @@ Publish only sanitized docs and summaries to `wq-review/main` after local commit
 - governance status, module index, test report, and `review_request.md`
 
 `review_request.md` must ask GPT to return exactly one of `PASS`, `FAIL`, or `BLOCKED`, with blockers tied to source evidence. The review snapshot must not contain source code full text, credentials, base URLs, tokens, cookies, submitted pool, full PnL, production DB/logs, private forum content, or real Alpha expressions.
+
+## V1 Delivery Update
+
+`AI-AUTONOMOUS-BACKEND-V1-20260719-001` completed Phases 0 through 8 in a local Mock/SQLite acceptance scope. Phase 0 found the clean source commit and one migration Head before code changed. The implementation commit is `886d11ad`; it adds the bounded orchestrator, Registry binding before materialization, fixture-only Skills, and versioned round run/recovery endpoints.
+
+The integrated acceptance exercised one `CAMPAIGN_AUTOMATIC` campaign, four rounds, three admitted candidates per round, a total execution budget of twelve, two Skills, one admission rejection, one `CHANGE_SKILL`, one short instruction, one long-term MemoryProposal, one Gate block, restart recovery, duplicate result idempotency, one low-efficiency assistance request, and one `ASSISTANCE_RESPONSE` V2 package context rebuild. No frontend, deployment, real provider, real WorldQuant, Prod Corr, or final Alpha submission work is part of this delivery.

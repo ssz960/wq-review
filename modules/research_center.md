@@ -56,4 +56,19 @@ Task Center、Factor Center、AI Mode、数据库、Research Exchange 和 packag
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
 
 2026-07-18 `KNOW-20260718-003`：相关性检索经验以来源可追溯、结论可冲突的 Practice Card 与证据矩阵形式进入候选审阅层。`Self -> PP -> Prod` 仅作假设研究记忆，必须携带 scope、样本和本地验证方法，禁止变成硬规则或执行权限。
-2026-07-18 `KNOW-20260718-004`：Multi 容量、共同 Settings、进程中断与限流经验都以带来源和验证状态的候选证据存储。没有原始证据的额度、重置、取消计数和 Universe 混合语义保持 `UNKNOWN`，不提供给 Admission 或 Scheduler 作为配置。
+
+## RESULT-20260718-001
+
+Research Center now owns `ResearchFeedbackDelta`. It derives only terminal, bounded feedback from normalized results, checks, Factor Center projection references and typed correlation summaries. Full raw result payloads and PnL curves are excluded from the delta.
+
+## INTEGRATE-LIVE-20260718-001
+
+Offline tests verified Feedback Delta idempotency and restart recovery. Live deltas remain zero because no WorldQuant batch was dispatched.
+
+## RUNTIME-RECOVER-LIVE-20260718-001
+
+The authorized runtime continuation wrote 22 bounded Feedback Deltas for the first 12-candidate batch and 30 for the 30-candidate Multi batch. Every delta remained derived from a normalized result; full raw payloads, curves and remote references were not exported or added to review evidence.
+
+## AI-AUTONOMOUS-BACKEND-V1-20260719-001
+
+V1 adds round-scoped hypotheses, MemoryProposal governance, Context V2 rebuild, NextMove records, and LOW_EFFICIENCY assistance while preserving Research Center as a bounded evidence and feedback consumer. The local acceptance records a short campaign instruction separately from a long-term MemoryProposal and keeps assistance response material outside formal memory until the existing governance path accepts it. No raw result payload, production curve, or external provider content is added to review material.

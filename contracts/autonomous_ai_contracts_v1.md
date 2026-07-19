@@ -218,3 +218,16 @@ Statuses: `OPEN`, `ACKNOWLEDGED`, `ANSWERED`, `MATERIAL_RECEIVED`, `IMPORTED`, `
 ```
 
 Frontend-readable fields are limited to `profile_key`, `provider_type`, `display_name`, `model`, `configured`, `masked`, `validation_status`, `last_validated_at`, and `enabled`. Raw key, token, cookie, and unmasked base URL are never returned.
+
+## V1 Implementation Status
+
+The V1 implementation is present behind default-off feature flags and is locally verified only. The new bounded API surface is:
+
+- `POST /api/v2/autonomous/campaigns/{campaign_id}/rounds/run`
+- `POST /api/v2/autonomous/campaigns/{campaign_id}/rounds/{round_id}/recover-results`
+
+Both endpoints use trusted server-derived runtime facts. A client cannot set Gate state, execution mode, provider readiness, or correlation permissions through either endpoint.
+
+The required core table conclusion remains five tables: `research_rounds`, `research_hypotheses`, `memory_proposals`, `research_assistance_requests`, and `llm_provider_profiles`. The selected Provider Secret implementation is the database table `llm_provider_secrets`; an external Secret Store would have been the alternative, not an additional mandatory table. `research_skill_specs` and `research_model_invocations` support versioned contracts and auditable model validation. Campaign events use `MiningEvent` projection/append semantics instead of a second campaign-event table.
+
+`ResearchOrchestrator` accepts only admitted candidate plans and records round-level summary statistics with `unique_candidate_id` as the denominator. It invokes the shared mock dispatcher for local verification, then waits for the existing execution/result chain to reach terminal states before recording a bounded NextMove decision.

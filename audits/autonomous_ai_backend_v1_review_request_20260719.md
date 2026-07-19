@@ -1,5 +1,3 @@
-# 当前审阅请求
-
 # Autonomous AI Backend V1 Review Request
 
 - Task ID: `AI-AUTONOMOUS-BACKEND-V1-20260719-001`

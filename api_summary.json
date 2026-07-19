@@ -7,7 +7,7 @@
     "api/factor-center": 14,
     "api/fields": 6,
     "api/health": 1,
-    "api/mining": 40,
+    "api/mining": 42,
     "api/research": 7,
     "api/research-artifacts": 1,
     "api/research-campaigns": 27,
@@ -20,7 +20,7 @@
     "api/task-runs": 13,
     "api/template-library": 10
   },
-  "route_count": 151,
+  "route_count": 153,
   "routes": [
     {
       "method": "GET",
@@ -169,6 +169,14 @@
     {
       "method": "GET",
       "path": "/api/mining/advice"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/allocation/confirm"
+    },
+    {
+      "method": "POST",
+      "path": "/api/mining/allocation/preview"
     },
     {
       "method": "GET",

@@ -125,3 +125,15 @@ Reconfirmation is mandatory for budget expansion, Region/Delay change, new high-
 - Real WQ calls require a separate explicitly authorized task, API Gate, hard admission, budget/concurrency caps, unified adapter, and audit.
 - The orchestrator only coordinates; it cannot generate expressions, submit simulations, compute results, mutate Gate, release slots, or write formal long-term memory.
 - Any missing evidence is marked `UNVERIFIED`; the system must not infer permission or platform facts.
+
+## V1 Implementation Evidence
+
+`AI-AUTONOMOUS-BACKEND-V1-20260719-001` implemented the bounded V1 path in an isolated worktree after the Phase 0 fact-source check. The migration chain is `20260718_0031 -> 20260719_0032`, with one Alembic Head.
+
+- `ResearchOrchestrator` owns only idempotent campaign/round progress, a round lease, bounded budget reservation, and append-only `MiningEvent` records. It does not create a second queue, result pullback, template store, factor store, Gate path, or formal memory write path.
+- Candidate generation remains `Skill -> CandidateProposal -> CandidatePlan -> materializer -> Platform Registry hard admission`. The materializer binds an otherwise unbound plan to the active immutable Registry profile before final admission.
+- Dispatch remains the existing shared `run_mock_dispatcher(..., agent_only=True, force_mode="mock")` path. Existing `ExecutionRequest`, Single/Multi batch transport, Result Ingestion, Factor Check, Factor Center, and feedback projections remain the facts of record.
+- Versioned endpoints advance a bounded round and resume its results. Runtime facts are derived from server settings and Task Center control state, never client-provided Gate or execution flags.
+- The local acceptance campaign covered four rounds and twelve unique candidates with a Gate block, recovery, duplicate result callback, Skill change, assistance request, and V2 package context rebuild.
+
+This evidence is Mock/SQLite-only. Feature flags remain default-off outside test configuration; no frontend implementation, server deployment, real provider call, real WorldQuant call, Prod Corr, or final Alpha submission is authorized by this work.

@@ -1,9 +1,50 @@
 # Alpha Mining OS 项目状态
 
-- 更新日期：2026-07-18
-- 当前治理任务：`AI-BACKEND-ARCH-AUDIT-20260718-001` 已完成本地文档审计，等待 GPT 架构验收。
-- 当前阶段：自主 AI 研究员后端处于架构审计与改造规划完成态；正式后端改造、迁移、前端改造、服务器部署和真实 WQ 调用仍冻结。
-- 安全状态：本任务未调用真实 WQ，未修改前端、业务代码或数据库迁移。
+- 更新日期：2026-07-19
+- 当前任务：`AI-AUTONOMOUS-BACKEND-V1-20260719-001` 已在独立本地 worktree 完成本地 V1 验收，等待 GPT 后端审阅。
+- 当前阶段：Phase 0 至 Stage 7 已通过；唯一 Alembic Head 为 `20260719_0032`，其下游为 `20260718_0031`。
+- 安全状态：本任务仅使用本地 Mock/SQLite；不部署、不调用真实 WQ、不调用真实 Provider、不修改前端。测试 Gate 状态只存在于本地 fixture，不改变服务器 Gate。
+- 架构前置：`AI-BACKEND-ARCH-AUDIT-20260718-001` 已通过 GPT 审阅（`wq-review@edf17d79632d02e6bc706520c1375783df6d5996`），审计契约与规划作为 V1 实施依据。
+
+## AI-AUTONOMOUS-BACKEND-V1-20260718-001 状态
+
+- 状态：`CANCELLED`；所有权已转移到 `AI-AUTONOMOUS-BACKEND-V1-20260719-001`。
+- 基线：从干净恢复提交 `44f3b898` 创建任务分支；API/worker import、唯一 migration head、Registry、CandidatePlan 到 Mock transport、Single/Multi、Result Ingestion、Factor Center、Research Package、Context/Checkpoint、Research Center、Research Memory 与 Exchange V2 离线回归均已通过。
+- 基线修复：Exchange V2 的内容哈希不再吸收自身会改变的存储遥测；legacy Factor Center CSV 的曲线只进入本地缓存，不进入主读模型。
+- 未验证边界：服务器联调、真实 WQ、真实 Provider、Prod Corr、最终提交和无人值守模式均未验证且未授权。
+- 证据：[autonomous_ai_backend_v1_baseline_20260718.md](test_reports/autonomous_ai_backend_v1_baseline_20260718.md)。
+
+## INTEGRATE-LIVE-20260718-001 状态
+
+- 状态：`DONE`，由 `RUNTIME-RECOVER-LIVE-20260718-001` 在原检查点续跑完成。
+- 共同基线：`20260718_0029_consultant_core_models`；保留 SCHED `0030`，RESULT 迁移顺延为 `0031`。
+- 唯一真实执行状态：`execution_requests + simulation_batches + simulation_batch_children`；Consultant `multi_simulation_*` 仅为领域/兼容投影。
+- 结果：48 项组合测试、17 项 Multi Transport、0029→0031 临时数据库迁移与治理测试通过；恢复后的 clean checkout 可导入 API/worker，服务器以 `0031` 运行。首批为 1 个 10-Child Multi 加 2 个 Single，后续为 3 个 10-Child Multi；42 条均完成，未见重复派发、429、活动槽位或结果链缺失。
+- 写锁：续跑完成并已释放；Gate 在受控批次结束后关闭。
+
+## RUNTIME-RECOVER-LIVE-20260718-001 状态
+
+- 状态：`DONE`；运行状态为 `LIVE_LOOP_RUNNING`。
+- Git 恢复：相对 `724ab02f`，25 个运行时/构建文件进入事实源，核心包括 `schemas.py`、`security.py`、`task_queue.py`、`worker.py`、`agent_control_service.py`、AI/campaign 支持模块、`main.py` 与镜像输入。未复制数据库、日志、缓存、部署包、备份、运行数据或凭据。
+- clean checkout：API/worker import、恢复失败关闭/可选路由 5 项、结果闭环 12 项、Result Ingestion 10 项、Allocation+CORE 26 项、Multi replay 17 项和适配器回归通过。当前工作站未安装 Docker CLI；已运行服务器镜像来自已提交恢复源，backend/worker 均健康。
+- 真实闭环：Alembic 唯一 Head 为 `20260718_0031`；42 条受控候选全部完成。首批产生 22 Fact/Normalized/Feedback 和 12 个 Factor 投影；30 条批次产生 30 Fact/Normalized/Factor/Feedback。预算 `42/42`、剩余 `0`、429 为 `0`、重复派发为 `0`。
+- 收尾：`/api/health` 返回 200，backend、worker、postgres、redis、nginx、frontend、cloudflared 均运行，RQ 默认队列为 0；Gate 已关闭并使派发会话失效。
+
+## RESULT-20260718-001 状态
+
+- 状态：`DONE`，离线实现、回归和治理收口完成。
+- 目标：Execution Transport 只产生原始执行结果；Result Ingestion 负责原始事实账本、标准化、幂等写入、Parent/Child 聚合、Checks 与 Correlation 分类；Factor Center 只作读模型；Research Center 生成 Feedback Delta；Research Exchange 只作有界导出；Data Pullback 保持冷数据归档。
+- 结果：迁移链单一 head `20260718_0030`；RESULT 10/10、CORE 10/10、Multi Transport 15/15、Research Exchange/Memory/Center 与 Data Pullback 服务层通过。完整证据见 `docs/test_reports/result_ingestion_offline_20260718.md`。
+- 写锁：已释放 research_exchange、factor_center、research_center、execution_transport。
+
+## CORE-20260718-004 基线恢复
+
+- 状态：`DONE`。
+- 原因：`CORE-20260718-003` 的迁移 `20260718_0029`、核心模型、服务、Schema 与 10 项测试仅存在于隔离分支，尚未进入当前事实源；RESULT 目标文件中另有多项仅存在于未跟踪工作树。
+- 范围：在独立临时 worktree 中整合固定 REG/CORE 提交，语义化解决治理冲突，并逐文件恢复可追溯业务源码。禁止批量纳入未跟踪文件。
+- 安全：不调用真实 WQ，不创建真实任务，不部署，不修改 API Gate 或前端；恢复验证通过前不启动 `RESULT-20260718-001` 业务开发。
+- 结果：固定提交链已语义合并；Alembic 从 `20260606_0001` 到 `20260718_0029` 共 29 个 revision 且单一 head 为 `20260718_0029`。CORE 10 项、Multi 15 项、Research Exchange、Research Memory、Research Center、Research Package/Context 离线回归通过。
+- 已知基线缺陷：Data Pullback 服务层通过但完整路由仍依赖未恢复的 `app.main` 控制面；Factor Center 既有 smoke 在 legacy curve 外置缓存断言失败，留给 RESULT 审计，不在恢复任务中改业务语义。
 
 ## GOV-20260718-004 状态
 
@@ -89,9 +130,9 @@
 - 范围：只读审计自主 AI 研究员后端现状，固化长期目标架构、差异矩阵、阶段改造计划和 V1 契约。
 - 产出：新增 `docs/design/autonomous_ai_research_architecture.md`、`docs/audits/autonomous_ai_backend_gap_analysis_20260718.md`、`docs/plans/autonomous_ai_backend_implementation_plan_20260718.md`、`docs/contracts/autonomous_ai_contracts_v1.md`。
 - 结论：现有 Platform Registry、CandidatePlan、Scheduler、Execution Adapter、Result Ingestion、Factor Center、Research Package v1、Context/Checkpoint、Research Memory v2 等可复用；必需新增表只有 5 张：Research Round、Hypothesis、MemoryProposal、Assistance Request 和 Provider Profile。Provider Secret 采用 1 张数据库表或外部 Secret Store 二选一；Campaign Event 优先复用/投影 `MiningEvent`，不新建第二套审计表。
-- 风险：本地迁移证据只到 `20260718_0030`，任务描述中的 `20260718_0031` 标记为 `UNVERIFIED/source gap`；正式编码前必须找到包含 `20260718_0031` 的干净事实源 Commit，确认唯一 Alembic Head，并在独立 worktree 开发。找不到时停止编码并报告 source gap。Agent Runtime 与 LLM Supervisor 两套语义也需先合并边界，避免第二套 AI 权限模型。
-- 审阅发布：`GOV-20260719-001` 正在重新生成累计式 `wq-review` 快照；审阅请求新增“累计历史未被覆盖或删除”核对项，并继续要求 `PASS`、`FAIL` 或 `BLOCKED`。
-- 状态：`READY_FOR_GPT_ARCH_REVIEW`；GPT 返回 `PASS` 前禁止启动正式后端改造。
+- 风险与前置：正式编码前必须找到包含 `20260718_0031` 的干净事实源 Commit，确认唯一 Alembic Head，并在独立 worktree 开发；找不到时停止编码并报告 source gap。该前置已由 `AI-AUTONOMOUS-BACKEND-V1-20260719-001` Phase 0 以 `ef06fee9` 和单 Head `20260719_0032 -> 20260718_0031` 满足。
+- 审阅发布：`GOV-20260719-001` 已建立累计式 `wq-review` 历史入口和“累计历史未被覆盖或删除”核对项；本次 V1 发布继续要求 `PASS`、`FAIL` 或 `BLOCKED`。
+- 状态：架构审阅已获 `PASS`；正式 V1 实施已转由 `AI-AUTONOMOUS-BACKEND-V1-20260719-001` 在独立 worktree 执行。
 
 ## 下一步边界
 
@@ -103,3 +144,35 @@
 - 因未发现用户原始论坛导出，使用已登录 Chrome 只读建立了 6 条高信号论坛页面的本地脱敏索引；SQLite、原始页面内容和本地 JSON 均未进入公开仓。
 - `wqc` 发布 20 条 `PENDING_HUMAN_REVIEW` 结构化候选结论，Manifest 依宪法保持空列表；`wq-review` 仅发布摘要、目录、冲突和待审项。
 - 未调用真实 Simulation、未读写凭据/Cookie/Token、未调用提交或账户修改操作；论坛自动化代码只作为禁止直用的反例记录。
+
+## REG-20260718-001 Platform Registry 上游状态
+
+- `wqa` 已在独立 `main` worktree 合并 USA Field 上下文与 43 个多 Region Dataset/Settings Scope，并在 commit `cea82e2119b8a91db818722294ef45d18e3f6a6b` 生成不可变 `REG-20260718-001` Manifest、Hash、Schema、Scope 覆盖矩阵、容量评估和离线同步验证。
+- Dataset/Settings 覆盖 USA、GLB、EUR、ASI、CHN、JPN、IND、MEA 共 43 个合法 Scope；Field 权威记录仅 USA/TOP3000/D1 完整，其余 Scope 均明确 `MISSING`，禁止跨 Region 推断。
+- 已登录平台只读 UI 验证 8 个 Region、GLB Settings 选项和 85 条 Operator；Operator 字段类型兼容矩阵仍 `UNVERIFIED`，最终组合必须失败关闭。
+- 无网络端到端验证通过：Manifest/Hash -> 1,000 行批量 SQLite staging import -> Active Snapshot -> Region/Dataset/Field type/关键词 Top-K -> Operator/Profile 校验；真实 WQ 调用为零。
+- 2C/2G/40G 下热 Scope 实测数据库约 39.4 MiB、导入约 5.5 秒、峰值 RSS 约 32.1 MiB、查询中位数约 2 ms；部署结论 `READY_WITH_LIMITS`，未执行部署。
+
+## CORE-20260718-003 Consultant Core
+
+- 新增版本化 Simulation Profile、Submission Policy、Multi Parent/Child、五类 Correlation Observation、Power Pool 历史成员和 SuperAlpha Selection 模型，迁移版本为 `20260718_0029`。
+- 统一 Scheduler 本轮仅提供不创建队列的 Mock 边界；现有 Single、Admission、API Gate、优先级和真实 WQ worker 未修改。
+- 10 项离线单元测试通过；现有旧运输回归因 Git 事实源缺少 `backend/app/db.py` 无法启动，执行级 Single 回归仍 `UNVERIFIED`。
+
+## AI-AUTONOMOUS-BACKEND-V1-20260719-001 状态
+
+- `AI-BACKEND-ARCH-AUDIT-20260718-001` 已获 GPT PASS，审阅基线为 `wq-review@edf17d79632d02e6bc706520c1375783df6d5996`。
+- Phase 0 已通过：固定本地提交 `ef06fee970ec45ccca49ce4278bb94159bd8c5bf` 的祖先 `44f3b89865037fcf60eb29649cd21d31305d9f95` 是运行恢复成果，树中包含 `20260718_0031_result_ingestion_v1.py`、Single/Multi、Result Ingestion 和恢复测试。Alembic 只有一个 Head `20260719_0032`，其 `down_revision` 为 `20260718_0031`；SQLite 升级、降级、再升级演练通过。
+- 前一 V1 任务的所有权已转移，旧 worktree 的未提交内容不构成来源。当前任务只在新的独立 worktree 修改已验证的 Git 事实源。
+- 后续实现只允许 Feature Flag 默认关闭的本地 Mock/SQLite 路径；仍禁止前端修改、服务器部署、真实 WQ、Prod Corr 和最终 Alpha 提交。
+- 额度关系、每日限额、Invalid/Cancelled 计数、Osmosis、Pyramid、奖励、限流数值及相关性阈值继续保持 `UNKNOWN`。
+- 实现结果：`886d11ad` 已交付 Round Orchestrator、Registry binding、受信运行时 API、版本化 fixture Skill 与 4 轮/12 条本地 campaign 验收。Stages 1-7、迁移演练、17 项 Multi transport 与 10 项 Result Ingestion 回归均通过。
+- 调用边界：真实 WQ、外部 Provider、Prod Corr 和最终 Alpha 提交调用均为 `0`；Self/PP 仅以本地 policy 启用，不调用外部相关性服务。
+- 状态：`READY_FOR_GPT_BACKEND_V1_REVIEW`。服务器、真实 Provider、真实 WQ、Prod Corr、最终提交和前端工作仍未验证且未授权。
+
+## SCHED-20260718-001 Single/Multi Allocation
+
+- 已恢复Platform Registry迁移0028与CORE迁移0029，并新增连续迁移`20260718_0030`。
+- 实现只读预览、不可变AllocationPlan、SHARED/SEPARATE/UNKNOWN Capacity、持久化预留、Single/Multi统一Mock调度和恢复；复用现有Batch与ExecutionRequest。
+- 25项离线测试通过；真实WQ、生产Worker和服务器Gate调用为零。
+- Single/Multi额度关系、最大Multi Parent并发、每日额度及Invalid/Cancelled计数仍为UNKNOWN。
