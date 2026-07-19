@@ -34,8 +34,8 @@
     },
     {
       "path": "knowledge_consultant_deep_collection_summary.md",
-      "sha256": "17c5dcd256e0a738eb7f6e28f8178083ef69dfea192ed437378c73495a47756a",
-      "size": 4217
+      "sha256": "7655bf5f88ce87f81403deaba300d49feebce046656f74861285087fb8014070",
+      "size": 6941
     },
     {
       "path": "MODULE_INDEX.md",
@@ -134,7 +134,7 @@
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-19T08:49:49+08:00",
+  "generated_at": "2026-07-19T10:54:09+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -161,6 +161,6 @@
     "server_status.json",
     "TASK_BOARD.md"
   ],
-  "local_commit": "a11bedee6d499616d21e5cd7b02255a45558fccd",
+  "local_commit": "9735d26701f2089c82cc1a9eed98571c26f80c05",
   "schema_version": 1
 }

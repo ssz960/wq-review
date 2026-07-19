@@ -47,3 +47,40 @@ Source knowledge commit: `wqc` `a11bedee6d499616d21e5cd7b02255a45558fccd`.
 ## Sensitive Content Check
 
 The published review artifact contains no raw forum body, comment, author profile, secret, token, cookie, account identifier, Alpha expression, submitted pool, PnL, result table, endpoint, header, or executable platform code.
+
+## Field Profile And Hypothesis Checkpoint
+
+Source knowledge commit: `wqc` `9735d26`.
+
+- Local-only corpus: 1,344 completed topic IDs from the 6,558-topic four-board catalogue.
+- Board coverage: Kunqi 592, Africa 34, Global 110, Consultant Chinese 608.
+- Local retry queue: 54 pages. These remain neither evidence nor completion.
+- Official Documents indexed locally: 74.
+- Published asset counts: 62 claims, 98 Practice Cards, 166 source-index rows, 15 correlation-pipeline evidence rows, 13 role-only or placeholder template candidates, and 13 template-evidence rows.
+
+### Design Review Priorities
+
+1. Add a private, versioned FieldProfile before assistant-led research planning. It is scoped, redacted metadata only and cannot create a CandidatePlan, prescribe a transformation, or prove a result.
+2. Record economic mechanism, abstract roles, scope, relation to earlier ideas, and a validation question in a private HypothesisCard. It can reduce duplicate research discussion but cannot prove novelty or lower correlation.
+3. Keep local correlation-graph family labels private, provenance-bound, sensitivity-tested, and advisory. They are not Self, Power Pool, or Prod checks and cannot reject, schedule, or execute a candidate.
+4. Treat autonomous credential, simulation, polling, repair, and submission-like AI workflows as prohibited integration material. Preserve hard admission, scheduler, approved adapter, human authorization, and audit boundaries.
+
+### Conflicts And Unknowns
+
+- Field-profile descriptors do not establish current field availability, operator compatibility, Alpha quality, platform behavior, or an admission outcome.
+- Distinct economic hypotheses do not prove low correlation, drawdown diversification, novelty, or performance. The association remains a private validation question.
+- Community graph methods do not define an official correlation interface or a valid candidate-elimination threshold.
+- Claimed pyramid membership, field-count, complexity, sequencing, evaluation, and progression rules remain `UNKNOWN` without current official evidence.
+- Community success rates, fixed batch rules, recovery instructions, and platform checks are not current platform facts and cannot configure the system.
+
+### Manual Review Set
+
+- `SE-041`, `SE-042`.
+- `PC-095`, `PC-096`, `PC-097`, `PC-098`.
+- `CPE-014`, `CPE-015`.
+- `public.field.profile_first_research_hypothesis`.
+- `TOPIC-40288593333527` for official-rule verification only.
+
+### Sensitive Content Check
+
+This checkpoint contains no raw forum body, comments, author identity, field identifier, formula, prompt, credential, Cookie, token, account data, private result, PnL, submitted pool, endpoint, header, or executable platform code.
