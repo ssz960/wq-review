@@ -84,3 +84,39 @@ Source knowledge commit: `wqc` `9735d26`.
 ### Sensitive Content Check
 
 This checkpoint contains no raw forum body, comments, author identity, field identifier, formula, prompt, credential, Cookie, token, account data, private result, PnL, submitted pool, endpoint, header, or executable platform code.
+
+## Queue And Correlation-Interface Checkpoint
+
+Source knowledge commit: `wqc` `7add0c0`.
+
+- Local-only corpus: 1,404 completed topic IDs from the 6,558-topic four-board catalogue.
+- Board coverage: Kunqi 609, Africa 52, Global 129, Consultant Chinese 614.
+- Local retry queue: 64 pages. These remain neither evidence nor completion.
+- Official Documents indexed locally: 74.
+- Published asset counts: 63 claims, 102 Practice Cards, 172 source-index rows, 17 correlation-pipeline evidence rows, 13 role-only or placeholder template candidates, and 13 template-evidence rows.
+
+### Design Review Priorities
+
+1. Treat a private work ledger as restart hygiene only: immutable campaign intent, opaque work identity, local review priority, explicit lifecycle, idempotency, resource bounds, and UNKNOWN recovery. It cannot report platform completion or invoke an adapter.
+2. Keep any historical local correlation proxy hypothesis-only. Until a scope-matched held-out calibration succeeds, it cannot suppress, replace, prioritize, or infer an authorized Self, Power Pool, or Prod observation.
+3. Treat direct and `author_`-prefixed correlation labels as opaque until current official population, aggregation, scope, timing, threshold, and availability semantics are captured.
+4. Treat direct remote cancellation and credential-backed raw Alpha description workflows as prohibited integration material. On interruption, preserve UNKNOWN and reconcile; assistants receive only redacted, non-executable research notes or CandidatePlans.
+
+### Conflicts And Unknowns
+
+- Local ledger state, dashboard state, and reported throughput do not establish external completion, capacity, quota, retry, or permission semantics.
+- A private historical proxy does not establish a Production Correlation metric or a safe cutoff.
+- Community questions and tutorials do not define author-prefixed correlation fields.
+- Community Alpha-type, quota, testing, reward, promotion, and leaderboard narratives are not current official rules.
+- A local interrupt does not prove remote cancellation, slot release, quota accounting, or audit state.
+
+### Manual Review Set
+
+- `CM-020`, `CM-021`.
+- `PC-099`, `PC-100`, `PC-101`, `PC-102`.
+- `CPE-016`, `CPE-017`.
+- `TOPIC-32510738962967` and `TOPIC-32032672214807` for current official-term verification only.
+
+### Sensitive Content Check
+
+This checkpoint contains no raw forum body, comments, author identity, field identifier, formula, prompt, credential, Cookie, token, account data, private result, PnL, submitted pool, endpoint, header, or executable platform code.
