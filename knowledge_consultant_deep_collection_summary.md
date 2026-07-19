@@ -1,45 +1,48 @@
 # KNOW-20260718-008 Deep Consultant Collection Review Summary
 
-Source knowledge commit: `wqc` `1231f61ba5de22ba4d6b2dffd70af366579dec03`.
+Source knowledge commit: `wqc` `a11bedee6d499616d21e5cd7b02255a45558fccd`.
 
 ## Scope
 
-- Local-only corpus: 1,068 complete forum bodies from a 6,558-topic four-board catalogue.
-- Board coverage: Kunqi 573, Africa 15, Global 81, Consultant Chinese 399.
+- Local-only corpus: 1,124 completed topic IDs from a 6,558-topic four-board catalogue.
+- Board coverage: Kunqi 573, Africa 15, Global 81, Consultant Chinese 455.
+- Local retry queue: 56 pages. These are neither evidence nor completion.
 - Official Documents indexed locally: 74.
 - This review file contains only sanitized conclusions, counts, claim IDs, and review priorities. Raw posts, comments, identities, credentials, cookies, requests, expressions, result values, and account data remain outside this repository.
 
 ## Published Knowledge Assets
 
-- 57 claims: 20 Consultant-mechanism and 37 system-engineering.
-- 89 Practice Cards, 148 source-index rows, and 13 correlation-pipeline evidence rows.
-- 11 role-only or placeholder template candidates and 11 template-evidence rows.
-- New current batch: `CM-020` evidence expansion, `SE-035` through `SE-037`, `PC-082` through `PC-089`, and `public.dataset.semantic_taxonomy_hypothesis`.
+- 60 claims: 20 Consultant-mechanism and 40 system-engineering.
+- 94 Practice Cards, 158 source-index rows, and 13 correlation-pipeline evidence rows.
+- 12 role-only or placeholder template candidates and 12 template-evidence rows.
+- New checkpoint: `SE-038` through `SE-040`, `PC-090` through `PC-094`, and `public.template.profile_scoped_compilation_hypothesis` from 10 sanitized source references.
 
 ## Design Review Priorities
 
-1. Keep research lineage, raw artifacts, and redacted decision summaries separate. GPT receives only the bounded summary.
-2. Keep desired concurrency, leases, retries, cache freshness, and reconciliation under one shared scheduler. Forum throttle reports establish no capacity or quota value.
-3. Treat correlation retrieval as a reviewed, rate-limited read stage; a Self-to-Power-Pool-to-Prod funnel remains a local hypothesis, not an admission rule.
-4. Use one private CampaignSession state owner, checkpointed phase transitions, bounded role reports, and explicit recovery. A research role cannot represent an external action as complete.
-5. Treat MCP as a narrow, typed, redacted query or draft interface. Durable workflow state, budget, admission, and authority remain outside the tool.
-6. Use role-taxonomy tags and typed registry snapshots to organize research hypotheses before any formula construction. They are not correlation or admission evidence.
-7. Treat direct platform command/control tools, client cooldown patches, session clients, and autonomous submission patterns as prohibited integration material.
-8. Keep Osmosis selection and allocation discussion as manual research context. Eligibility, points, rewards, and account-write semantics remain UNKNOWN.
+1. Compile each generated or template-derived candidate into a dependency manifest, then resolve it against a profile hash and approved registry snapshot before CandidatePlan review.
+2. Keep MCP response projections purpose-specific, typed, redacted, and bounded. Raw artifacts and durable workflow state stay private and outside assistant context.
+3. Record robustness work as a private ExperimentSpec with baseline lineage, intended variation, scope, outcome state, and opaque result reference. No forum variation or result threshold is adopted.
+4. Keep correlation observations idempotent and stateful: READY, PENDING, THROTTLED, UNAVAILABLE, MALFORMED, and UNKNOWN must remain distinct. Do not use a missing value or a source sentinel as a usable result.
+5. Keep desired concurrency, retries, cache freshness, and reconciliation under one shared scheduler. Forum reports establish no platform capacity, quota, reset, or rate-limit value.
+6. Treat MCP, RAG, template, and research-agent components as advisory only. They cannot receive credentials, raw expressions, results, adapter access, budget authority, or account-write capability.
+7. Treat personal composite candidate scores as hypothesis-only review aids. They cannot imply PPA, Osmosis, reward, Value Factor, admission, or promotion policy.
+8. Treat direct platform command/control tools, client cooldown patches, session clients, autonomous submission, and copied request code as prohibited integration material.
 
 ## Conflicts And Unknowns
 
-- A local Self and Power Pool-style correlation report is a counterexample to a monotonic screening funnel only; it does not define a metric, pool, threshold, or interface rule.
-- Forum reports on correlation caching, retry behavior, comparison pools, and differentiated result states are engineering evidence only. Exact endpoints, limits, and response semantics require approved local validation.
-- No forum source in this batch establishes current simulation capacity, reset behavior, invalid/cancelled accounting, retry scope, PPA rules, promotion terms, or reward mechanics.
-- Field-shape claims, check-failure repair narratives, semantic taxonomies, temporal-health scores, field-family triage, and AI workflow outcomes remain scoped hypotheses requiring private validation.
-- A local change that suppresses throttle or wait behavior is non-adoptable and does not establish an external error contract.
+- Template and AST anecdotes do not prove parser completeness, registry freshness, field type, enabled operator state, semantic suitability, or admission eligibility.
+- The current Self, Power Pool, Prod, pagination, pending, rate-limit, authentication, and response contracts remain unverified. Direct forum code cannot establish them.
+- Forum robustness studies do not establish a portable setting, comparison method, threshold, or authority to create a simulation.
+- A local Self and Power Pool-style correlation report is counterevidence to a monotonic screening funnel only; it does not define a metric, pool, threshold, or interface rule.
+- No forum source in this checkpoint establishes current simulation capacity, reset behavior, invalid/cancelled accounting, retry scope, PPA rules, promotion terms, Value Factor mechanics, or reward mechanics.
+- Osmosis selection and allocation discussion remains manual research context only. Eligibility, points, rewards, and account-write semantics remain UNKNOWN.
 
 ## Manual Review Set
 
-- `CM-020`, `SE-035`, `SE-036`, `SE-037`.
-- `PC-082`, `PC-084`, `PC-085`, `PC-087`, `PC-088`, `PC-089`, and `public.dataset.semantic_taxonomy_hypothesis`.
-- The detailed source locations and all evidence-level distinctions are in the `wqc` source index and review summary.
+- `SE-038`, `SE-039`, `SE-040`.
+- `PC-090`, `PC-091`, `PC-092`, `PC-093`, `PC-094`.
+- `public.template.profile_scoped_compilation_hypothesis`.
+- The detailed evidence distinctions and source locations remain in `wqc`; this review repository intentionally does not duplicate forum material.
 
 ## Sensitive Content Check
 
