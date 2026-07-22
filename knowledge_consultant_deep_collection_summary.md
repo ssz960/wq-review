@@ -120,3 +120,19 @@ Source knowledge commit: `wqc` `7add0c0`.
 ### Sensitive Content Check
 
 This checkpoint contains no raw forum body, comments, author identity, field identifier, formula, prompt, credential, Cookie, token, account data, private result, PnL, submitted pool, endpoint, header, or executable platform code.
+## Alpha Practice Collection Checkpoint 2026-07-22
+
+- Local-only Chrome corpus: 1,562 unique successful topic bodies out of 6,558 catalogue topics; 84 unresolved/retryable entries are not evidence. Board counts are reconciled from the local state file, not inferred from failed pages.
+- Published `wqc` source commit: `909fec155e5fb71e7674691e6a8432bdff41a59b`.
+- This review increment covers 15 newly selected source pointers, 7 sanitized Practice Cards (`PC-111`–`PC-117`), 2 non-executable template candidates, 2 template-evidence rows, and 5 coverage rows.
+- Review themes: hypothesis-first alpha research; Value Factor overfitting and category-diversity postmortems; MCP field/operator assistance versus direct clients; regional low-self-correlation hypotheses; Prod-correlation reduction as an experiment axis; and bounded local batch/concurrency patterns.
+- Direct client code, credentials, requests, identifiers, expressions, platform results, reward values, PnL, submitted pools, and account data remain excluded. The code-class sources are threat-model or generic offline-engineering evidence only.
+- Local `wq-forum-rag refresh` was run against `WQPCommunityState_20260719_consultant_bodies_1562.json`; raw JSON, SQLite, and full post bodies remain in the task temp directory only.
+
+### Review priorities
+
+`PC-111`, `PC-112`, `PC-113`, `PC-114`, `PC-115`, `PC-116`, `PC-117`, `public.hypothesis_first_alpha_brief`, `public.region_diversity_experiment`, `TOPIC-38213050258839`, `TOPIC-38300250037015`, `TOPIC-41048220908183`, and `TOPIC-40790058369303`.
+
+### Sensitive Content Check
+
+No secret or credential value was published. Any matches for words such as `token`, `Cookie`, `credential`, `request`, or `formula` are exclusion-language annotations only; no raw body, comment, account identity, field identifier, Alpha expression, PnL, submitted pool, endpoint, request header, or executable platform client was added.
