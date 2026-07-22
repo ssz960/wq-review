@@ -148,3 +148,9 @@ No secret or credential value was published. Any matches for words such as `toke
 ### Sensitive Content Check
 
 No secret or credential value was published. Matches for policy words such as `token`, `Cookie`, `credential`, `request`, or `formula` are exclusion annotations only; no raw body, account identity, field identifier, Alpha expression, private result, endpoint, request header, or executable platform client was added.
+
+## Collection Progress Checkpoint 2026-07-22 (no new public evidence)
+
+- The local-only Chrome collector reached 1,676 unique successful topic bodies; 85 entries remain unresolved/retryable and are not evidence.
+- Latest published `wqc` commit: `088a05ba70edb27f6530755e11868ac33a7d62c9`.
+- Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_1676.json`. This progress-only checkpoint adds no new public claim, formula, threshold, source interpretation, or platform rule.
