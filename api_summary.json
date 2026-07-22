@@ -1,4 +1,19 @@
 {
+  "autonomous_route_count": 3,
+  "autonomous_routes": [
+    {
+      "method": "POST",
+      "path": "/api/v2/autonomous/campaigns/mock"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/autonomous/providers"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/autonomous/readiness"
+    }
+  ],
   "groups": {
     "api/agent-sessions": 6,
     "api/auth": 1,
@@ -18,9 +33,10 @@
     "api/settings": 1,
     "api/task-center": 11,
     "api/task-runs": 13,
-    "api/template-library": 10
+    "api/template-library": 10,
+    "api/v2": 3
   },
-  "route_count": 151,
+  "route_count": 154,
   "routes": [
     {
       "method": "GET",
@@ -625,7 +641,19 @@
     {
       "method": "POST",
       "path": "/api/template-library/templates/{template_id}/test-expand"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/autonomous/campaigns/mock"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/autonomous/providers"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/autonomous/readiness"
     }
   ],
-  "source": "backend/app/main.py"
+  "source": "FastAPI app.openapi()"
 }

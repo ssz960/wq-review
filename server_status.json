@@ -1,4 +1,33 @@
 {
-  "source": "not_provided",
-  "status": "UNVERIFIED"
+  "alembic_head": "20260719_0032",
+  "campaign": {
+    "budget_limit": 6,
+    "budget_used": 6,
+    "duplicate_execution_requests": 0,
+    "duplicate_result_facts": 0,
+    "execution_requests": 6,
+    "rounds": 2,
+    "unique_candidates": 6
+  },
+  "deployed_commit": "e8f3ad09a9232ad1fd68394514e92ba07f2ade2f",
+  "generated_at": "2026-07-22T05:46:58Z",
+  "registry": {
+    "snapshot": "REG-20260718-001",
+    "source_commit": "8548481557fbf51b970a7a22f988bad19f1f7732"
+  },
+  "safety": {
+    "gate_open": false,
+    "real_calls": 0,
+    "real_execution_enabled": false,
+    "real_provider_enabled": false
+  },
+  "services": {
+    "backend": true,
+    "health_endpoint": true,
+    "legacy_reads": true,
+    "postgres": true,
+    "redis": true,
+    "worker": true
+  },
+  "status": "PASS"
 }
