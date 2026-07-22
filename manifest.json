@@ -25,7 +25,7 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "ad859ba5bd92fd825e324299f7377b1cee9c03ebcacbbd58f5cc508901d25d78",
+      "sha256": "766acef27415cac80507c308e1be049f8394abdf48a0339e0463fef9db71ec3b",
       "size": 3295
     },
     {
@@ -150,8 +150,8 @@
     },
     {
       "path": "recent_changes.md",
-      "sha256": "33ea2923044af584a6a3c4c7ea737046fa225c16edbc36c4d54b94c344c6db02",
-      "size": 722
+      "sha256": "68f49bc1adaa1f5c355639a8f6ad4247df5fb474e73c6006ebd0438d49991cca",
+      "size": 720
     },
     {
       "path": "recent_tests.md",
@@ -180,7 +180,7 @@
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-22T18:27:08+08:00",
+  "generated_at": "2026-07-22T18:30:08+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -216,7 +216,7 @@
     "TASK_BOARD.md",
     "test_reports/autonomous_ai_server_mock_v1_20260719.md"
   ],
-  "local_commit": "e01b4c7d466e26ab4a0a8bb7bdb7c9bcbff575a2",
+  "local_commit": "1736160a724fd2f00136bd33b3812b3b5eda2b0f",
   "registry_snapshot": "REG-20260718-001",
   "registry_source_commit": "8548481557fbf51b970a7a22f988bad19f1f7732",
   "schema_version": 2,
