@@ -191,3 +191,10 @@ No secret or credential value was published. Matches for policy words such as `t
 - The local-only Chrome collector reached 2,006 unique successful topic bodies; 88 entries remain unresolved/retryable and outside evidence.
 - Latest published `wqc` commit: `6139cf30f3111b78a24d18a24a28f1e8b86f5f4e`.
 - Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_2006.json`. This progress-only checkpoint adds no new public interpretation or platform rule.
+
+## Retry and Alpha Practice Checkpoint 2026-07-22
+
+- Retried 20 unresolved pages; 18 succeeded. The local-only Chrome corpus now contains 2,024 unique successful topic bodies; 70 unresolved/retryable entries remain outside evidence.
+- Latest published `wqc` commit: `90d4e249296cf6e611ee669f609c0ca8a5327687`.
+- Added to the review set: 12 source pointers and 10 sanitized Practice Cards (`PC-138`–`PC-147`) covering LLM semantic context, operator validation, post-update/PPA review, IND troubleshooting, batch replay, bounded AI runs, template discovery, and Combine postmortems.
+- Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_2024.json`. Direct code, requests, credentials, identifiers, expressions, thresholds, private results, PnL, submitted pools, endpoints, and external mutations remain excluded.
