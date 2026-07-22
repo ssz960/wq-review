@@ -113,10 +113,10 @@
 
 ## AI-SERVER-MOCK-V1-20260719-001
 
-- 状态：`BLOCKED`。唯一阻断是目标服务器 SSH 在 TCP 建连后未返回协议 banner，因而无法取得清理、资源、备份、迁移、服务和 Active Registry 证据。
-- 本地完成：恢复提交 `e95a23f`；唯一 Alembic Head `20260719_0032`；OpenAPI 实测包含 `/api/v2/autonomous`；四类失败关闭 Readiness 和 masked Provider 列表已实现。
-- 安全结论：未上传、未清理服务器、未迁移生产数据库、未调用 Provider/WQ，所有真实执行开关保持关闭。不得标记服务器 Mock PASS。
+- 状态：`DONE`。`AI autonomous server mock V1: PASS`；`NEXT_STATE: READY_FOR_REAL_PROVIDER_PREFLIGHT`。
+- 服务器完成 `20260718_0031 -> 20260719_0032`，唯一 Head；Active Registry 为非 fixture；两轮六候选 Mock Campaign、Gate 关闭、worker 重启和重复终态回调均通过。
+- 安全结论：真实 Provider、WQ 与相关性调用为零，真实执行 Gate 和 Autonomous real flags 均关闭；旧系统读取与服务保持正常。
 
 - 源码恢复：原 `.git` 不可用，按用户授权将缺失能力视为未实现并重新开发；服务器和 `wq-review` 不作为源码来源。
 - 范围：后端、数据库迁移、部署、Readiness/Preflight 与服务器 Mock Campaign。
-- 状态：`IN_PROGRESS`；完成服务器 Registry、迁移、服务和 Mock 闭环验证前不得标记 PASS。
+- 状态：`DONE`；服务器 Registry、迁移、服务和 Mock 闭环证据见本任务唯一报告。

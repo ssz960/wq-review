@@ -58,7 +58,7 @@
 
 ## 相关报告
 
-2026-07-22：目标服务器 TCP 22 可连接，但 SSH 协议握手无响应；未能开始部署前检查、清理、备份或迁移，任务按失败关闭原则标记 `BLOCKED`。
+2026-07-22：SSH 恢复后完成部署盘点、数据库与目录备份、Docker 缓存清理、干净 release 切换及 `0031 -> 0032` 迁移；最终健康、资源和回滚点均已验证。
 
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
 - `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md`

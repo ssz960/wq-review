@@ -28,7 +28,7 @@
     "scheduler_recovery_state_machine"
   ],
   "source_branch": "codex/AI-SERVER-MOCK-V1-20260719-001-root",
-  "source_commit": "a7c858ab5ab60517668cacc87f3bf44e143b37f6",
+  "source_commit": "e90a7172fd57d6b1d3fcda2259935842cda2dec4",
   "source_of_truth": "local_git_repository",
   "test_runner_file_count": 52,
   "test_runner_files": [

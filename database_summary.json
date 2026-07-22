@@ -33,7 +33,7 @@
     "20260718_0028_registry_runtime_bridge.py",
     "20260718_0029_core_runtime_bridge.py",
     "20260718_0030_single_multi_allocation.py",
-    "20260719_0031_result_ingestion.py",
+    "20260718_0031_result_ingestion.py",
     "20260719_0032_autonomous_v1.py"
   ],
   "model_source": "backend/app/models.py",
