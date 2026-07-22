@@ -11,9 +11,13 @@
   },
   "deployed_commit": "e8f3ad09a9232ad1fd68394514e92ba07f2ade2f",
   "generated_at": "2026-07-22T05:46:58Z",
-  "registry": {
-    "snapshot": "REG-20260718-001",
-    "source_commit": "8548481557fbf51b970a7a22f988bad19f1f7732"
+  "registry_snapshot": "REG-20260718-001",
+  "registry_source": "server_active_platform_registry_non_fixture",
+  "registry_source_commit": "8548481557fbf51b970a7a22f988bad19f1f7732",
+  "result_ingestion": {
+    "fact_source": "execution_result_facts",
+    "feedback_projection": "research_feedback_deltas",
+    "normalized_projection": "normalized_execution_results"
   },
   "safety": {
     "gate_open": false,
@@ -22,12 +26,12 @@
     "real_provider_enabled": false
   },
   "services": {
-    "backend": true,
-    "health_endpoint": true,
-    "legacy_reads": true,
-    "postgres": true,
-    "redis": true,
-    "worker": true
+    "backend": "healthy",
+    "health_endpoint": "http_200",
+    "legacy_reads": "healthy",
+    "postgres": "healthy",
+    "redis": "healthy",
+    "worker": "healthy"
   },
   "status": "PASS"
 }

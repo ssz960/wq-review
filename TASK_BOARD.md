@@ -27,7 +27,7 @@
 | `REG-20260718-002` | platform_registry, deployment_and_operations | root | BLOCKED | `REG-20260718-001`, wqa `cea82e2119b8a91db818722294ef45d18e3f6a6b` | `a4ae0da` | `docs/test_reports/platform_registry_server_validation_20260718.md` |
 | `CORE-20260718-003` | core_models, execution_transport, factor_center | root | DONE | `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/consultant_core_model_validation_20260718.md` |
 | `SCHED-20260718-001` | candidate_plan, task_center, scheduler, execution_transport | root | DONE | `CORE-20260718-003`, `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/single_multi_allocation_validation_20260718.md` |
-| `AI-SERVER-MOCK-V1-20260719-001` | ai_mode, platform_registry, task_center, execution_transport, research_center, provider_and_skills, deployment_and_operations | server-mock-v1 | DONE | local recovery `e95a23f`; server Active Registry and 0031 | `e90a7172fd57d6b1d3fcda2259935842cda2dec4` | `docs/test_reports/autonomous_ai_server_mock_v1_20260719.md` |
+| `AI-SERVER-MOCK-V1-20260719-001` | ai_mode, platform_registry, task_center, execution_transport, research_center, provider_and_skills, deployment_and_operations | server-mock-v1 | DONE/PASS | local recovery `e95a23f`; server Active Registry and 0031 | `e90a7172fd57d6b1d3fcda2259935842cda2dec4` | `docs/test_reports/autonomous_ai_server_mock_v1_20260719.md`; cumulative history `docs/archive/completed_asset_migration_index.md` |
 
 ## 写锁
 
@@ -42,3 +42,5 @@
 其他模块在本任务中仅更新治理文档，不授权业务代码写入。
 
 `AI-SERVER-MOCK-V1-20260719-001` 已完成并释放后端、迁移、部署与治理文档写锁；未获得前端、真实 Provider、真实 WQ、相关性服务或最终提交权限。
+
+`AI-SERVER-MOCK-V1-20260719-001` 的累计审阅历史保留于 [完成资产迁移索引](history/completed_asset_migration_index.md)，不会因新快照生成而覆盖或删除。

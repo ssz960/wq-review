@@ -2,6 +2,8 @@
 
 本索引是当前模块文档的唯一入口；子设计文档由对应主模块维护。
 
+已完成资产的累计审阅入口见[完成资产迁移索引](history/completed_asset_migration_index.md)。该索引保留 REG、CORE、SCHED、RESULT、RUNTIME-RECOVER、TPL 和 Allocation 历史到当前权威文档的迁移关系。
+
 | 模块 | 文档 | 主要代码入口 | 状态摘要 |
 | --- | --- | --- | --- |
 | consultant_core | [consultant_core_model_design](modules/consultant_core_model_design.md) | `backend/app/mining/consultant_core.py` | Additive Multi/Policy/Correlation/Pool mock core; real WQ unchanged. |

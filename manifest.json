@@ -25,8 +25,8 @@
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "e58e1e3f40a3a641487aeca7faf709afcdaf8307417a45fac08adbc1916a583a",
-      "size": 3291
+      "sha256": "40caeb5bc76724efa62b9d026676d64095f4280ad75582a933d79960ac93a31d",
+      "size": 3295
     },
     {
       "path": "database_summary.json",
@@ -50,13 +50,13 @@
     },
     {
       "path": "history/completed_asset_migration_index.md",
-      "sha256": "6e8ccfaa6e4c4f358aaac2be77dfbfc79a9cab5f3e978df6ae43a21a2a5182e1",
-      "size": 958
+      "sha256": "c5444c98a3b06592f01b995a9d918af90caf22316d2d5b5b11a4c37029babb82",
+      "size": 2347
     },
     {
       "path": "MODULE_INDEX.md",
-      "sha256": "95af09ef6abea10e93aae6d9290a1c97f8dcb95feb879c0472fdd211cb289f93",
-      "size": 3374
+      "sha256": "2c70331b866597535ca0efa356bda7a6d24b075c6477b57eff0e131a14d21cdd",
+      "size": 3616
     },
     {
       "path": "modules/ai_mode.md",
@@ -140,8 +140,8 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "3c98dc8c9b38d0515c53f1cdeb8b04e1ab7fc7ff401f11413972c3b6414f660b",
-      "size": 11309
+      "sha256": "1c96daad909cf88332b77e724eeb563d0cfacce4bcfb43c24e4144a568b0f7a8",
+      "size": 11565
     },
     {
       "path": "README.md",
@@ -150,7 +150,7 @@
     },
     {
       "path": "recent_changes.md",
-      "sha256": "ddd52f79fc81298740e402b0770db99b622c2dbf99f0ef3c575688960e795ed9",
+      "sha256": "970e53bd55a02804b00a299aa7fe021bf4d445825e32aa76e9fbceefcb726734",
       "size": 733
     },
     {
@@ -160,27 +160,27 @@
     },
     {
       "path": "review_request.md",
-      "sha256": "4fd698e9cbd89a1d7092abe22a047cd3130f869057fc6c54bee75b1819eb1278",
-      "size": 280
+      "sha256": "02f06eb88d973891e3c6b1312a30eca92b8f7b613ba63969894d089ea8068241",
+      "size": 1023
     },
     {
       "path": "server_status.json",
-      "sha256": "edb80b72481eb031db1aec94516e0fbfc2f77c401d84f8cd41aabfc2190de9fe",
-      "size": 790
+      "sha256": "13a126cc01a80e28656a6f2b24525b6fb8793cb12c45dbbac2e348192d975ab1",
+      "size": 1072
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "23021ad75c183511569f4df2438377d610bd40a1c111ec91ace62ca795a41262",
-      "size": 5399
+      "sha256": "b0fb70d87166c32b38fa6a0fd25ea88dec7d3bd4cffe63815d78b05b6b0560e6",
+      "size": 5658
     },
     {
       "path": "test_reports/autonomous_ai_server_mock_v1_20260719.md",
-      "sha256": "798aaaa7950e5d4d5a99426571190576abb4f7c53b66f7683b93c60c4b278c5e",
-      "size": 5023
+      "sha256": "14f84eb81f51d683fb5e0186e9413a7bbe7bcef43e60e32717d7e1c6dd132190",
+      "size": 5453
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-22T13:54:55+08:00",
+  "generated_at": "2026-07-22T18:21:44+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -216,13 +216,13 @@
     "TASK_BOARD.md",
     "test_reports/autonomous_ai_server_mock_v1_20260719.md"
   ],
-  "local_commit": "4cefa54c25aa0c0907f76d1b6b8b67bdaf05cdb3",
+  "local_commit": "d0f866d960f5ed4bc5567e375f5b88280eb457b0",
   "registry_snapshot": "REG-20260718-001",
   "registry_source_commit": "8548481557fbf51b970a7a22f988bad19f1f7732",
   "schema_version": 2,
   "server_deployed_commit": "e8f3ad09a9232ad1fd68394514e92ba07f2ade2f",
   "test_report": {
     "path": "test_reports/autonomous_ai_server_mock_v1_20260719.md",
-    "sha256": "798aaaa7950e5d4d5a99426571190576abb4f7c53b66f7683b93c60c4b278c5e"
+    "sha256": "14f84eb81f51d683fb5e0186e9413a7bbe7bcef43e60e32717d7e1c6dd132190"
   }
 }

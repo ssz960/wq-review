@@ -4,6 +4,7 @@
 - 当前任务：`AI-SERVER-MOCK-V1-20260719-001` 已完成，状态 `DONE/PASS`。
 - 当前阶段：服务器 Mock V1 已验收，等待 GPT 审阅；不得提前进入真实 Provider 预检。
 - 安全状态：真实 Provider、真实 WQ、Self/PP/Prod Corr、最终提交和前端修改均禁止；服务器 Gate 必须保持关闭。
+- 累计审阅入口：[完成资产迁移索引](history/completed_asset_migration_index.md)，其中保留 Autonomous V1 架构契约、设计、V1 测试、REG、CORE、SCHED、RESULT、RUNTIME-RECOVER、TPL、Allocation Decision 和 Capacity Policy。
 
 ## GOV-20260718-004 状态
 

@@ -12,7 +12,7 @@ No real Provider, WorldQuant, Self/PP/Prod Corr, or Alpha submission call was ma
 
 ## Deployment And Rollback
 
-- Local deployment source: commit `e8f3ad0` and its linear ancestors; backend image includes runtime fix commit `910d6d8`.
+- Local implementation evidence: committed source `e90a7172fd57d6b1d3fcda2259935842cda2dec4`; deployment release commit `e8f3ad09a9232ad1fd68394514e92ba07f2ade2f` and its linear ancestors; backend image includes runtime fix commit `910d6d8`.
 - Server migration: `20260718_0031 -> 20260719_0032`; one Alembic Head confirmed.
 - Database backup: compressed PostgreSQL dump, gzip integrity checked, about 8.9 MB; checksum recorded on server.
 - Deployment backup: pre-deployment archive about 45 MB plus intact rollback deployment directory.
@@ -23,7 +23,7 @@ No real Provider, WorldQuant, Self/PP/Prod Corr, or Alpha submission call was ma
 ## Route And Service Evidence
 
 - `/api/health`: HTTP 200.
-- `/api/v2/autonomous/readiness`: mounted and HTTP 200.
+- `/api/v2/autonomous/readiness`: mounted and HTTP 200. The published API summary is generated from the actual `FastAPI app.openapi()` schema with all `/api/v2/autonomous/*` operations retained, rather than by source-text route matching.
 - backend, worker, PostgreSQL, Redis, nginx, frontend, and tunnel containers: running; PostgreSQL and Redis healthy.
 - Task Center, Factor Center, Factor/Result reads, and Research Storage: HTTP 200.
 - Legacy WorldQuant service: remained active and was not restarted or modified.
@@ -36,7 +36,7 @@ No real Provider, WorldQuant, Self/PP/Prod Corr, or Alpha submission call was ma
 - `ready_for_real_single`: not configured, not armed; execution Gate closed.
 - `ready_for_consultant_multi`: not configured, not armed; consultant multi disabled.
 - Provider API returned an empty list and exposed no secret material.
-- Active Registry: `REG-20260718-001`, with a non-fixture source commit; no fallback to `/api/fields` occurred.
+- Active Registry: `REG-20260718-001`, source commit `8548481557fbf51b970a7a22f988bad19f1f7732`, server Active Platform Registry provenance, not a fixture; no fallback to `/api/fields` occurred.
 
 ## Mock Campaign
 
@@ -57,6 +57,7 @@ Final facts:
 - Worker was restarted between rounds and returned to the shared queue.
 - Round 2 terminal callback was repeated; counts remained six requests and six facts.
 - Campaign events reused `MiningEvent`; no Campaign Event table, queue, Factor store, or Mock state machine was added.
+- `real_calls=0` for the full acceptance run.
 
 ## Resources And Boundaries
 
