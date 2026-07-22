@@ -136,3 +136,15 @@ This checkpoint contains no raw forum body, comments, author identity, field ide
 ### Sensitive Content Check
 
 No secret or credential value was published. Any matches for words such as `token`, `Cookie`, `credential`, `request`, or `formula` are exclusion-language annotations only; no raw body, comment, account identity, field identifier, Alpha expression, PnL, submitted pool, endpoint, request header, or executable platform client was added.
+
+## Collection Continuation Checkpoint 2026-07-22
+
+- Local-only Chrome corpus: 1,621 unique successful topic bodies out of 6,558 catalogue topics; 85 unresolved/retryable entries remain outside evidence.
+- Latest published `wqc` source commit: `a26814dc9cc370d2f4056db7a1e08ff5c1f01dfe`.
+- Added to the review set: 9 source pointers, 7 sanitized Practice Cards (`PC-118`–`PC-124`), and 6 coverage rows for template compilation, local correlation-script risk, Select-rule generation, progression narratives, operator/neutralization hypotheses, and metadata-mutation boundaries.
+- Direct code sources remain threat-model or offline patterns only. Credentials, requests, identifiers, expressions, thresholds, private results, PnL, submitted pools, endpoints, and external mutations are excluded.
+- Local RAG refresh source: `WQPCommunityState_20260719_consultant_bodies_1621.json`; raw JSON, SQLite, and full bodies stay in the task temporary directory.
+
+### Sensitive Content Check
+
+No secret or credential value was published. Matches for policy words such as `token`, `Cookie`, `credential`, `request`, or `formula` are exclusion annotations only; no raw body, account identity, field identifier, Alpha expression, private result, endpoint, request header, or executable platform client was added.
