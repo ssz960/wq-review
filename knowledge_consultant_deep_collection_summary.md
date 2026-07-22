@@ -161,3 +161,9 @@ No secret or credential value was published. Matches for policy words such as `t
 - Latest published `wqc` commit: `a6937592b5cfcdea635373c4a4f408816a889035`.
 - Added to the review set: 14 source pointers, 13 sanitized Practice Cards (`PC-125`–`PC-137`), and 6 coverage rows for robustness, regional tuning, dual-agent supervision, Osmosis boundaries, Python Alpha uncertainty, LLM semantic validation, local filter/environment manifests, dependency diff review, and mutation risks.
 - Direct code and platform-facing workflows remain threat-model or offline patterns only. No credential, request, identifier, expression, threshold, private result, endpoint, PnL, submitted pool, or external mutation is included.
+
+## Collection Progress Checkpoint 2026-07-22 (no new public evidence)
+
+- The local-only Chrome collector reached 1,796 unique successful topic bodies; 85 entries remain unresolved/retryable and outside evidence.
+- Latest published `wqc` commit: `80b5e6d4f57eab73ecfc6747e2a5e5a38a5cd952`.
+- The state file was reconciled against successful JSONL topic IDs and local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_1796.json`. This progress-only checkpoint adds no new public interpretation or platform rule.
