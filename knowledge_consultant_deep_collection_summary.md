@@ -384,3 +384,9 @@ No secret or credential value was published. Matches for policy words such as `t
 - The local-only Chrome collector reached 5,012 unique successful topic bodies out of the 6,558-topic four-board Consultant catalogue; 75 unresolved/retryable entries remain outside evidence.
 - Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_5012.json`.
 - This is a coverage-only update: it adds no claim, formula, threshold, author identity, platform request, code, private result, or platform rule. Raw JSON, SQLite, complete posts, comments, and account/session material remain local-only.
+
+## Collection Progress Checkpoint 2026-07-23 (no new public evidence)
+
+- The local-only Chrome collector reached 5,159 unique successful topic bodies out of the 6,558-topic four-board Consultant catalogue; 228 unresolved/retryable entries remain outside evidence.
+- Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_5159.json`.
+- The collector is paused pending a user-controlled Chrome sign-in. This is a coverage-only update: no claim, formula, threshold, author identity, platform request, code, private result, or platform rule was added. Raw JSON, SQLite, complete posts, comments, and account/session material remain local-only.
