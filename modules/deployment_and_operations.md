@@ -34,7 +34,7 @@
 
 ## 当前实现
 
-现有 guard/deploy/local 脚本存在；安全的 wq-review 生成器已落地。独立 wqb/wqc 已在 `wqmining` 外建立本地 checkout 和 Public 骨架，不作为 nested repo。审计发现的大量根目录历史部署包、数据库、日志和临时脚本仍保留原位并纳入 ignore/risk 清单。服务器当前运行状态为 `UNVERIFIED`。
+现有 guard/deploy/local 脚本存在；安全的 wq-review 生成器已落地。独立 wqb/wqc 已在 `wqmining` 外建立本地 checkout 和 Public 骨架，不作为 nested repo。前序 Server Mock 已记录干净 release、备份、回滚和 `0031 -> 0032`；本任务的 `0032 -> 0033` 部署未开始，因为 SSH 在认证前没有提供 banner。
 
 ## 已确认设计
 
@@ -44,11 +44,13 @@
 
 - 当前 Git 仅跟踪 32 个文件而工作树约 475 个未跟踪条目，完整源码提交边界尚未治理。
 - 根目录遗留传输包/脚本和 `backend/backend/` 重复数据目录。
-- 现有部署脚本的端到端回滚与服务器状态格式：`UNVERIFIED`。
+- 当前真实 Provider 预检无法重新读取服务器资源、服务、Registry、备份或回滚点；唯一阻断为 SSH banner 缺失，不能用前序快照替代部署验收。
 
 ## 验证记录
 
 2026-07-18 完成静态仓库/Git 审计；离线治理测试已验证链接、索引、任务 ID、重复目录检测、敏感拦截、manifest 契约、Git checkout 保留和 review 重现性，全部 PASS。wq-review、wqb、wqc 均已匿名读取验证；两个资产骨架各 6 个治理/schema 文件且 manifest 为空。未部署服务器、未调用 WQ。
+
+2026-07-22：本地 `0032 -> 0033` 和唯一 Alembic Head、真实 FastAPI OpenAPI 和 Provider 预检 Stub 已验证；服务器 SSH banner 未响应，未创建服务器备份、未同步 release、未迁移、未重启服务、未测资源，真实 Provider/WQ 调用均为零。
 
 ## 多窗口仓库发布
 
@@ -58,7 +60,8 @@
 
 ## 相关报告
 
-2026-07-22：SSH 恢复后完成部署盘点、数据库与目录备份、Docker 缓存清理、干净 release 切换及 `0031 -> 0032` 迁移；最终健康、资源和回滚点均已验证。
+2026-07-22：前序 Server Mock 已完成部署盘点、数据库与目录备份、Docker 缓存清理、干净 release 切换及 `0031 -> 0032` 迁移；当前 Provider 预检因 SSH banner 阻断，未执行新的服务器操作。
 
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
 - `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md`
+- `docs/test_reports/real_provider_preflight_v1_20260722.md`

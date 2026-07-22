@@ -1,9 +1,9 @@
 # Alpha Mining OS 项目状态
 
 - 更新日期：2026-07-22
-- 当前任务：`AI-SERVER-MOCK-V1-20260719-001` 已完成，状态 `DONE/PASS`。
-- 当前阶段：服务器 Mock V1 已验收，等待 GPT 审阅；不得提前进入真实 Provider 预检。
-- 安全状态：真实 Provider、真实 WQ、Self/PP/Prod Corr、最终提交和前端修改均禁止；服务器 Gate 必须保持关闭。
+- 当前任务：`AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001`，状态 `BLOCKED`。
+- 当前阶段：本地预检实现、迁移和 Stub 验证已完成；服务器 SSH 在认证前未提供 banner，部署和真实 Provider 验收未开始。
+- 安全状态：真实 WQ、Single、Multi、Self/PP/Prod Corr、最终提交和前端修改均禁止；服务器 Gate 必须保持关闭，预检不得创建 `ExecutionRequest`。
 - 累计审阅入口：[完成资产迁移索引](history/completed_asset_migration_index.md)，其中保留 Autonomous V1 架构契约、设计、V1 测试、REG、CORE、SCHED、RESULT、RUNTIME-RECOVER、TPL、Allocation Decision 和 Capacity Policy。
 
 ## GOV-20260718-004 状态
@@ -121,3 +121,13 @@
 - 源码恢复：原 `.git` 不可用，按用户授权将缺失能力视为未实现并重新开发；服务器和 `wq-review` 不作为源码来源。
 - 范围：后端、数据库迁移、部署、Readiness/Preflight 与服务器 Mock Campaign。
 - 状态：`DONE`；服务器 Registry、迁移、服务和 Mock 闭环证据见本任务唯一报告。
+
+## AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001
+
+- 状态：`BLOCKED`。本地实现提交为 `95674fd4ab6ef6e6fb1eb6383ae43b65e9f50ceb`，治理证据提交为 `777e157608ab64fbbaff15b0a0583cd372935fdf`；独立 `codex/AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001-implementation` worktree 的写锁已释放。
+- 范围：唯一 Provider 调用入口、Secret 解析、脱敏上下文、严格 JSON Schema、Proposal Dry Run、审计、错误分类、限流与重启幂等；服务器部署与受限验收。
+- 不可变边界：WQ Gate 关闭，所有 WQ/Single/Multi/Correlation/提交调用为零，不能修改旧 `/worldquant`、前端或创建真实 `ExecutionRequest`。
+- 本地事实：`20260719_0032 -> 20260722_0033` 迁移和唯一 Head 已由隔离 SQLite 测试验证；实际 FastAPI `app.openapi()` 包含四个 `/api/v2/autonomous/*` 路由；成功、401/403、429/500、超时、断网、空/非 JSON、缺字段、超长、恶意权限字段、回调重放和重启重放 Stub 均已覆盖。
+- 唯一阻断：TCP 可达但 SSH 在认证前不返回 banner，无法检查服务器、创建备份、部署 `95674fd4ab6ef6e6fb1eb6383ae43b65e9f50ceb` 或执行 `0032 -> 0033`。本任务真实 Provider 请求、Proposal、`ExecutionRequest` 增量和 WQ 调用均为 `0`。
+- 服务器最后记录事实：部署 Commit `e8f3ad09a9232ad1fd68394514e92ba07f2ade2f`、Alembic Head `20260719_0032`、非 fixture Active Registry `REG-20260718-001`；这些是前序验收记录，未被本任务重新读取。
+- 后续边界：仅在 SSH 服务恢复后，重新执行服务器盘点、备份、干净部署、迁移和最多十次串行真实 Provider 预检；当前不得进入真实 Provider 后续状态。

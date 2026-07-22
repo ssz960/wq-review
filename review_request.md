@@ -1,21 +1,19 @@
 # 当前审阅请求
 
-# Autonomous AI Server Mock V1 Review Request
+# Real Provider Preflight V1 Review Request
 
-Review the sanitized, cumulative evidence for
-`AI-SERVER-MOCK-V1-20260719-001`. Confirm that the server Mock acceptance is
-bound to the recorded local implementation commit, server deployment commit,
-Active Registry source commit, unique Alembic Head, and report hash.
+Review `AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001` as a blocked deployment
+task. Confirm that the local implementation has one fail-closed Provider
+preflight entry, a sanitized audit record, bounded retry and idempotency rules,
+and no route to execution or WQ controls. Confirm the actual FastAPI OpenAPI
+summary contains all four `/api/v2/autonomous/*` routes.
 
-Verify that the FastAPI OpenAPI-derived summary retains all
-`/api/v2/autonomous/*` routes, the server status contains no secret material or
-unverified placeholders, and the two-round, six-candidate Mock Campaign kept
-the Gate and real execution disabled.
+Confirm that the report and server status record zero real Provider requests,
+zero Proposals, zero `ExecutionRequest` delta, and zero WQ calls rather than a
+false PASS. The only blocking condition must be the missing server SSH banner,
+while the retained Server Mock, V1 contract/design/test, and REG/CORE/SCHED/
+RESULT/RUNTIME-RECOVER/TPL history remain linked from the cumulative migration
+index.
 
-Checklist: confirm that cumulative completed history has not been covered,
-replaced without a migration link, or deleted. Use the cumulative history entry
-point to inspect the retained V1 contract, design, local validation, REG, CORE,
-SCHED, RESULT, RUNTIME-RECOVER, TPL, and allocation/capacity history.
-
-This request does not authorize real Provider preflight, real execution,
-correlation services, or final Alpha submission.
+Do not authorize real Provider, WQ, Single, Multi, correlation or submission
+operations from this review.

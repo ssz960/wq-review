@@ -20,18 +20,18 @@
     },
     {
       "path": "api_summary.json",
-      "sha256": "4d4f66d772b4401972b1dffe7b8a149a86a75599acbee947ec8b8901a2c3e2ac",
-      "size": 14712
+      "sha256": "3661626195d66683b234b94c2f6c90c1a092e55194966fcc4647d4459c02ae81",
+      "size": 14902
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "766acef27415cac80507c308e1be049f8394abdf48a0339e0463fef9db71ec3b",
-      "size": 3295
+      "sha256": "635ecc38666423fa43bbd5f230fc04584c80c216831a35d8151fdf161820c26b",
+      "size": 3350
     },
     {
       "path": "database_summary.json",
-      "sha256": "23161d98d4bc590fe34fdf99e14c3cb06b7a4736f07e48afc3275dad763f6aaa",
-      "size": 4310
+      "sha256": "efff09fa84d8d004b770cdefb752f7f9a21a72916cd771dfe2335806b5ee55bf",
+      "size": 4425
     },
     {
       "path": "history/autonomous_ai_backend_v1_20260719.md",
@@ -50,18 +50,18 @@
     },
     {
       "path": "history/completed_asset_migration_index.md",
-      "sha256": "c5444c98a3b06592f01b995a9d918af90caf22316d2d5b5b11a4c37029babb82",
-      "size": 2347
+      "sha256": "a8290c26a7a0f4306491643d134f845a8dd9882894c07de1e5721d4df230ba4c",
+      "size": 2561
     },
     {
       "path": "MODULE_INDEX.md",
-      "sha256": "2c70331b866597535ca0efa356bda7a6d24b075c6477b57eff0e131a14d21cdd",
-      "size": 3616
+      "sha256": "c10930c564e17ae17cdbb273b4633c0c8644480eb433a27adf41176580de6ef8",
+      "size": 3683
     },
     {
       "path": "modules/ai_mode.md",
-      "sha256": "cd89a7734aa5c31bf2f53e3ff36694175ec7a5cef830faf1e6619575ba57b9af",
-      "size": 2568
+      "sha256": "7ef3d8821bb9767404a88f1c99f63ed0477d6e5cdbfe44d63e4c8427fe1471a1",
+      "size": 3771
     },
     {
       "path": "modules/allocation_decision_matrix.md",
@@ -80,8 +80,8 @@
     },
     {
       "path": "modules/deployment_and_operations.md",
-      "sha256": "3fce1ad5a6a33b911d224e1d702abbb5a93312249f505f99ea78b54391d859b9",
-      "size": 3583
+      "sha256": "52222dea05918a4588a6d6fdac3a13d20037347fe82d46c1e10554e90a93072e",
+      "size": 4072
     },
     {
       "path": "modules/execution_transport.md",
@@ -105,8 +105,8 @@
     },
     {
       "path": "modules/provider_and_skills.md",
-      "sha256": "17bd76bce6c41ddcecb8cc6b166f51bd2de21244c15b46ba53677712ca97e635",
-      "size": 3634
+      "sha256": "774d7da839e8bdbccc53134a045e11323469f6cb5f00b6879364b886fa6ccf33",
+      "size": 4970
     },
     {
       "path": "modules/research_center.md",
@@ -140,47 +140,52 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "1c96daad909cf88332b77e724eeb563d0cfacce4bcfb43c24e4144a568b0f7a8",
-      "size": 11565
+      "sha256": "b5bb04b8869c4e3c2cdb22bf5ada19012d71391d1d0e35f6a5aa2b0422aea8eb",
+      "size": 13377
     },
     {
       "path": "README.md",
-      "sha256": "9d1be50f6bec2f5e739a5caa7a16bb0e1840e653c2d2386fed91103735a91ab6",
-      "size": 768
+      "sha256": "1d51826970728f835b2afa8989ab4931da6f5a7efe2fbfa8503d54584e3f65bb",
+      "size": 856
     },
     {
       "path": "recent_changes.md",
-      "sha256": "68f49bc1adaa1f5c355639a8f6ad4247df5fb474e73c6006ebd0438d49991cca",
-      "size": 720
+      "sha256": "8cce65dbc0615355838392c5eb3279f05103308a248fb52d9432a53b58263ac7",
+      "size": 729
     },
     {
       "path": "recent_tests.md",
-      "sha256": "6c7f8191b0631f8783ba1508a6e4edcf87b3b15c3a0708ea3447efccc38aae4f",
-      "size": 215
+      "sha256": "d028ffd3715ffae59398950fd452846a47aba791c111152f769087a466e55c58",
+      "size": 270
     },
     {
       "path": "review_request.md",
-      "sha256": "02f06eb88d973891e3c6b1312a30eca92b8f7b613ba63969894d089ea8068241",
-      "size": 1023
+      "sha256": "338f61071064518cc19fd54d907a765698e0e19b09a3acd4ba26cecfc5692872",
+      "size": 937
     },
     {
       "path": "server_status.json",
-      "sha256": "13a126cc01a80e28656a6f2b24525b6fb8793cb12c45dbbac2e348192d975ab1",
-      "size": 1072
+      "sha256": "aa2f2bc01b3975d9f754cc954c95fecde66bfad2365b0a4405f4f13ec7aef1cc",
+      "size": 1776
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "b0fb70d87166c32b38fa6a0fd25ea88dec7d3bd4cffe63815d78b05b6b0560e6",
-      "size": 5658
+      "sha256": "4cbb36a959197edae95309f4f94d87000bfc797b3c1323290eb1ce71df629f5a",
+      "size": 6638
     },
     {
       "path": "test_reports/autonomous_ai_server_mock_v1_20260719.md",
       "sha256": "14f84eb81f51d683fb5e0186e9413a7bbe7bcef43e60e32717d7e1c6dd132190",
       "size": 5453
+    },
+    {
+      "path": "test_reports/real_provider_preflight_v1_20260722.md",
+      "sha256": "75d740a181f44345c1151c12a194c342aa6f97224852c2bcd607c07cf886cf68",
+      "size": 7491
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-22T18:30:08+08:00",
+  "generated_at": "2026-07-22T21:06:35+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
@@ -214,15 +219,17 @@
     "review_request.md",
     "server_status.json",
     "TASK_BOARD.md",
-    "test_reports/autonomous_ai_server_mock_v1_20260719.md"
+    "test_reports/autonomous_ai_server_mock_v1_20260719.md",
+    "test_reports/real_provider_preflight_v1_20260722.md"
   ],
-  "local_commit": "1736160a724fd2f00136bd33b3812b3b5eda2b0f",
+  "local_commit": "dad7b0239542186222d67efe8a8752214db2c861",
   "registry_snapshot": "REG-20260718-001",
   "registry_source_commit": "8548481557fbf51b970a7a22f988bad19f1f7732",
-  "schema_version": 2,
+  "schema_version": 3,
   "server_deployed_commit": "e8f3ad09a9232ad1fd68394514e92ba07f2ade2f",
+  "task_id": "AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001",
   "test_report": {
-    "path": "test_reports/autonomous_ai_server_mock_v1_20260719.md",
-    "sha256": "14f84eb81f51d683fb5e0186e9413a7bbe7bcef43e60e32717d7e1c6dd132190"
+    "path": "test_reports/real_provider_preflight_v1_20260722.md",
+    "sha256": "75d740a181f44345c1151c12a194c342aa6f97224852c2bcd607c07cf886cf68"
   }
 }

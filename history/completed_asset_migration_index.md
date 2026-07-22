@@ -11,6 +11,7 @@ deleted whenever a newer document supersedes an older one.
 | Autonomous V1 design | `docs/design/autonomous_ai_backend_v1_design_20260719.md` | Prior design entry -> retained V1 design |
 | Autonomous V1 local validation | `docs/test_reports/autonomous_ai_backend_v1_20260719.md` | Prior local validation -> retained pre-server evidence |
 | Autonomous server Mock V1 | `docs/test_reports/autonomous_ai_server_mock_v1_20260719.md` | Current server acceptance report |
+| Real Provider preflight V1 | `docs/test_reports/real_provider_preflight_v1_20260722.md` | New preflight evidence -> retains Server Mock and architecture history; current run is blocked before server deployment |
 | REG / Platform Registry | `docs/modules/platform_registry.md` | Completed Registry asset -> current Registry authority |
 | CORE / consultant core | `docs/modules/consultant_core_model_design.md` | Completed core asset -> current core-model authority |
 | SCHED / single-multi allocation | `docs/modules/single_multi_allocation_design.md` | Completed allocation asset -> deterministic allocator authority |

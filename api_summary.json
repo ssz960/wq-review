@@ -1,9 +1,13 @@
 {
-  "autonomous_route_count": 3,
+  "autonomous_route_count": 4,
   "autonomous_routes": [
     {
       "method": "POST",
       "path": "/api/v2/autonomous/campaigns/mock"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/autonomous/provider-preflight/run"
     },
     {
       "method": "GET",
@@ -34,9 +38,9 @@
     "api/task-center": 11,
     "api/task-runs": 13,
     "api/template-library": 10,
-    "api/v2": 3
+    "api/v2": 4
   },
-  "route_count": 154,
+  "route_count": 155,
   "routes": [
     {
       "method": "GET",
@@ -645,6 +649,10 @@
     {
       "method": "POST",
       "path": "/api/v2/autonomous/campaigns/mock"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/autonomous/provider-preflight/run"
     },
     {
       "method": "GET",

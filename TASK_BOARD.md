@@ -28,6 +28,7 @@
 | `CORE-20260718-003` | core_models, execution_transport, factor_center | root | DONE | `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/consultant_core_model_validation_20260718.md` |
 | `SCHED-20260718-001` | candidate_plan, task_center, scheduler, execution_transport | root | DONE | `CORE-20260718-003`, `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/single_multi_allocation_validation_20260718.md` |
 | `AI-SERVER-MOCK-V1-20260719-001` | ai_mode, platform_registry, task_center, execution_transport, research_center, provider_and_skills, deployment_and_operations | server-mock-v1 | DONE/PASS | local recovery `e95a23f`; server Active Registry and 0031 | `e90a7172fd57d6b1d3fcda2259935842cda2dec4` | `docs/test_reports/autonomous_ai_server_mock_v1_20260719.md`; cumulative history `docs/archive/completed_asset_migration_index.md` |
+| `AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001` | ai_mode, provider_and_skills, deployment_and_operations, research_center, platform_registry, task_center | real-provider-preflight-v1 | BLOCKED | `AI-SERVER-MOCK-V1-20260719-001`; responsive server SSH, Active Registry and Provider credential | `95674fd4ab6ef6e6fb1eb6383ae43b65e9f50ceb` (implementation), `777e157608ab64fbbaff15b0a0583cd372935fdf` (evidence) | `docs/test_reports/real_provider_preflight_v1_20260722.md` |
 
 ## 写锁
 
@@ -44,3 +45,5 @@
 `AI-SERVER-MOCK-V1-20260719-001` 已完成并释放后端、迁移、部署与治理文档写锁；未获得前端、真实 Provider、真实 WQ、相关性服务或最终提交权限。
 
 `AI-SERVER-MOCK-V1-20260719-001` 的累计审阅历史保留于 [完成资产迁移索引](history/completed_asset_migration_index.md)，不会因新快照生成而覆盖或删除。
+
+`AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001` 已释放 ai_mode、provider_and_skills、deployment_and_operations、research_center、platform_registry 与 task_center 的后端及治理文档写锁。本地 Provider 预检入口、审计/Schema/Proposal Dry Run 模型与迁移已提交为 `95674fd4ab6ef6e6fb1eb6383ae43b65e9f50ceb`；服务器 SSH banner 阻断部署和真实 Provider 验收。前端、旧 `/worldquant`、真实执行 adapter、WQ Gate、相关性服务和最终提交路径未修改。

@@ -1,6 +1,6 @@
 {
   "data_exported": false,
-  "migration_count": 32,
+  "migration_count": 33,
   "migration_directory": "backend/alembic/versions",
   "migrations": [
     "20260606_0001_baseline_v12.py",
@@ -34,10 +34,11 @@
     "20260718_0029_core_runtime_bridge.py",
     "20260718_0030_single_multi_allocation.py",
     "20260718_0031_result_ingestion.py",
-    "20260719_0032_autonomous_v1.py"
+    "20260719_0032_autonomous_v1.py",
+    "20260722_0033_real_provider_preflight.py"
   ],
   "model_source": "backend/app/models.py",
-  "table_count": 86,
+  "table_count": 88,
   "tables": [
     "agent_conversation_checkpoints",
     "agent_queue_lane_state",
@@ -91,6 +92,8 @@
     "platform_registry_snapshots",
     "pool_memberships",
     "priority_events",
+    "provider_preflight_audits",
+    "provider_preflight_budgets",
     "research_artifacts",
     "research_assets",
     "research_assistance_requests",

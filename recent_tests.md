@@ -4,3 +4,4 @@
 
 - `autonomous_ai_backend_v1_20260719.md` — FAIL
 - `autonomous_ai_server_mock_v1_20260719.md` — PASS
+- `real_provider_preflight_v1_20260722.md` — BLOCKED
