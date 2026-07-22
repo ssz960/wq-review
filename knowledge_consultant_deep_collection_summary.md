@@ -198,3 +198,9 @@ No secret or credential value was published. Matches for policy words such as `t
 - Latest published `wqc` commit: `90d4e249296cf6e611ee669f609c0ca8a5327687`.
 - Added to the review set: 12 source pointers and 10 sanitized Practice Cards (`PC-138`–`PC-147`) covering LLM semantic context, operator validation, post-update/PPA review, IND troubleshooting, batch replay, bounded AI runs, template discovery, and Combine postmortems.
 - Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_2024.json`. Direct code, requests, credentials, identifiers, expressions, thresholds, private results, PnL, submitted pools, endpoints, and external mutations remain excluded.
+
+## Collection Progress Checkpoint 2026-07-22 (no new public evidence)
+
+- The local-only Chrome collector reached 2,077 unique successful topic bodies; 70 entries remain unresolved/retryable and outside evidence.
+- Latest published `wqc` commit: `75347d624d8b20596cd5e289d6ae27b6fd6fed9a`.
+- Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_2077.json`. This progress-only checkpoint adds no new public interpretation or platform rule.
