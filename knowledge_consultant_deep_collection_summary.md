@@ -154,3 +154,10 @@ No secret or credential value was published. Matches for policy words such as `t
 - The local-only Chrome collector reached 1,676 unique successful topic bodies; 85 entries remain unresolved/retryable and are not evidence.
 - Latest published `wqc` commit: `088a05ba70edb27f6530755e11868ac33a7d62c9`.
 - Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_1676.json`. This progress-only checkpoint adds no new public claim, formula, threshold, source interpretation, or platform rule.
+
+## Alpha Practice Rotation Checkpoint 2026-07-22
+
+- Local-only Chrome corpus: 1,736 unique successful topic bodies out of 6,558 catalogue topics; 85 unresolved/retryable entries remain outside evidence.
+- Latest published `wqc` commit: `a6937592b5cfcdea635373c4a4f408816a889035`.
+- Added to the review set: 14 source pointers, 13 sanitized Practice Cards (`PC-125`–`PC-137`), and 6 coverage rows for robustness, regional tuning, dual-agent supervision, Osmosis boundaries, Python Alpha uncertainty, LLM semantic validation, local filter/environment manifests, dependency diff review, and mutation risks.
+- Direct code and platform-facing workflows remain threat-model or offline patterns only. No credential, request, identifier, expression, threshold, private result, endpoint, PnL, submitted pool, or external mutation is included.
