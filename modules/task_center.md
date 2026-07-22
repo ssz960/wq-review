@@ -60,15 +60,3 @@ CandidatePlan allocation now has a read-only deterministic preview and a
 confirmed immutable plan. Single and Multi share Admission evidence, Capacity
 reservation, existing Batch tables, scheduler entry and audit. Capacity absence
 returns DEFER; preview never creates an ExecutionRequest.
-
-## INTEGRATE-LIVE-20260718-001
-
-Confirmed Allocation decisions and legacy admitted requests converge on the same Batch scheduler without a second execution-state table. Server dispatch stayed disabled because the clean Git runtime could not start.
-
-## RUNTIME-RECOVER-LIVE-20260718-001
-
-Tracked `main.py`, queue/worker and campaign dependencies now start from a clean checkout. The authorized run used only the scoped `run_mock_dispatcher(..., strategy_run_id=<run>, agent_only=True, force_mode="real")` path; it never used an unscoped resume or generic dispatch. After terminal reconciliation, `_update_task_center_control_state(action="close_api_gate")` recorded the close, paused dispatch and invalidated the session. The default queue and capacity reservations are empty.
-
-## AI-AUTONOMOUS-BACKEND-V1-20260719-001
-
-V1 reads Task Center control state as trusted runtime input and cannot accept a client override for Gate or execution mode. Its only dispatch bridge is scoped, agent-only, and forced to the mock adapter in local acceptance. Gate closure produces a bounded blocked round without spending execution budget; reopening permits the same admitted requests to recover through the shared scheduler. No task-center policy, queue schema, production worker, or server Gate setting was changed for this delivery.

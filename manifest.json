@@ -1,36 +1,4 @@
 {
-  "cumulative_history": {
-    "archived_documents": [
-      "archive/completed_asset_migration_index.md",
-      "archive/20260718_completed_assets/platform_registry_upstream_validation_20260718.md",
-      "archive/20260718_completed_assets/consultant_core_model_design.md",
-      "archive/20260718_completed_assets/consultant_core_model_validation_20260718.md",
-      "archive/20260718_completed_assets/core_baseline_recovery_20260718.md",
-      "archive/20260718_completed_assets/single_multi_allocation_design.md",
-      "archive/20260718_completed_assets/allocation_decision_matrix.md",
-      "archive/20260718_completed_assets/capacity_policy_and_slot_model.md",
-      "archive/20260718_completed_assets/scheduler_recovery_state_machine.md",
-      "archive/20260718_completed_assets/single_multi_allocation_validation_20260718.md",
-      "archive/20260718_completed_assets/result_ingestion_offline_20260718.md",
-      "archive/20260718_completed_assets/runtime_recover_live_20260718.md",
-      "archive/20260718_completed_assets/template_candidate_promotion_20260718.md"
-    ],
-    "asset_ids": [
-      "REG-20260718-001",
-      "CORE-20260718-003",
-      "CORE-20260718-004",
-      "SCHED-20260718-001",
-      "RESULT-20260718-001",
-      "RUNTIME-RECOVER-LIVE-20260718-001",
-      "TPL-20260718-001",
-      "consultant_core",
-      "single_multi_allocation",
-      "allocation_decision",
-      "capacity_policy",
-      "scheduler_recovery"
-    ],
-    "entrypoint": "archive/completed_asset_migration_index.md"
-  },
   "deterministic": true,
   "excluded_sensitive_content": {
     "archives_backups_and_environment_files": true,
@@ -51,118 +19,28 @@
     },
     {
       "path": "api_summary.json",
-      "sha256": "c241210cb988908bb44a13a4043f7dec0b3cdea0bb9f52d6266a5f44de3dfd9d",
-      "size": 14303
+      "sha256": "9e0091b3cc3ccb2a7e3c37b1083a9e7d450713cd489d4ce5c9473906542cb59e",
+      "size": 14135
     },
     {
       "path": "architecture_summary.json",
-      "sha256": "e60dfcf547cfeaa3329c383b0839c3b60c0143c8768b1594e535f82a6f116b85",
-      "size": 2154
-    },
-    {
-      "path": "archive/20260718_completed_assets/allocation_decision_matrix.md",
-      "sha256": "aba126f7cd0123cd7553c7777a610db75c3a81ac2ae449f39242f29094ce78a2",
-      "size": 925
-    },
-    {
-      "path": "archive/20260718_completed_assets/capacity_policy_and_slot_model.md",
-      "sha256": "fcceba438095721b68e6d11b5b7cfd5320e8d64e8e3022ae979eef0230338299",
-      "size": 908
-    },
-    {
-      "path": "archive/20260718_completed_assets/consultant_core_model_design.md",
-      "sha256": "31864861e1403212aa65d6b4f3770624b37e06d9b1edc3debe22cabc82d8be25",
-      "size": 1023
-    },
-    {
-      "path": "archive/20260718_completed_assets/consultant_core_model_validation_20260718.md",
-      "sha256": "8e836d8d0a7b5a2e26361f76e04116bb2fd0b892d86b592dc83da5827a72541d",
-      "size": 1025
-    },
-    {
-      "path": "archive/20260718_completed_assets/core_baseline_recovery_20260718.md",
-      "sha256": "615e6e53c66c33a138f33d9c028e54e2e48bb33ed306a21ba65a700c34ae399d",
-      "size": 2825
-    },
-    {
-      "path": "archive/20260718_completed_assets/platform_registry_upstream_validation_20260718.md",
-      "sha256": "1b6b8d785cab3dfa8b21d5791512c9d55a68211aebcd2d5fd52376f21d72cf17",
-      "size": 2560
-    },
-    {
-      "path": "archive/20260718_completed_assets/result_ingestion_offline_20260718.md",
-      "sha256": "62743aaf20f9d88cf61b84dd38c36bdaeedb0ea65ded631bf7bc21e1a8ab6563",
-      "size": 3543
-    },
-    {
-      "path": "archive/20260718_completed_assets/runtime_recover_live_20260718.md",
-      "sha256": "2b4445fc4085803f2dfdaaff2a3684ba8de0c2ed33381c78058f37a03b7adfcf",
-      "size": 3566
-    },
-    {
-      "path": "archive/20260718_completed_assets/scheduler_recovery_state_machine.md",
-      "sha256": "e107540b7da1709db0665ba7acff64698069bf5b006b626219ea18dd8b380897",
-      "size": 943
-    },
-    {
-      "path": "archive/20260718_completed_assets/single_multi_allocation_design.md",
-      "sha256": "0a38c7eeb0ae0b2e11a4ed97201e2da30b21d3ee22792c9a6517137eeb42bafb",
-      "size": 1398
-    },
-    {
-      "path": "archive/20260718_completed_assets/single_multi_allocation_validation_20260718.md",
-      "sha256": "2b318d5f0a0f098996d31cd1b9db369f7c77f19c4d40ab36d8893c44ab60373d",
-      "size": 1431
-    },
-    {
-      "path": "archive/20260718_completed_assets/template_candidate_promotion_20260718.md",
-      "sha256": "f72be0fd53f056183db1cd4ea5fa0fd5785737f1d021a51e9f43cca460922332",
-      "size": 1459
-    },
-    {
-      "path": "archive/completed_asset_migration_index.md",
-      "sha256": "8aa381009ef93dc7fed1d77350c5196ce84047ef5589c838be5fb31d40c21514",
-      "size": 3960
-    },
-    {
-      "path": "audits/autonomous_ai_backend_architecture_review_request_20260718.md",
-      "sha256": "f245c37d838d34a1d1312ccd307c57ac96211df51b51bd9d421f7988c2b3d982",
-      "size": 1813
-    },
-    {
-      "path": "audits/autonomous_ai_backend_gap_analysis_20260718.md",
-      "sha256": "c8cbd0519805436fcd4c12b27fb49cf68f08a47cb3c071c728e9790eeb875ada",
-      "size": 17929
-    },
-    {
-      "path": "audits/autonomous_ai_backend_v1_review_request_20260719.md",
-      "sha256": "c116f8af864402e81cf09cdff2cb434e85d385478579385cd0f2e024927edb8b",
-      "size": 2568
-    },
-    {
-      "path": "contracts/autonomous_ai_contracts_v1.md",
-      "sha256": "007c3c74b89bf9801aac8810d20d91d009e54a8c75a3aca62bdd4fc3ebafd678",
-      "size": 8812
+      "sha256": "e10339555710bb8d9323bf0f49ac22818c07d45afdb497b827b368c3d4eb0194",
+      "size": 3291
     },
     {
       "path": "database_summary.json",
-      "sha256": "a080897038043e6df662678899a6462c66069a92089d672da6c47a6609b83065",
-      "size": 4437
-    },
-    {
-      "path": "design/autonomous_ai_research_architecture.md",
-      "sha256": "12e152813c4af922638affe6c2140aac7afde27840ad11f21e9027cbb7ea22fa",
-      "size": 12861
+      "sha256": "3326bdf6e8e946d429b1e2d2cf42988751474736a4c8a56a57b3b136d345507e",
+      "size": 4310
     },
     {
       "path": "MODULE_INDEX.md",
-      "sha256": "445e3a3c506659f336f368c4bf1d87be925d2475a6029550590231f4f05196b4",
-      "size": 4698
+      "sha256": "95af09ef6abea10e93aae6d9290a1c97f8dcb95feb879c0472fdd211cb289f93",
+      "size": 3374
     },
     {
       "path": "modules/ai_mode.md",
-      "sha256": "ff5365be58129783ea86a7e6edf493551d6d7897283b1396cff157c989d1608f",
-      "size": 4280
+      "sha256": "3bcd67c8ec092fb3a4804ae44b51c301c4c46a1ff0f8c5a96b06db843798d345",
+      "size": 2555
     },
     {
       "path": "modules/allocation_decision_matrix.md",
@@ -175,19 +53,24 @@
       "size": 908
     },
     {
+      "path": "modules/consultant_core_model_design.md",
+      "sha256": "6746744bdb2bd09c5682ce53e288f0be6cb8cabff7662c6f41460ced86206d44",
+      "size": 779
+    },
+    {
       "path": "modules/deployment_and_operations.md",
-      "sha256": "d6fb4a76bc0fe64ae235cdb7804ee7c34e6b2baded061f4254127d7adca9d5ee",
-      "size": 4237
+      "sha256": "3281535e7b9d01e643fe3b2a1b3db69dd42c5d7997e59f4b83922f5f0898950c",
+      "size": 3573
     },
     {
       "path": "modules/execution_transport.md",
-      "sha256": "705087f6cb1f6b0b8304fb68f97ebde88f1d409a8b6bbabc98ff9ebd19afcb50",
-      "size": 5015
+      "sha256": "b0eee90e12f027a552096c2ef31e4a699812027e97b721afdfcfa7626fb099e5",
+      "size": 2480
     },
     {
       "path": "modules/factor_center.md",
-      "sha256": "d109aa0f0e70c8ac394a4477efee97d71bc30cf5d4f23ec6025eddb1b6f7fdf0",
-      "size": 3786
+      "sha256": "60e08c8d4a0648756fad34fa79239bef983b3e8b232d9f901cfc9255bb984f33",
+      "size": 2115
     },
     {
       "path": "modules/frontend_shell.md",
@@ -196,23 +79,23 @@
     },
     {
       "path": "modules/platform_registry.md",
-      "sha256": "528c7f116b9fbce6e99ef11195628cf55c9708c749fc544b0cac94aaf5f0db6b",
-      "size": 3282
+      "sha256": "853500bba6c27cb756c7df0f4fa7ad6f23b3c4f482b5afbfcf46eac1f37a07d3",
+      "size": 2622
     },
     {
       "path": "modules/provider_and_skills.md",
-      "sha256": "f2e48c1fe526410522beb1a1a7da95cebf2238a315b6bac012a2279685dc37f4",
-      "size": 4369
+      "sha256": "8c1b65fbadb4af4b0765d4f6935a90c6bd4cd21999f4943985141d6cded3e544",
+      "size": 3601
     },
     {
       "path": "modules/research_center.md",
-      "sha256": "d80a3fd800cc11f11ac93b5a29a66e0e1b155c505d2b163b2f50cdc19d7316f4",
-      "size": 4053
+      "sha256": "01a1f2fc0449bfe1121a7b90c2d543b97e2917f8389b82ec2f590bdf8a223f99",
+      "size": 2997
     },
     {
       "path": "modules/research_exchange.md",
-      "sha256": "12fcebb1ab36c59f755a1d82a8fb31b1e9093b0a533295fd86eccffbd2622d56",
-      "size": 4891
+      "sha256": "c0d4a0e1809766b1b6b14064fb76dfdcd5ca8ae57e4adda8943884fd7c60f917",
+      "size": 3210
     },
     {
       "path": "modules/scheduler_recovery_state_machine.md",
@@ -226,8 +109,8 @@
     },
     {
       "path": "modules/task_center.md",
-      "sha256": "dca99a57bc95e3e3d5426315af3654d6fdec1f14e2334feb3fe6236f9c61bfa0",
-      "size": 3876
+      "sha256": "c9e4de3272405d205eeba852d63663a29cc9f465311de4b6740d84d29127f6fa",
+      "size": 2555
     },
     {
       "path": "modules/template_center.md",
@@ -235,34 +118,29 @@
       "size": 2024
     },
     {
-      "path": "plans/autonomous_ai_backend_implementation_plan_20260718.md",
-      "sha256": "79c337d89b71dbc47916170098d942928098b45df7e07f5a0156991139fcba43",
-      "size": 10121
-    },
-    {
       "path": "PROJECT_STATUS.md",
-      "sha256": "65fbb8f2ce51ef09b52fe996028911870ad457a23faf1989a849cff536b6904f",
-      "size": 19378
+      "sha256": "d70c43195ae2cf7e7dfdad41d16ce6012a5ea744f25b43dc5ccc4bf9602358fa",
+      "size": 11490
     },
     {
       "path": "README.md",
-      "sha256": "624d77aec6957bde21bb0695f77d46d9ee73011a1b88b6944a7954b663a44436",
-      "size": 870
+      "sha256": "a60cfb8cd39ca5802d2ee10bb2311d648c4b67a56360a9cf5015622aebd67e35",
+      "size": 571
     },
     {
       "path": "recent_changes.md",
-      "sha256": "27416c9188be2cba4b9d2ba148099ad0a50556f0c5868512318cf94ded14310c",
-      "size": 751
+      "sha256": "3891db124abd196ecc29f9c280c732cf71a0bcc8ca131cc02df7849b5f5ca321",
+      "size": 182
     },
     {
       "path": "recent_tests.md",
-      "sha256": "4a3e91d6494c073c2e72e42023b68d73ea9659ace90488ce7db3c78fcce9cbef",
-      "size": 811
+      "sha256": "d2c0a6acf6e13b35311b070cfeed68a291f2c9611028dcbedc57976bede9ef5b",
+      "size": 165
     },
     {
       "path": "review_request.md",
-      "sha256": "73a79cdf4c2dcc5273245175db58e0233a1b9b8d02c160b520cdefa2f60b0eca",
-      "size": 2590
+      "sha256": "c7075cf71dcd9fa5de309ad6d4e2c6c37e8505dd86c96ee47ad76bb896da1570",
+      "size": 236
     },
     {
       "path": "server_status.json",
@@ -271,59 +149,22 @@
     },
     {
       "path": "TASK_BOARD.md",
-      "sha256": "635ab4d320e4ea799ee8c42ff4f456db17af35e715ee95b36e8914ea036815da",
-      "size": 11078
-    },
-    {
-      "path": "test_reports/ai_backend_architecture_review_delivery_governance_20260719.md",
-      "sha256": "1929bf30ecd316f4147c03452d3476cd0f65c46b75c8dfafee35a8da0e3ef889",
-      "size": 1880
-    },
-    {
-      "path": "test_reports/autonomous_ai_backend_architecture_audit_20260718.md",
-      "sha256": "cdc3affb76b69f858c8399dc6ade87b1d72395686d7276260c5ac12ba0a8a95a",
-      "size": 2938
-    },
-    {
-      "path": "test_reports/autonomous_ai_backend_v1_20260719.md",
-      "sha256": "abcdeec837520df85ecde53889601fde4e4e4dddff3c219ac9d0f470fde99ee5",
-      "size": 4357
-    },
-    {
-      "path": "test_reports/autonomous_ai_backend_v1_baseline_20260718.md",
-      "sha256": "bb844c2d1e5125a7c41508987b24950facda3f6ac258c6fa11a08b18acd6c8bf",
-      "size": 3498
+      "sha256": "6ff042a297f1a8def23aede7f3b665188767bcdfb6526b7e813fd4c77bceed8f",
+      "size": 5542
     }
   ],
   "full_source_exported": false,
-  "generated_at": "2026-07-19T13:03:52+08:00",
+  "generated_at": "2026-07-22T12:48:30+08:00",
   "included_files": [
     "AGENTS_SUMMARY.md",
     "api_summary.json",
     "architecture_summary.json",
-    "archive/20260718_completed_assets/allocation_decision_matrix.md",
-    "archive/20260718_completed_assets/capacity_policy_and_slot_model.md",
-    "archive/20260718_completed_assets/consultant_core_model_design.md",
-    "archive/20260718_completed_assets/consultant_core_model_validation_20260718.md",
-    "archive/20260718_completed_assets/core_baseline_recovery_20260718.md",
-    "archive/20260718_completed_assets/platform_registry_upstream_validation_20260718.md",
-    "archive/20260718_completed_assets/result_ingestion_offline_20260718.md",
-    "archive/20260718_completed_assets/runtime_recover_live_20260718.md",
-    "archive/20260718_completed_assets/scheduler_recovery_state_machine.md",
-    "archive/20260718_completed_assets/single_multi_allocation_design.md",
-    "archive/20260718_completed_assets/single_multi_allocation_validation_20260718.md",
-    "archive/20260718_completed_assets/template_candidate_promotion_20260718.md",
-    "archive/completed_asset_migration_index.md",
-    "audits/autonomous_ai_backend_architecture_review_request_20260718.md",
-    "audits/autonomous_ai_backend_gap_analysis_20260718.md",
-    "audits/autonomous_ai_backend_v1_review_request_20260719.md",
-    "contracts/autonomous_ai_contracts_v1.md",
     "database_summary.json",
-    "design/autonomous_ai_research_architecture.md",
     "MODULE_INDEX.md",
     "modules/ai_mode.md",
     "modules/allocation_decision_matrix.md",
     "modules/capacity_policy_and_slot_model.md",
+    "modules/consultant_core_model_design.md",
     "modules/deployment_and_operations.md",
     "modules/execution_transport.md",
     "modules/factor_center.md",
@@ -336,19 +177,14 @@
     "modules/single_multi_allocation_design.md",
     "modules/task_center.md",
     "modules/template_center.md",
-    "plans/autonomous_ai_backend_implementation_plan_20260718.md",
     "PROJECT_STATUS.md",
     "README.md",
     "recent_changes.md",
     "recent_tests.md",
     "review_request.md",
     "server_status.json",
-    "TASK_BOARD.md",
-    "test_reports/ai_backend_architecture_review_delivery_governance_20260719.md",
-    "test_reports/autonomous_ai_backend_architecture_audit_20260718.md",
-    "test_reports/autonomous_ai_backend_v1_20260719.md",
-    "test_reports/autonomous_ai_backend_v1_baseline_20260718.md"
+    "TASK_BOARD.md"
   ],
-  "local_commit": "c658238fc40489c8db6109c7d6864d67c6116cba",
-  "schema_version": 2
+  "local_commit": "a7c858ab5ab60517668cacc87f3bf44e143b37f6",
+  "schema_version": 1
 }
