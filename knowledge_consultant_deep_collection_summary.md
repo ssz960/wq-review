@@ -228,3 +228,9 @@ No secret or credential value was published. Matches for policy words such as `t
 - The local-only Chrome collector reached 2,286 unique successful topic bodies; 72 entries remain unresolved/retryable and outside evidence.
 - Latest published `wqc` commit: `bf6636c626fda4e3a454ea3b953941911cc1bc3c`.
 - Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_2286.json`. This progress-only checkpoint adds no new public interpretation or platform rule.
+
+## Collection Progress Checkpoint 2026-07-22 (no new public evidence)
+
+- The local-only Chrome collector reached 2,343 unique successful topic bodies; 72 entries remain unresolved/retryable and outside evidence.
+- Latest published `wqc` commit: `13b0ede596f1e958648043b7dbbd2283839ad7d4`.
+- Local RAG was refreshed from `WQPCommunityState_20260719_consultant_bodies_2343.json`. This progress-only checkpoint adds no new public interpretation or platform rule.
