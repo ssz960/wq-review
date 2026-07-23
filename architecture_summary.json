@@ -8,7 +8,7 @@
     "tasks": "backend/app/tasks.py"
   },
   "full_source_exported": false,
-  "mining_python_file_count": 110,
+  "mining_python_file_count": 113,
   "module_documents": [
     "platform_registry",
     "task_center",
@@ -27,10 +27,10 @@
     "capacity_policy_and_slot_model",
     "scheduler_recovery_state_machine"
   ],
-  "source_branch": "codex/AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001-implementation",
-  "source_commit": "dad7b0239542186222d67efe8a8752214db2c861",
+  "source_branch": "codex/AI-PROVIDER-MOCK-E2E-V1-20260722-002-implementation",
+  "source_commit": "046655811ba093581754d3f1f0a263e2074ac63a",
   "source_of_truth": "local_git_repository",
-  "test_runner_file_count": 53,
+  "test_runner_file_count": 54,
   "test_runner_files": [
     "agent_campaign_continuous_loop_test.py",
     "agent_campaign_single_primary_module1_test.py",
@@ -72,6 +72,7 @@
     "optimize_repair_smoke_test.py",
     "platform_registry_sync_test.py",
     "pressure_test.py",
+    "provider_generated_mock_test.py",
     "provider_preflight_v1_test.py",
     "public_activity_projection_test.py",
     "real_wq_targeted_30_runner.py",

@@ -65,3 +65,16 @@
 - `docs/test_reports/project_governance_and_gpt_codex_bridge_20260718.md`
 - `docs/test_reports/auxiliary_repository_concurrency_and_cleanup_20260718.md`
 - `docs/test_reports/real_provider_preflight_v1_20260722.md`
+
+## AI-PROVIDER-MOCK-E2E-V1-20260722-002
+
+SSH was stable through the dedicated alias after console recovery; the prior
+TCP/no-banner root cause was not provable from console evidence and shared
+authentication was left unchanged. The clean server deployment used source
+and server Commit `3273770cd3b808f9e7be1942d78bb6735eaf6507`, migrated
+`20260719_0032 -> 20260722_0033`, and retained backup/rollback points. Health,
+services, Active Registry provenance, and four Autonomous OpenAPI routes were
+verified. The bounded Provider budget was exhausted before a valid Proposal,
+so the task is BLOCKED and Provider-generated Mock execution was not run.
+WQ Gate and all real execution calls remain zero. See
+`docs/test_reports/provider_generated_mock_e2e_v1_20260722.md`.

@@ -29,6 +29,7 @@
 | `SCHED-20260718-001` | candidate_plan, task_center, scheduler, execution_transport | root | DONE | `CORE-20260718-003`, `REG-20260718-002` | `HEAD`（本任务提交） | `docs/test_reports/single_multi_allocation_validation_20260718.md` |
 | `AI-SERVER-MOCK-V1-20260719-001` | ai_mode, platform_registry, task_center, execution_transport, research_center, provider_and_skills, deployment_and_operations | server-mock-v1 | DONE/PASS | local recovery `e95a23f`; server Active Registry and 0031 | `e90a7172fd57d6b1d3fcda2259935842cda2dec4` | `docs/test_reports/autonomous_ai_server_mock_v1_20260719.md`; cumulative history `docs/archive/completed_asset_migration_index.md` |
 | `AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001` | ai_mode, provider_and_skills, deployment_and_operations, research_center, platform_registry, task_center | real-provider-preflight-v1 | BLOCKED | `AI-SERVER-MOCK-V1-20260719-001`; responsive server SSH, Active Registry and Provider credential | `95674fd4ab6ef6e6fb1eb6383ae43b65e9f50ceb` (implementation), `777e157608ab64fbbaff15b0a0583cd372935fdf` (evidence) | `docs/test_reports/real_provider_preflight_v1_20260722.md` |
+| `AI-PROVIDER-MOCK-E2E-V1-20260722-002` | ai_mode, provider_and_skills, platform_registry, task_center, execution_transport, research_center, deployment_and_operations | provider-mock-e2e-v1 | BLOCKED | `AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001`; server SSH, Active Registry, Provider output stability | `3273770cd3b808f9e7be1942d78bb6735eaf6507` (implementation and server deployment) | `docs/test_reports/provider_generated_mock_e2e_v1_20260722.md` |
 
 ## 写锁
 
@@ -47,3 +48,5 @@
 `AI-SERVER-MOCK-V1-20260719-001` 的累计审阅历史保留于 [完成资产迁移索引](history/completed_asset_migration_index.md)，不会因新快照生成而覆盖或删除。
 
 `AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001` 已释放 ai_mode、provider_and_skills、deployment_and_operations、research_center、platform_registry 与 task_center 的后端及治理文档写锁。本地 Provider 预检入口、审计/Schema/Proposal Dry Run 模型与迁移已提交为 `95674fd4ab6ef6e6fb1eb6383ae43b65e9f50ceb`；服务器 SSH banner 阻断部署和真实 Provider 验收。前端、旧 `/worldquant`、真实执行 adapter、WQ Gate、相关性服务和最终提交路径未修改。
+
+`AI-PROVIDER-MOCK-E2E-V1-20260722-002` 使用独立 `codex/AI-PROVIDER-MOCK-E2E-V1-20260722-002-implementation` 分支/worktree；实现/服务器部署 Commit 为 `3273770cd3b808f9e7be1942d78bb6735eaf6507`，任务状态为 `BLOCKED`。Provider 预算耗尽后未启动 Mock 执行，唯一报告为 `docs/test_reports/provider_generated_mock_e2e_v1_20260722.md`。本任务已释放 ai_mode、provider_and_skills、platform_registry、task_center、execution_transport、research_center 与 deployment_and_operations 的全部写锁；不修改前端、旧 `/worldquant`、真实执行 adapter、WQ Gate、Single/Multi 容量、相关性或最终提交路径。

@@ -60,3 +60,12 @@ The unified Mock path represents Single as a one-Child `SimulationBatch` and
 Multi as a 2-10 Child Batch. It persists slot reservation before marking work
 reserved, preserves Child facts across Parent errors, and recovers Pending, 429
 and restart without calling the real adapter.
+
+## AI-PROVIDER-MOCK-E2E-V1-20260722-002
+
+The shared execution facts remain the only permitted Mock path:
+`execution_requests + simulation_batches + simulation_batch_children`, followed
+by Result Ingestion and Factor Center. This server acceptance was blocked
+before Proposal materialization because the authorized Provider budget was
+exhausted. No second queue, result table, Mock state machine, execution
+request, result fact, or WQ call was created.

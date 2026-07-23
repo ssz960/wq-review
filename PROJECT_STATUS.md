@@ -1,8 +1,8 @@
 # Alpha Mining OS 项目状态
 
-- 更新日期：2026-07-22
-- 当前任务：`AI-REAL-PROVIDER-PREFLIGHT-V1-20260722-001`，状态 `BLOCKED`。
-- 当前阶段：本地预检实现、迁移和 Stub 验证已完成；服务器 SSH 在认证前未提供 banner，部署和真实 Provider 验收未开始。
+- 更新日期：2026-07-23
+- 当前任务：`AI-PROVIDER-MOCK-E2E-V1-20260722-002`，状态 `BLOCKED`。
+- 当前阶段：服务器部署与受限 Provider 预检事实已记录；Provider 生成 Mock 执行未启动，因为授权 Provider 调用预算已耗尽。
 - 安全状态：真实 WQ、Single、Multi、Self/PP/Prod Corr、最终提交和前端修改均禁止；服务器 Gate 必须保持关闭，预检不得创建 `ExecutionRequest`。
 - 累计审阅入口：[完成资产迁移索引](history/completed_asset_migration_index.md)，其中保留 Autonomous V1 架构契约、设计、V1 测试、REG、CORE、SCHED、RESULT、RUNTIME-RECOVER、TPL、Allocation Decision 和 Capacity Policy。
 
@@ -131,3 +131,16 @@
 - 唯一阻断：TCP 可达但 SSH 在认证前不返回 banner，无法检查服务器、创建备份、部署 `95674fd4ab6ef6e6fb1eb6383ae43b65e9f50ceb` 或执行 `0032 -> 0033`。本任务真实 Provider 请求、Proposal、`ExecutionRequest` 增量和 WQ 调用均为 `0`。
 - 服务器最后记录事实：部署 Commit `e8f3ad09a9232ad1fd68394514e92ba07f2ade2f`、Alembic Head `20260719_0032`、非 fixture Active Registry `REG-20260718-001`；这些是前序验收记录，未被本任务重新读取。
 - 后续边界：仅在 SSH 服务恢复后，重新执行服务器盘点、备份、干净部署、迁移和最多十次串行真实 Provider 预检；当前不得进入真实 Provider 后续状态。
+
+## AI-PROVIDER-MOCK-E2E-V1-20260722-002
+
+- 状态：`BLOCKED`。实现 Commit 为 `3273770cd3b808f9e7be1942d78bb6735eaf6507`，服务器部署 Commit 相同；本轮证据在独立 `codex/AI-PROVIDER-MOCK-E2E-V1-20260722-002-implementation` worktree 生成。
+- 范围：SSH 根因恢复、服务器盘点/备份/干净部署、`0032 -> 0033` 迁移、真实 Provider 预检和 Provider Proposal 到现有 Mock 执行/结果/反馈事实链的两轮闭环。
+- 不可变边界：WQ Gate、real WQ、Single、Multi、Self/PP/Prod Corr 与提交保持关闭/零调用；不修改前端、旧 `/worldquant`、容量策略、相关性或真实执行 adapter。
+- 预检与 Mock 执行均须使用服务器非 fixture Active Registry、共享 CandidatePlan/Admission/`execution_requests + simulation_batches + simulation_batch_children` 和 Result Ingestion；不得新增旁路队列、结果表或 Mock 状态机。
+- 服务器事实：SSH 别名可稳定执行多次非交互命令；sshd active、22 端口监听。控制台没有提供先前 no-banner 的可证明根因，未修改共享 SSH 认证。服务健康 `/api/health=200`；唯一 Alembic Head 为 `20260722_0033`，迁移为 `20260719_0032 -> 20260722_0033`；Active Registry 为非 fixture `REG-20260718-001`，source Commit 为 `8548481557fbf51b970a7a22f988bad19f1f7732`。
+- OpenAPI 事实：部署 FastAPI `app.openapi()` 包含四个 `/api/v2/autonomous/*` 路由；WQ Gate 关闭，real execution、Single、Multi 和提交调用均关闭/为零。
+- Provider 事实：真实 Provider 物理调用 `10/10`，并发 `1`，审计记录 `8`，总 Token `5040`；重复空响应/非 JSON 响应后未获得有效 Proposal。Readiness 已因预算耗尽失败关闭，唯一阻断为 `provider_preflight_call_budget_exhausted`。
+- Mock 事实：Proposal、两轮 Campaign、六候选、Candidate、Mock `ExecutionRequest`、SimulationBatch/Child、Result Fact 和 Feedback Delta 均为 `0`；没有人工插入数据，所需共享 Mock 闭环因此未通过。
+- 唯一报告：[Provider Generated Mock E2E V1](test_reports/provider_generated_mock_e2e_v1_20260722.md)。本任务状态保持 `BLOCKED`，不得标记 `PASS` 或进入最小真实 WQ 复审。
+- 写锁：本任务在文档/后端范围内的写锁已释放；根工作树未被本任务修改，前端、旧 `/worldquant`、真实执行 adapter、容量策略和相关性路径均未修改。
